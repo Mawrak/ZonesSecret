@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+<string id="gz_stroyka_key_name">
+		<text>Ключ</text>
+</string>
+<string id="gz_stroyka_key_description">
+		<text>Ключ от двери, в лабораторию Х-13.</text>
+</string>
+<string id="gz_quest_key_greh_guard_name">
+		<text>Ключ</text>
+</string>
+<string id="gz_quest_key_greh_guard_description">
+		<text>Ключ охранника в Тёмной Долине.</text>
+</string>
+<string id="gz_agr_dolgbase_und_key_name">
+		<text>Ключ</text>
+</string>
+<string id="gz_agr_dolgbase_und_key_description">
+		<text>Ключ от калитки на базе Долга, которая ведёт к спуску в подземелье.</text>
+</string>
+<string id="gz_pda_messenger">
+		<text>ПДА Связного</text>
+</string>
+<string id="gz_pda_messenger_description">
+		<text>ПДА Связного, зашифрованных файлов нет. Видимо он должен был передать мне всю информацию устно.</text>
+</string>
+<string id="gz_ds_sumka_name">
+		<text>Сумка со снаряжением</text>
+</string>
+<string id="gz_ds_sumka_description">
+		<text>Сумка со снаряжением, внутри фильтры для противогазов, два прибора ночного видения, фонарики и батарейки.</text>
+</string>
+<string id="gz_rf_mil_pda_name">
+		<text>Электронный планшет командира</text>
+</string>
+<string id="gz_rf_mil_pda_description">
+		<text>Электронный планшет командира. Есть распоряжения относительно меня и профессора Маниковского.</text>
+</string>
+<string id="gz_rf_lab_card_name">
+		<text>Электронная карта доступа</text>
+</string>
+<string id="gz_rf_lab_card_description">
+		<text>Электронная карта доступа в "лабораторный комплекс номер 5", на имя "научный сотрудник номер 0135".</text>
+</string>
+<string id="gz_pz_flair_name">
+		<text>Сигнальный дым</text>
+</string>
+<string id="gz_pz_flair_description">
+		<text>Сигнальный дым оранжевого цвета, мне необходимо зажечь его, чтобы обозначить наше местонахождение для вертолёта.</text>
+</string>
+<string id="gz_yan_zapiska_trup_name">
+		<text>Клочок бумаги</text>
+</string>
+<string id="gz_yan_zapiska_trup_description">
+		<text>Клочок бумаги. Часть текста можно разобрать: Ссуки, обобрали полностью. Даже ножа не оставили. Лучше пристрелили бы сразу, как собаку... чем помирать от рук зомби.</text>
+</string>
+<string id="gz_pda_cap_dv">
+		<text>ПДА Капитана</text>
+</string>
+<string id="gz_pda_cap_dv_description">
+		<text>ПДА Капитана, который он оставил для меня у пленника греха.</text>
+</string>
+<string id="gz_pda_bandit_zap">
+		<text>Записка</text>
+</string>
+<string id="gz_bandit_zap_desc">
+		<text>"Видели как какой-то фраерок прятал хабар в трубе за решёткой, что на высохшем пруду севернее моста, надо отправить мелкого проверить чё там."</text>
+</string>
+<string id="gz_bezpamatnii_diary_name">
+		<text>Дневник Неизвестного</text>
+</string>
+<string id="gz_bezpamatnii_diary_name_description">
+		<text>Дневник неизвестного сталкера. Старая тетрадь, в которой несколько страниц исписаны плохоразборчивым почерком.</text>
+</string>
+<string id="gz_loki_case_flesh_name">
+		<text>Флешка из кейса Локи</text>
+</string>
+<string id="gz_loki_case_flesh_description">
+		<text>Флешка найденная мною в кейсе Локи. Судя по всему кто-то очень хотел скрыть хранящуюся на ней информацию.\n Вся информация зашифрована.</text>
+</string>
+<string id="gz_agr_dolg_datchik_name">
+		<text>Датчик движения</text>
+</string>
+<string id="gz_agr_dolg_datchik_description">
+		<text>Датчик движения, который мне надо установить в определённом месте отмеченном на карте, по просьбе долга. Датчик позволит отслеживать передвижения мутантов по территори болот.</text>
+</string>
+<string id="pda_predateley_name">
+		<text>ПДА предателя</text>
+</string>
+<string id="pda_predateley_desc">
+		<text>ПДА принадлежащий члену отряда предателей.</text>
+</string>
+<string id="gz_tainik_pismo_name">
+		<text>Записка</text>
+</string>
+<string id="gz_tainik_pismo_description">
+		<text>Здравствуй неизвестный сталкер, я отдолжил вещи из твоего тайника, они спасли мне жизнь. Если свидимся, я тебе всё верну, обещаю.\n Василь.</text>
+</string>
+<string id="gz_pz_lab_yell_case_name">
+		<text>Аномальный контейнер(жёлтый)</text>
+</string>
+<string id="gz_pz_lab_yell_case_description">
+		<text>Аномальный контейнер жёлтого цвета, с неизвестным содержимым.</text>
+</string>
+<string id="gz_und_paper_name">
+		<text>Помятый лист</text>
+</string>
+<string id="gz_und_paper_description">
+		<text>Помятый лист, на нём много надписей, большинство из которых уже не разобрать.\n С краю ручкой записано GFИТ.</text>
+</string>
+<string id="gz_rf_pismo_name">
+		<text>Записка сестры</text>
+</string>
+<string id="gz_rf_pismo_description">
+		<text>Записка сестры с Большой Земли. Часть бумаги испачкана кровью.</text>
+</string>
+<string id="gz_dv_fomka_diary_name">
+		<text>Дневник Фомки</text>
+</string>
+<string id="gz_dv_fomka_diary_description">
+		<text>Дневник сталкера по кличке Фомка.</text>
+</string>
+<string id="gz_pz_scien_diary_name">
+		<text>Дневник учёного</text>
+</string>
+<string id="gz_pz_scien_diary_description">
+		<text>Достаточно объёмный дневник рассказывающий о работе в подземном комплексе. Много непонятной научной лексики. Последние записи рассказывают о событиях произошедших уже после второго взрыва.</text>
+</string>
+<string id="gz_und_agr_cap_cross_name">
+		<text>Нательный крест Капитана</text>
+</string>
+<string id="gz_und_agr_cap_cross_description">
+		<text>Нательный крест Капитана. Надо бы передать эту вещь его жене Наталье, когда вернусь на большую землю.</text>
+</string>
+<string id="gz_und_agr_cap_jeton_name">
+		<text>Армейский жетон Капитана</text>
+</string>
+<string id="gz_und_agr_cap_jeton_description">
+		<text>Армейский жетон Капитана. На обратной стороне выгравирован позывной "Стрелок". Надо бы передать эту вещь его жене Наталье, когда вернусь на большую землю.</text>
+</string>
+<string id="gz_quest_agr_merc_pda_name">
+		<text>Ноутбук наёмников</text>
+</string>
+<string id="gz_quest_agr_merc_pda_description">
+		<text>Ноутбук Командира наёмников с агропрома. Думаю тут могут быть данные о нашей операции. Надо найти человека который смог бы взломать защиту.\n Вся информация зашифрована.</text>
+</string>
+<string id="gz_shpion_papka_name">
+		<text>Папка информатора Долга</text>
+</string>
+<string id="gz_shpion_papka_description">
+		<text>Папка со сведениями добытыми информатором Долга. Мне необходимо передать её Капитану Куприянову.</text>
+</string>
+<string id="gz_dv_black_diger_diary_name">
+		<text>Дневник Чёрного Копателя</text>
+</string>
+<string id="gz_dv_black_diger_diary_description">
+		<text>Записи легендарного сталкера Чёрного Копателя.</text>
+</string>
+<string id="gz_dv_black_diger_diary_name">
+		<text>Дневник неизвестного</text>
+</string>
+<string id="gz_dv_black_diger_diary_description">
+		<text>Потрёпанный дневник, часть страниц внутри вымазана кровью.</text>
+</string>
+<string id="gz_ds_geed_diary_name">
+		<text>Дневник Гида</text>
+</string>
+<string id="gz_ds_geed_diary_description">
+		<text>Дневник человека по прозвищу Гид. Один из тех кто размещает объявления в интернете и за кругленькую сумму водит в Зону любителей экстремальных ощущений.</text>
+</string>
+<string id="gz_ds_money_name">
+		<text>Деньги</text>
+</string>
+<string id="gz_ds_money_desc">
+		<text>Деньги. Специфический товар, обладающий наивысшей ликвидностью, служащий измерителем стоимости других товаров и услуг.</text>
+</string>
+<string id="gz_quest_datchik_name">
+		<text>РК-5</text>
+</string>
+<string id="gz_quest_datchik_description">
+		<text>Портативное устройство для изучения аномальных зон РК-5.</text>
+</string>
+<string id="gz_quest_pda_zombie_name">
+		<text>ПДА Зомбированного</text>
+</string>
+<string id="gz_quest_pda_zombie_description">
+		<text>ПДА Зомбированного сталкера по кличке Петька Борзой.</text>
+</string>
+<string id="gz_scien_flash_name">
+		<text>Укреплённый жёсткий диск Кайзановского</text>
+</string>
+<string id="gz_scien_flash_description">
+		<text>Укреплённый жёсткий диск профессора Кайзановского. Устройство защищено от влаги, механических повреждений и приспособлено для самых жёстких условий эксплуатации. На это внешнем носителе судя по всему хранится очень важная информация о Зоне отчуждения, найденная учёными в заброшенных лабораториях.</text>
+</string>
+<string id="gz_yan_guard_pda_name">
+		<text>ПДА Мазоли</text>
+</string>
+<string id="gz_yan_guard_pda_description">
+		<text>ПДА бандита по кличке Васька Мазоль. Последняя запись: Отличная идея была с смс о помощи, двух лохов развели. Много хабара набрали.</text>
+</string>
+<string id="gz_pz_merclager_documents_name">
+		<text>Защитный контейнер(красный)</text>
+</string>
+<string id="gz_pz_merclager_documents_description">
+		<text>Контейнер защищающий от химического и радиактивного облучения. По видимому был найден в одной из лабораторий на территории Зоны. Содержимое контейнера не известно.</text>
+</string>
+<string id="gz_storyline_pz_bomb_name">
+		<text>Взрывное устройство</text>
+</string>
+<string id="gz_storyline_pz_bomb_description">
+		<text>Взрывное устройство, собранное умельцами из группировки Искатели.</text>
+</string>
+<string id="gz_noyt_borman_name">
+		<text>Ноутбук группировки Последний День.</text>
+</string>
+<string id="gz_noyt_borman_description">
+		<text>Ноутбук принадлежащий группировке Последний День, был украден предателем по прозвищу Борман.\n Вся информация зашифрована.</text>
+</string>
+<string id="gz_pda_borman_name">
+		<text>ПДА Бормана.</text>
+</string>
+<string id="gz_pda_borman_description">
+		<text>ПДА предателя Бормана, бывшего члена группировки Последний День.\n Вся информация зашифрована.</text>
+</string>
+<string id="gz_rf_docs_name">
+		<text>Папка с документами</text>
+</string>
+<string id="gz_rf_docs_description">
+		<text>Папка с документами найденная в тайнике зомбированого сталкера.</text>
+</string>
+<string id="gz_quest_talisman_name">
+		<text>Талисман</text>
+</string>
+<string id="gz_quest_talisman_desc">
+		<text>Талисман. Магический предмет, назначением которого, согласно суеверным представлениям, является принесение счастья и удачи его владельцу.</text>
+</string>
+<string id="gz_lab_noyt_name">
+		<text>Папка с документами</text>
+</string>
+<string id="gz_lab_noyt_description">
+		<text>Документы с заброшенного лагеря учёных на Янтаре.</text>
+</string>
+<string id="gz_diggers_maps_name">
+		<text>Карты Чёрного Копателя</text>
+</string>
+<string id="gz_diggers_maps_description">
+		<text>Карты подземелий Агропрома, на которой отмечены все входы и выходы со Свалки и Агропрома. Нарисованные от руки Чёрным Копателем - легендой Зоны.</text>
+</string>
+<string id="gz_bekas_money_name">
+		<text>Контейнер из Х-18</text>
+</string>
+<string id="gz_bekas_money_description">
+		<text>Герметичный контейнер из поздемной лаборатории X-18. Найден двумя диггерами Бекасом и Петро. Содержимое не известно, почему-то он очень интересует человека по имени Осведомитель.</text>
+</string>
+<string id="gz_pda_bekas_name">
+		<text>ПДА Бекаса</text>
+</string>
+<string id="gz_pda_bekas_description">
+		<text>Заныкал схрон в пещере не далеко от завода грешников, надеюсь там никто не найдут.</text>
+</string>
+<string id="gz_pda_petro_name">
+		<text>ПДА Петро</text>
+</string>
+<string id="gz_pda_petro_description">
+		<text>ПДА сталкера по кличке Петро. Последнее сообщение от сталкера Бекаса: Я на некоторое время осяду в Тёмной долине, пока не появится работёнка от учёных, если что, ищи меня там.</text>
+</string>
+<string id="gz_prisoners_flesh_name">
+		<text>Флешка Гаврилы</text>
+</string>
+<string id="gz_prisoners_flesh_description">
+		<text>Флешка Гаврилы - пленника Свободы. На ней хранится очень важная информация, интересующая торговца Цезаря и группировку Свобода.</text>
+</string>
+<string id="gz_team_diary_name">
+		<text>Дневник Сержанта Захарова</text>
+</string>
+<string id="gz_team_diary_description">
+		<text>Дневник Сержанта Захарова - одного из выживших после крушения, членов моей группы.</text>
+</string>
+<string id="gz_pda_ld_code_name">
+		<text>ПДА Шведа</text>
+</string>
+<string id="gz_pda_ld_code_description">
+		<text>ПДА Шведа, члена группировки Последний день.\n Вся информация зашифрована.</text>
+</string>
+<string id="gz_pz_lab_blue_case_name">
+		<text>Аномальный контейнер(синий)</text>
+</string>
+<string id="gz_pz_lab_blue_case_description">
+		<text>Аномальный контейнер синего цвета, с неизвестным содержимым. Найден в лаборатории на промзоне.</text>
+</string>
+<string id="gz_pda_maps_name">
+		<text>ПДА мёртвого сталкера</text>
+</string>
+<string id="gz_pda_maps_description">
+		<text>ПДА мёртвого сталкера из вагончика. Последняя запись: Покупатель на карты нашёлся быстро. Правда мужик какой-то мутный, он мне сразу не понравился, да и цену предложил не большую. Пока что поищу ещё покупателей. Поменял место тайника с картами. Что бы не забыть: От заправки на север, в трубе.</text>
+</string>
+<string id="gz_quest_case_instruments_name">
+		<text>Набор инструментов</text>
+</string>
+<string id="gz_quest_case_instruments_description">
+		<text>Набор инструментов, оставшийся в зоне, ещё до первой катострофы.</text>
+</string>
+<string id="gz_pda_torgash_name">
+		<text>ПДА торгаша</text>
+</string>
+<string id="gz_pda_torgash_description">
+		<text>ПДА торговца оружием. Помимо прочей информации на нём есть упоминание о схроне, где бандиты складывали всё награбленное. Однако, точное местонахождение тайника неизвестно, говорится только, что он спрятан возле разлома южнее заправки.</text>
+</string>
+<string id="gz_quest_gps_name">
+		<text>GPS-маячок</text>
+</string>
+<string id="gz_quest_gps_description">
+		<text>GPS-маячок, который мне дал торговец Свободы и попросил им отметить один из тайников Долга.</text>
+</string>
+<string id="gz_quest_medkit_case_doc_name">
+		<text>Сумка с медикаментами</text>
+</string>
+<string id="gz_quest_medkit_case_doc_description">
+		<text>Сумка с набором медикаментов. Имеет ценность, так как медикаменты в Зоне очень сложно достать.</text>
+</string>
+<string id="gz_quest_guitar_name">
+		<text>Папка с картами</text>
+</string>
+<string id="gz_quest_guitar_description">
+		<text>Папка с картами города Припять. Карты старые, сделанные ещё до первой катастрофы. Лукаш, попросил меня принести эти карты ему.</text>
+</string>
+<string id="gz_quest_weapons_case_name">
+		<text>Ящик с оружием</text>
+</string>
+<string id="gz_quest_weapons_case_description">
+		<text>Ящик с оружием, найденный мной в схроне бандитов. В этом ящике, лежат награбленные стволы. Я должен отнести его Миклухе.</text>
+</string>
+<string id="gz_pda_predat_name">
+		<text>ПДА командира - предателей</text>
+</string>
+<string id="gz_pda_predat_description">
+		<text>Электронный планшет командира, который принадлежал майору Караваеву. В нём есть приказ на мою ликвидацию, а так же на ликвидацию некого ассистента Кайзановского.</text>
+</string>
+<string id="gz_quest_raciya_detail_1_name">
+		<text>Аккумулятор</text>
+</string>
+<string id="gz_quest_raciya_detail_1_description">
+		<text>Аккумулятор для рации.</text>
+</string>
+<string id="gz_quest_raciya_detail_2_name">
+		<text>Коробка транзисторов</text>
+</string>
+<string id="gz_quest_raciya_detail_2_description">
+		<text>Коробка качественных транзисторов - полупроводниковых деталей, способных генерировать, преобразовать и усиливать электрические колебания. Предел мечтаний радиотехника, если такого чудом занесёт в Зону.</text>
+</string>
+<string id="gz_quest_raciya_detail_3_name">
+		<text>Моток медной проволоки</text>
+</string>
+<string id="gz_quest_raciya_detail_3_description">
+		<text>Медь является отличным проводником, а ещё и ценным цветным металлом. Ввиду данного факта, такая проволока представляет собой большую редкость. Все имевшиеся запасы меди в Зоне, были найдены и сданы во вторсырьё - ещё в середине 1990-х.</text>
+</string>
+<string id="gz_quest_raciya_detail_4_name">
+		<text>Текстолитовая основа</text>
+</string>
+<string id="gz_quest_raciya_detail_4_description">
+		<text>Текстолит - основа печатной платы. То, что испытывает радиотехник-любитель при виде нетронутой текстолитовой плиты, сравнимо разве что с ощущениями писателя над чистым листом.</text>
+</string>
+<string id="gz_storyline_gar_dynamite_name">
+		<text>Динамит</text>
+</string>
+<string id="gz_storyline_gar_dynamite_description">
+		<text>(Предмет для задания!)\n Ящик с динамитом, может пригодиться для подрыва стен или укреплений.</text>
+</string>
+<string id="gz_quest_diary_wounded_digger_name">
+		<text>Дневник Угрюмого</text>
+</string>
+<string id="gz_quest_diary_wounded_digger_description">
+		<text>Дневник диггера по кличке Угрюмый.</text>
+</string>
+<string id="gz_quest_diary_dead_digger1_name">
+		<text>ПДА Сутулого</text>
+</string>
+<string id="gz_quest_diary_dead_digger1_description">
+		<text>ПДА диггера по кличке Сутулый.</text>
+</string>
+<string id="gz_quest_diary_dead_digger2_name">
+		<text>ПДА Гимли</text>
+</string>
+<string id="gz_quest_diary_dead_digger2_description">
+		<text>ПДА диггера по кличке Гимли.</text>
+</string>
+<string id="gz_quest_diary_suicide_digger_name">
+		<text>ПДА Грека</text>
+</string>
+<string id="gz_quest_diary_suicide_digger_description">
+		<text>ПДА диггера по кличке Грек.</text>
+</string>
+<string id="gz_quest_jeton_military_controller_name">
+		<text>Армейский жетон</text>
+</string>
+<string id="gz_quest_jeton_military_controller_description">
+		<text>Идентификационный номер - Д-005462, Демиденко Павел Юрьевич. Вооружённые силы Украины.</text>
+</string>
+<string id="gz_quest_rf_docs_name">
+		<text>Карты</text>
+</string>
+<string id="gz_quest_rf_docs_description">
+		<text>Карты и схемы путепровода "Припять-1".</text>
+</string>
+<string id="gz_ds_pda_bool_name">
+		<text>ПДА Быка</text>
+</string>
+<string id="gz_ds_pda_bool_description">
+		<text>ПДА бандита по кличке Бык.\n Вся информация зашифрована.</text>
+</string>
+<string id="gz_tainik_case_name">
+		<text>Герметичный кейс</text>
+</string>
+<string id="gz_tainik_case_description">
+		<text>Герметичный кейс, который я нашёл в тайнике сталкера по кличке Локи. Думаю кто-нибудь из оружейных мастеров сможет его открыть.</text>
+</string>
+<string id="gz_quest_pda_otshel_name">
+		<text>ПДА Отшельника</text>
+</string>
+<string id="gz_quest_pda_otshel_description">
+		<text>ПДА Отшельника с озера Янтарь. На устройстве есть записи о проводимых Отшельником исследованиях пространнственных аномалий.\n Однако, часть информации зашифрована.</text>
+</string>
+<string id="gz_pda_maps_band_name">
+		<text>ПДА Гноя</text>
+</string>
+<string id="gz_pda_maps_band_description">
+		<text>ПДА Бандита по кличке Гной. Последнее сообщение от Лешего: Малец с картами тормозит, поторипите его, нам нельзя больше ждать.\n Так же, на ПДА есть зашифрованная информация.</text>
+</string>
+<string id="gz_pda_depo_dead_stalker_name">
+		<text>ПДА мёртвого сталкера из Депо</text>
+</string>
+<string id="gz_pda_depo_dead_stalker_description">
+		<text>"Запись в ПДА: Проклятое депо, еле нашли в него проход. Мало того, что пришлось пробираться по узкому коридору, по колено в радиактивной воде, так ещё из-под воды какие-то твари повылезали. Серый, мразь, вместо того чтобы людей отправлять, сам бы пошёл сюда. И зачем я только согласился на это? Вот сейчас и сгинем тут... Грёбанные учёные с их грёбанным артефактом, никак не можем его найти. Головастики что-то говорили, якобы аномалия не породила артефакт как это происходит обычно, а дала аномальные свойства какому-то из здешних предметов. Однако, тут столько хлама, хрен разберёшь, что из этого артефакт, судя по всему, без детектора тут не обойтись."\n Так же, на устройстве есть зашифрованная информация.</text>
+</string>
+<string id="gz_pda_dolg_kuprianov_name">
+		<text>ПДА Капитана Куприянова</text>
+</string>
+<string id="gz_pda_dolg_kuprianov_description">
+		<text>ПДА Капитана Куприянова - командира отряда разведчиков группировки Долг.\n Вся информация зашифрована.</text>
+</string>
+<string id="gz_pda_sv_cheh_name">
+		<text>ПДА Чехова</text>
+</string>
+<string id="gz_pda_sv_cheh_description">
+		<text>ПДА сталкера по кличке Чехов. Один из командиров группировки свобода.\n Вся информация зашифрована.</text>
+</string>
+<string id="gz_pda_sv_loki_name">
+		<text>ПДА Локи</text>
+</string>
+<string id="gz_pda_sv_loki_description">
+		<text>ПДА принадлежал сталкеру по кличке Локи, члену группировки Свобода.\n Вся информация зашифрована.</text>
+</string>
+<string id="gz_pda_bandit_leshui_name">
+		<text>ПДА Сухого</text>
+</string>
+<string id="gz_pda_bandit_leshui_description">
+		<text>ПДА Сухого. Одного из главарей бандитских банд на территории Свалка. Сухой, был одним из самых уважаемых бандитских авторитетов в своих кругах.\n Вся информация зашифрована.</text>
+</string>
+<string id="gz_pda_hunt_name">
+		<text>ПДА охотника</text>
+</string>
+<string id="gz_pda_hunt_description">
+		<text>Последняя запись: Наконец-то я выследил эту тварь, сейчас она обосновалась на заправке. В бинокль видел два трупа, похоже военные. Еды у неё достаточно, думаю в ближайшее время, кровосос не уйдёт оттуда. А значит это мой шанс...\n Часть информации в ПДА зашифрована.</text>
+</string>
+<string id="gz_pda_gorb_name">
+		<text>ПДА Горбатого</text>
+</string>
+<string id="gz_pda_gorb_description">
+		<text>ПДА бандита по кличке Горбатый.\n Вся информация зашифрована.</text>
+</string>
+<string id="merc_racia_name">
+		<text>Рация наёмников</text>
+</string>
+<string id="merc_racia_description">
+		<text>Рация, настроеная на закрытые частоты наёмников, которая позволит мне прослушивать их переговоры в эфире.</text>
+</string>
+<string id="descr_pda_stalker_novice">
+		<text>Устаревшая модель ПДА принадлежавшая сталкеру новичку.\n Уровень защиты информации: низкий.</text>
+</string>
+<string id="pda_stalker_novice_name">
+		<text>ПДА сталкера-новичка</text>
+</string>
+<string id="descr_pda_stalker_regular">
+		<text>ПДА, делеко не новой модели. Судя по всему принадлежал одному из опытных сталкеров.\n Уровень защиты информации: средний.</text>
+</string>
+<string id="pda_stalker_regular_name">
+		<text>ПДА опытного сталкера</text>
+</string>
+<string id="descr_pda_stalker_veteran">
+		<text>ПДА одного из сталкеров-ветеранов.\n Уровень защиты информации: высокий.</text>
+</string>
+<string id="pda_stalker_veteran_name">
+		<text>ПДА сталкера-ветерана</text>
+</string>
+<string id="descr_pda_stalker_master">
+		<text>ПДА последней модели, судя по всему принадлежал сталкеру мастеру. Так называют людей истоптавших Зону не один год, о таких людях уже ходят легенды.\n Уровень защиты информации: очень высокий.</text>
+</string>
+<string id="pda_stalker_master_name">
+		<text>ПДА сталкера-мастера</text>
+</string>
+<string id="pda_stalker_broken_desc">
+		<text>ПДА зомбированного сталкера. Девайс подвергся мощному пси-излучению из-за чего у него выгорела вся электронная начинка и не представляется возможным восстановление информации с него.\n По сути этот ПДА теперь бесполезен.</text>
+</string>
+<string id="pda_stalker_broken_name">
+		<text>Сломанный ПДА</text>
+</string>
+<string id="voda_name">
+		<text>Питьевая вода</text>
+</string>
+<string id="voda_desc">
+		<text>Питьевая вода. Негазированная.</text>
+</string>
+<string id="quest_art_kolokol_name">
+		<text>Артефакт Колокол.</text>
+</string>
+<string id="quest_art_kolokol_desc">
+		<text>Довольно редкий артефакт. Свойства которого ещё не изучены.</text>
+</string>
+<string id="king_gigant_hand_name">
+		<text>Лапа огромного псевдогиганта.</text>
+</string>
+<string id="king_gigant_hand_desc">
+		<text>Лапа огромного псевдогиганта. Очень редкая особь, одна из таких была убита в Рыжем лесу.</text>
+</string>
+<string id="quest_rf_art_old_name">
+		<text>Артефакт Тюльпан.</text>
+</string>
+<string id="quest_rf_art_old_desc">
+		<text>Артефакт Тюльпан, который по слухам обладает чудодейственными заживляющими свойствами.</text>
+</string>
+<string id="device-torch_lab_name">
+		<text>Налобный фонарь (для Лаборатории).</text>
+</string>
+<string id="device-torch_lab_desc">
+		<text>Фонарик с довольно мощной лампой. Весьма полезная вещь в условиях недостаточной освещённости.</text>
+</string>
+<string id="gz_quest_raciya_name">
+		<text>Рация.</text>
+</string>
+<string id="gz_quest_raciya_desc">
+		<text>Рация (сокращение от радиостанция) - портативный или мобильный приёмопередатчик, предназначенный для оперативной связи.</text>
+</string>
+</string_table>

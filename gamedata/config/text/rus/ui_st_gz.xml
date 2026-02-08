@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+    <string id="ui_quick_slot_use_str_0">
+		<text>$$ACTION_USE_SLOT_QUICK_ACCESS_0$$</text>
+	</string>
+	<string id="ui_quick_slot_use_str_1">
+		<text>$$ACTION_USE_SLOT_QUICK_ACCESS_1$$</text>
+	</string>
+	<string id="ui_quick_slot_use_str_2">
+		<text>$$ACTION_USE_SLOT_QUICK_ACCESS_2$$</text>
+	</string>
+	<string id="ui_quick_slot_use_str_3">
+		<text>$$ACTION_USE_SLOT_QUICK_ACCESS_3$$</text>
+	</string>
+	<string id="power_supply">
+		<text>Аккумулятор</text>
+	</string>
+	<string id="power_core">
+		<text>Батарейки</text>
+	</string>
+	<string id="power_core_desc">
+		<text>Источник электричества для автономного питания разнообразных устройств.</text>
+	</string>
+	<string id="ui_st_money_regional">
+		<text>руб.</text>
+	</string>
+	<string id="pnv_bad">
+		<text>ПНВ-1</text>
+	</string>
+	<string id="pnv_bad_desc">
+		<text>Основа технологии — фотоумножители, поставленные между фотокатодом и окуляром, что позволяло добиться многократного усиления видимого ИК света с переводом последнего в видимый диапазон.</text>
+	</string>
+	<string id="pnv_sred">
+		<text>ПНВ-2</text>
+	</string>
+	<string id="pnv_sred_desc">
+		<text>Применена микроканальная технология, что позволило избавиться от паразитной засветки. Яркая точка на изображении оставалась точкой и не засвечивала соседние каналы.</text>
+	</string>
+	<string id="pnv_good">
+		<text>ПНВ-3</text>
+	</string>
+	<string id="pnv_good_desc">
+		<text>Применены фотокатоды на арсениде галлия, что позволило ещё больше увеличить коэффициент усиления света и уменьшить габариты приборов.</text>
+	</string>
+	<string id="antipohmel">
+		<text>Антипохмельные препараты</text>
+	</string>
+	<string id="enc_equipment_devic_device-pda1">
+		<text>Личный ПДА Зорина.</text>
+	</string>
+	<string id="enc_equipment_devic_device-pda1_desc">
+		<text>Армейский PDA с номером 8639540, выданный на имя сержанта Зорина.</text>
+	</string>
+	<string id="iskateli">
+		<text>Искатели</text>
+	</string>
+	<string id="pz_merclager_bomb_install">
+		<text>Установить взрывчатку</text>
+	</string>
+	<string id="gar_mine_1">
+		<text>Обезвредить мину</text>
+	</string>
+	<string id="pz_merclager_bomb_timer">
+		<text>До взрыва</text>
+	</string>
+	<string id="ui_st_exit_hint">
+		<text>Выход</text>
+	</string>
+	<string id="pz_merclager_bomb_alarm">
+		<text>Тревога начнется через:</text>
+	</string>
+	<string id="el_weak">
+		<text>Слабый</text>
+	</string>	
+	<string id="el_average">
+		<text>Средний</text>
+	</string>	
+	<string id="el_strong">
+		<text>Высокий</text>
+	</string>	
+	<string id="el_very_strong">
+		<text>Максимальный</text>
+	</string>	
+	<string id="baryga">
+		<text>Не получается даже определить.</text>
+	</string>
+</string_table>

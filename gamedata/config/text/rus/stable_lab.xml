@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding="windows-1251"?>
+<string_table>
+	<string id="gener_on_tips">
+		<text>Нажмите '$$ACTION_USE$$', что бы подать питание</text>
+	</string>
+	<string id="open_germodoor_tips">
+		<text>Нажмите '$$ACTION_USE$$', что бы открыть гермодверь</text>
+	</string>
+	<string id="give_torch_tips">
+		<text>Нажмите '$$ACTION_USE$$', что бы взять фонарик</text>
+	</string>
+	<string id="force_box_tips">
+		<text>Нажмите '$$ACTION_USE$$', что бы двигать ящик</text>
+	</string>
+	<string id="find_key_tips">
+		<text>Необходим ключ</text>
+	</string>
+	
+	<string id="lock_on_outside">
+		<text>Заблокировано с другой стороны</text>
+	</string>
+	<string id="activate_gener_text">
+		<text>Запустить генератор</text>
+	</string>
+	<string id="find_gener_text">
+		<text>Попасть в генераторную</text>
+	</string>
+	<string id="start_gener_text">
+		<text>Подать питание</text>
+	</string>
+	
+
+	<string id="lab_text1">
+		<text>Слава богу, вы живы. Слышали?! Сюда идут наёмники, нужно выбираться.</text>
+	</string>
+	<string id="lab_text2">
+		<text>Дайте аптчеку... иначе помру</text>
+	</string>
+	<string id="lab_uchen_text_11">
+		<text>Я бы хотел вам помочь, но у меня нет медикаментов при себе</text>
+	</string>
+	<string id="lab_uchen_text_12">
+		<text>Да конечно... не двигайтесь, сейчас как новенький будете</text>
+	</string>
+	<string id="lab_uchen_text_2">
+		<text>Единственный выход за этой дверью. Что бы её открыть, нужно возобновить подачу электричества и нажать рычаг в комнате управления на платформе. Я с тобой пойти не смогу. Сильно повредил ногу. Возвращайся скорей, тут жутко находиться одному...Ах да, чуть не забыл. Когда подадите питание, включится система защиты с активацией источника пси-излучения. Мы должны будем выбраться отсюда в течении 2 минут, иначе рискуем стать местным "персоналом."</text>
+	</string>
+	<string id="lab_text3">
+		<text>Ждите... я мигом.</text>
+	</string>
+</string_table>

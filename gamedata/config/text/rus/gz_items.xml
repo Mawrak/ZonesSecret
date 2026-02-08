@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+ <string id="pda_stalker_novice_name">
+  <text>ПДА сталкера-новичка.</text>
+ </string> 
+ <string id="pda_stalker_regular_name">
+  <text>ПДА опытного сталкера.</text>
+ </string> 
+ <string id="pda_stalker_veteran_name">
+  <text>ПДА сталкера-ветерана.</text>
+ </string> 
+ <string id="pda_stalker_master_name">
+  <text>ПДА сталкера-мастера.</text>
+ </string>
+</string_table>

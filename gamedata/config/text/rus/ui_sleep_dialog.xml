@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="sleep_title_1">
+		<text>Спать до...</text>
+	</string>
+	<string id="sleep_warning_radiation">
+		<text>Вы не можете спать, когда у Вас высокий уровень облучённости организма.</text>
+	</string>
+	<string id="sleep_warning_enemy">
+		<text>Вы не можете спать, когда рядом враги.</text>
+	</string>
+        <string id="sleep_warning_satiety">
+                  <text>Вы не можете спать, когда Вы хотите есть.</text>
+        </string>
+         <string id="sleep_warning_zhazhda">
+                <text>Вы не можете спать, когда Вы хотите пить.</text>
+        </string>
+	
+	<string id="st_sleep_hours">
+		<text>ч</text>
+	</string>
+	
+</string_table>

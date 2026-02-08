@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<string_table>
+	<string id="aJanuary">
+		<text>января</text>
+	</string>
+    <string id="aFebruary">
+		<text>февраля</text>
+	</string>
+    <string id="aMarch">
+		<text>марта</text>
+	</string>
+    <string id="aApril">
+		<text>апреля</text>
+	</string>
+    <string id="aMay">
+		<text>мая</text>
+	</string>
+    <string id="aJune">
+		<text>июня</text>
+	</string>
+    <string id="aJuly">
+		<text>июля</text>
+	</string>
+    <string id="aAugust">
+		<text>августа</text>
+	</string>
+    <string id="aSeptember">
+		<text>сентября</text>
+	</string>
+    <string id="aOctober">
+		<text>октября</text>
+	</string>
+    <string id="aNovember">
+		<text>ноября</text>
+	</string>
+    <string id="aDecember">
+		<text>декабря</text>
+	</string>
+    <string id="aNow">
+		<text>Сейчас</text>
+	</string>
+    <string id="aYear">
+		<text>года</text>
+	</string>
+	
+	<string id="aYear">
+	 <text>года</text>
+	</string>
+</string_table>

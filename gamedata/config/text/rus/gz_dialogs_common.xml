@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+ <string_table>
+  
+  <string id="doctor_dialog_001">
+   <text>Что то я плохо себя чувствую...</text>
+  </string>	
+  <string id="doctor_dialog_002">
+   <text>Давай я тебя осмотрю.</text>
+  </string>	
+	
+  <string id="repair_dialog_001">
+   <text>Мне нужно кое-что отремонтировать.</text>
+  </string>	
+  <string id="repair_dialog_002">
+   <text>Да не вопрос, чего там у тебя?</text>
+  </string>	
+  
+  <string id="hacker_dialog_001">
+   <text>Мне нужно взломать кое-что</text>
+  </string>	  
+  <string id="hacker_atw_01">
+   <text>Ну, мои условия тебе известны. Показывай, что притащил?</text>
+  </string>	  
+
+  <!-- Как только схема диалогов будет дополнена, у хакера будут разные варианты ответа-->
+  <string id="hacker_atw_02">
+   <text>Расценки ты знаешь. Показывай, что приволок?</text>
+  </string>	  
+  <string id="hacker_atw_03">
+   <text>Ну и что на этот раз ты мне принес?</text>
+  </string>	  
+  <string id="hacker_atw_04">
+   <text>Как раз есть пока свободное время, чего там у тебя?</text>
+  </string>		  
+  <string id="hacker_atw_05">
+   <text>Ну показывай, что принес, цены на мои услги ты знаешь.</text>
+  </string>	
+  <string id="hacker_atw_06">
+   <text>Любой каприз, за Ваши деньги, как говоится. Хе-хе, давай, показывай, что принёс.</text>
+  </string>	
+  <!-- Как только схема диалогов будет дополнена, у хакера будут разные варианты ответа-->
+  
+  <!-- формируем из кусочков расчёт цены и т.п. -->
+  <string id="hacker_dialog_005_part_1">
+   <text>Так... Ну давай посмотрим</text>
+  </string>	
+  <string id="hacker_dialog_005_part_2">
+   <text>здесь</text>
+  </string>	
+  <string id="hacker_dialog_005_part_3">
+   <text>уровень защиты, значит обойдется это тебе в</text>
+  </string>	
+  <string id="hacker_dialog_005_part_4">
+   <text>рублей. Через</text>
+  </string>	
+  <string id="hacker_dialog_005_part_5_1">
+   <text>часа</text>
+  </string>	
+  <string id="hacker_dialog_005_part_5_2">
+   <text>часов</text>
+  </string>	
+  <string id="hacker_dialog_005_part_6">
+   <text>пришлю тебе на ПДА все данные, которые удастся расшифровать. По рукам?</text>
+  </string>	
+  <!-- формируем из кусочков расчёт цены и т.п. -->
+  
+  <string id="hacker_dialog_003">
+   <text>По рукам.</text>
+  </string>	
+  <string id="hacker_dialog_004">
+   <text>Нет, я передумал.</text>
+  </string>	
+  
+  <!-- Хакер работает -->
+  <string id="hacker_dialog_006">
+   <text>Я ещё с прошлым твоим заказом не закончил, позже заходи.</text>
+  </string>	
+  <string id="hacker_dialog_007">
+   <text>Понял, позже тогда зайду.</text>
+  </string>	
+  
+ </string_table>
