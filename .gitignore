@@ -1,5 +1,12 @@
 
 _appdata_/user.ltx
+
+_appdata_requiem/logs/
+_appdata_requiem/savedgames/
+_appdata_requiem/screenshots/
+_appdata_requiem/user.ltx
+fsgame.ltx
+
 gamedata.db0
 gamedata.db1
 gamedata.db2
