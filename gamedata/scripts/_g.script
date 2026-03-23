@@ -1096,6 +1096,92 @@ function IsMonster (object, class_id)
 	end
     return false
 end
+
+
+function IsMonster2 (object, class_id)
+    local id = class_id or get_clsid(object)
+    if id == clsid.crow or
+       id == clsid.zombie or
+       id == clsid.flesh or
+       id == clsid.controller or
+       id == clsid.bloodsucker or
+       id == clsid.burer or
+       id == clsid.chimera or
+       id == clsid.boar or
+       id == clsid.flesh_group or
+       id == clsid.dog_red or
+       id == clsid.dog_black or
+       id == clsid.pseudo_gigant
+    then
+        return true
+    end
+    return false
+end
+
+
+
+
+function IsItem (object, class_id)
+    local id = class_id or get_clsid(object)
+    if id == clsid.wpn_fn2000 or
+       id == clsid.wpn_ak74 or
+       id == clsid.wpn_lr300 or
+       id == clsid.wpn_hpsa or
+       id == clsid.wpn_pm or
+       id == clsid.wpn_fort or
+       id == clsid.wpn_binocular or
+       id == clsid.wpn_shotgun or
+       id == clsid.wpn_svd or
+       id == clsid.wpn_svu or
+       id == clsid.wpn_rpg7 or
+       id == clsid.wpn_val or
+       id == clsid.wpn_vintorez or
+       id == clsid.wpn_walther or
+       id == clsid.wpn_usp45 or
+       id == clsid.wpn_groza or
+       id == clsid.wpn_knife or
+       id == clsid.wpn_scope or
+       id == clsid.wpn_silencer or
+       id == clsid.wpn_grenade_launcher or
+       id == clsid.obj_physic or
+       id == clsid.obj_breakable or
+       id == clsid.device_pda or
+       id == clsid.device_torch or
+       id == clsid.device_detector_simple or
+       id == clsid.obj_bolt or
+       id == clsid.obj_medkit or
+       id == clsid.obj_food or
+       id == clsid.obj_bottle or
+       id == clsid.obj_antirad or
+       id == clsid.obj_explosive or
+       id == clsid.obj_document or
+       id == clsid.obj_attachable or
+       id == clsid.wpn_grenade_f1 or
+       id == clsid.wpn_grenade_rpg7 or
+       id == clsid.wpn_grenade_rgd5 or
+       id == clsid.wpn_grenade_fake or
+       id == clsid.equ_scientific or
+       id == clsid.equ_stalker or
+       id == clsid.equ_military or
+       id == clsid.equ_exo or
+       id == clsid.wpn_ammo or
+       id == clsid.wpn_ammo_vog25 or
+       id == clsid.wpn_ammo_og7b or
+       id == clsid.wpn_ammo_m209
+    then
+        return true
+    end
+    return false
+end
+
+function IsNone (object, class_id)
+    local id = class_id or get_clsid(object)
+    if IsStalker(nil, id) or IsMonster(nil, id) or IsMonster2(nil, id) or IsItem(nil, id) then
+        return false
+    end
+    return true
+end
+
 -------------------------------------------------------------------------------------------
 function IsStalker (object, class_id)
     local id = class_id or get_clsid (object)

@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding="windows-1251"?>
 <game_information_portions>
+    <info_portion id="gz_ds_hack"></info_portion>
 	<!-- STABLE CHECKED -->
 	<info_portion id="gz_ds_heli_cutscene"></info_portion>
 	<info_portion id="gz_ds_iskateli_cutscene"></info_portion>

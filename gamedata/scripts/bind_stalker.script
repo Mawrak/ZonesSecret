@@ -26,6 +26,89 @@ function actor_binder:__init (obj) super(obj)
 	self.actor_detector = xr_detector.actor_detector()
 end
 ----------------------------------------------------------------------------------------------------------------------
+
+-- Helper: returns true if obj:name() starts with any of the given patterns
+function MatchesNamePattern(obj, patterns)
+    local name = tostring(obj:name())
+    for _, pattern in ipairs(patterns) do
+        if string.find(name, pattern, 1, true) == 1 then  -- true = plain match, not regex
+            return true
+        end
+    end
+    return false
+end
+
+-- List of common name prefixes from your data (add/remove as needed)
+local light_prefixes = {
+    "lights_", "light_"
+}
+
+local zone_prefixes = {
+    "zone_", "electra_", "kat_", "witches_", "camp_fire"
+}
+
+local zone_prefixes_1 = { --this fixes it!!
+    "zone_"
+}
+local zone_prefixes_2 = {
+    "electra_"
+}
+local zone_prefixes_3 = {
+    "kat_"
+}
+local zone_prefixes_4 = {
+    "witches_"
+}
+local zone_prefixes_5 = {
+    "camp_fire"
+}
+
+
+local sleep_prefixes_3 = {
+    "sleep"
+}
+
+
+local zone_prefixes_6 = {
+    "flame_small"
+}
+local zone_prefixes_empty = {
+    "lol"
+}
+
+local trader_prefixes = {
+    "trader_", "door"
+}
+
+local ds_prefixes = {
+    "ds_"
+}
+
+local safe_prefixes = {
+    "clmbl#", "ds_", "agr_", "gar_", "red_", "yan_", "pz_", "x15_", "lab", "esc_", "dv_", "promz_", "electra_", "kat_", "witches_", "camp_fire", "sleep", "flame_small"
+}
+
+
+
+local level_prefixes = {
+    "clmbl#", "ds_", "agr_", "gar_", "red_", "yan_", "pz_", "x15_", "lab", "esc_", "dv_", "promz_"
+}
+local phys_object_prefixes = {
+    "physic_object", "physic_destroyable_object", "inventory_box", "box_", "shelf_", "cabinet_", "shkaf_", "stol_"
+}
+local device_prefixes = {
+    "device_torch", "wpn_", "af_", "gz_", "level_prefix"
+}
+
+-- You can combine them or test one at a time
+local all_none_prefixes = {}
+for _, list in ipairs({light_prefixes, level_prefixes, phys_object_prefixes, device_prefixes}) do
+    for _, p in ipairs(list) do
+        table.insert(all_none_prefixes, p)
+    end
+end
+
+
 function actor_binder:net_spawn(data)
 	printf("actor net spawn")		
 
@@ -58,7 +141,29 @@ function actor_binder:net_spawn(data)
 
 	--' Загружаем настройки дропа
 	death_manager.init_drop_settings()
+    
+    --this is needed to prevent crashes due to broken zone object
+    if not has_alife_info("gz_ds_hack") then
+        db.actor:give_info_portion("gz_ds_hack")
+        for a = 1, 65535 do
+            local obj = alife():object(a)
+            if obj and IsNone(obj) and is_object_online(obj) then
+                -- Test one category at a time – start with only light_prefixes
+                
+                
+                if MatchesNamePattern(obj, zone_prefixes_1) == true and MatchesNamePattern(obj, safe_prefixes) == false then
+                    --printf("Disabling light/zone object: %s", tostring(obj:name()))
+                    alife():release(obj)
+                    
+                    --alife():set_switch_online(obj.id, false)
+                    --alife():set_switch_offline(obj.id, true)
+                end
 
+                
+            end
+        end
+    end
+    
 	return true
 end
 ----------------------------------------------------------------------------------------------------------------------
