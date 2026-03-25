@@ -111,7 +111,7 @@
 			<sound>characters_voice\scenario\video\soz_prologue_intro_sound</sound>
 			<pause_state>on</pause_state>
 			<video_wnd x="0" y="0" width="1024" height="768" stretch="1">
-				<texture x="0" y="0" width="1280" height="720">intro\soz_prologue_intro_movie</texture>
+				<texture x="0" y="0.5" width="1280" height="715">intro\soz_prologue_intro_movie</texture>
 			</video_wnd>
 		</item>
 	</intro_game>
