@@ -2,9 +2,7 @@
 -- Позволяет в 8 раз сократить размер нет-пакета ГГ и не бояться вылетов из-за переполнения, т.к. основное место там занимают именно таски.
 -- 12.07.20 фикс повторения квеста у квестодателя после выполнения и save-load (by Macron)
 -- Фикс автозавершения квестов by proper70
---'Исправлена недоработка, в результате которой в побочных
---'квестах менялись местами их полные и краткие описания.
---'Комменты - ниже [ScaV]
+
 
 local random_task = nil
 
@@ -350,11 +348,7 @@ function CRandomTask:action_give_task(actor, npc, p1, p2)
 	task:set_title(task_desc.type)
 
 	local oo = task:get_objective(0)
-	oo:set_article_id(task_desc.text) --'здесь меняем "task_desc.description"
---'на "task_desc.text", чтобы в PDA в поле "Детальная информация о задании" была
---'именно ДЕТАЛЬНАЯ информация о задании.
---
---[ScaV]
+	oo:set_article_id(task_desc.description)
 	
 	local objective = SGameTaskObjective(task,1)
 	objective:set_description(task_desc.name)
@@ -367,18 +361,12 @@ function CRandomTask:action_give_task(actor, npc, p1, p2)
 	end
 
 
---'В следующем условии везде заменяем "task_desc.text" на "task_desc.description",
---'чтобы на глобальной карте при наведении курсора на отметку задания выводилась
---'краткая информация о нём, а не полная, как раньше.
---
---[ScaV]
-
 	if task_desc.type == "eliminate_lager" then
-		objective:set_map_hint(task_desc.description)
+		objective:set_map_hint(task_desc.text)
 		objective:set_map_location("eliminate_lager_location")
 		objective:set_object_id(task_desc.selected_target)
 	elseif task_desc.type == "defend_lager" then
-		objective:set_map_hint(task_desc.description)
+		objective:set_map_hint(task_desc.text)
 		objective:set_map_location("defend_lager_location")
 		objective:set_object_id(task_desc.selected_target)
 
@@ -386,11 +374,11 @@ function CRandomTask:action_give_task(actor, npc, p1, p2)
 		local sm_ini = defend_object:spawn_ini()
 		self.task_info[self.task_id_by_yes_phrase_id[p2]].defend_target = utils.cfg_get_number(sm_ini, "random_task", "defend_target", nil, true)
 	elseif task_desc.type == "kill_stalker" then
-		objective:set_map_hint(task_desc.description)
+		objective:set_map_hint(task_desc.text)
 		objective:set_map_location("kill_stalker_location")
 		objective:set_object_id(task_desc.selected_target)
 	elseif task_desc.type == "find_item" then
-		objective:set_map_hint(task_desc.description)
+		objective:set_map_hint(task_desc.text)
 		objective:set_map_location("find_item_location")
 		objective:set_object_id(task_desc.selected_target)
 	end
