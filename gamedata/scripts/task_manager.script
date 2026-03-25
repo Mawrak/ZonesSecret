@@ -21,7 +21,13 @@ local parent_by_story = {
 	[518] = "zastava_commander",
 	[506] = "petrenko",
 	[607] = "lisiy",
-
+	[515] = "mercenary",
+	[10511] = "ds_neutlager_barmen",
+	[10512] = "ds_neutlager_mehanic",
+	[10510] = "ds_neutlager_trader",
+	[10509] = "ds_neutlager_doctor",
+	[11506] = "dv_yar",
+	[11509] = "dv_varyag"
 }
 
 local story_by_parent = {
@@ -37,7 +43,13 @@ local story_by_parent = {
 	zastava_commander			= 518,
 	petrenko					= 506,
 	lisiy						= 607,
-
+	mercenary					= 515,
+	ds_neutlager_barmen					= 10511,
+	ds_neutlager_mehanic				= 10512,
+	ds_neutlager_trader				= 10510,
+	ds_neutlager_doctor				= 10509,
+	ds_yar				= 11506,
+	ds_varyag				= 11509
 }
 
 local hash_to_id = {}
@@ -1064,6 +1076,58 @@ function init_zastava_commander_reward_dialog(dlg)
 end
 function init_mercenary_reward_dialog(dlg)
 	get_random_task():init_reward_dialog(dlg, "mercenary")
+end
+
+
+
+----------soz---------------
+--dialog--
+function init_ds_neutlager_barmen_task_dialog(dlg)
+	get_random_task():init_task_dialog(dlg, "ds_neutlager_barmen")
+end
+
+function init_ds_neutlager_mehanic_task_dialog(dlg)
+	get_random_task():init_task_dialog(dlg, "ds_neutlager_mehanic")
+end
+
+function init_ds_neutlager_trader_task_dialog(dlg)
+	get_random_task():init_task_dialog(dlg, "ds_neutlager_trader")
+end
+
+function init_ds_neutlager_doctor_task_dialog(dlg)
+	get_random_task():init_task_dialog(dlg, "ds_neutlager_doctor")
+end
+
+function init_dv_yar_task_dialog(dlg)
+	get_random_task():init_task_dialog(dlg, "dv_yar")
+end
+
+function init_dv_varyag_task_dialog(dlg)
+	get_random_task():init_task_dialog(dlg, "dv_varyag")
+end
+----reward-----
+function init_ds_neutlager_barmen_reward_dialog(dlg)
+	get_random_task():init_reward_dialog(dlg, "ds_neutlager_barmen")
+end
+
+function init_ds_neutlager_mehanic_reward_dialog(dlg)
+	get_random_task():init_reward_dialog(dlg, "ds_neutlager_mehanic")
+end
+
+function init_ds_neutlager_trader_reward_dialog(dlg)
+	get_random_task():init_reward_dialog(dlg, "ds_neutlager_trader")
+end
+
+function init_ds_neutlager_doctor_reward_dialog(dlg)
+	get_random_task():init_reward_dialog(dlg, "ds_neutlager_doctor")
+end
+
+function init_dv_yar_reward_dialog(dlg)
+	get_random_task():init_reward_dialog(dlg, "dv_yar")
+end
+
+function init_dv_varyag_reward_dialog(dlg)
+	get_random_task():init_reward_dialog(dlg, "dv_varyag")
 end
 
 
