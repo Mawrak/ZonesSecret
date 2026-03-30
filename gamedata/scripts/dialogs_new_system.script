@@ -145,9 +145,7 @@ function ds_isk_provodnik1(dlg)
  assembly_dialogs.construct_dialog("ds_isk_provodnik1",dlg)
 end
 
-function ds_rob_dialog(dlg)
- assembly_dialogs.construct_dialog("ds_rob_dialog2",dlg)
-end
+
 function ds_kap_stalker_meet(dlg)
  assembly_dialogs.construct_dialog("ds_kap_stalker_meet",dlg)
 end

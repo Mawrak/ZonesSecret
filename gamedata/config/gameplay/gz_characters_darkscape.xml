@@ -301,7 +301,7 @@
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
 		</supplies>
-		<start_dialog>dialog_iskateli_trader_1</start_dialog>
+		
 				
 #include "gameplay\character_dialogs.xml"
 

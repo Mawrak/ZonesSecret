@@ -7,7 +7,6 @@
  </dialog>
 		
  <dialog id="dialog_ds_intresting">
-  <dont_has_info>about_place</dont_has_info>
   <init_func>dialogs_new_system.ds_interesing</init_func>
  </dialog>
  
@@ -229,11 +228,7 @@
   <init_func>dialogs_new_system.ds_isk_doctor_pda</init_func>           
  </dialog>
 	
- <dialog id="dialog_iskateli_trader_1">
-  <has_info>return_things_start</has_info>
-  <dont_has_info>return_things_done</dont_has_info>
-  <init_func>dialogs_new_system.ds_iskateli_trader_1</init_func>  
-</dialog>
+
 	
  <dialog id="dialog_ds_neut_trader_about_rac">
   <dont_has_info>ds_neut_trader_dialog_rac_done</dont_has_info>
@@ -258,10 +253,7 @@
   <init_func>dialogs_new_system.ds_neut_mehanik_about_rac</init_func>   
  </dialog>
  
- <dialog id="dialog_isk_provodnik1">
-  <dont_has_info>return_things_start</dont_has_info>
-  <init_func>dialogs_new_system.ds_isk_provodnik1</init_func>    
- </dialog>
+
 	
  <dialog id="dialog_isk_provodnik2">
   <dont_has_info>dlg_ds_iskateli_provodnik_go_to_world</dont_has_info>
@@ -306,7 +298,7 @@
             </phrase>
             <phrase id="3">
                 <text>ds_rob_dialog_03</text>
-                <give_info>ds_goto_bandlider_done</give_info>
+                
                 <next>4</next>
                 <next>7</next>
             </phrase>
@@ -317,11 +309,13 @@
             </phrase>
             <phrase id="5">
                 <text>ds_rob_dialog_05</text>
-                <give_info>ds_bandlider_need_money_start</give_info>
+                
                 <next>6</next>
             </phrase>
             <phrase id="6">
                 <text>ds_rob_dialog_06</text>
+                <give_info>ds_goto_bandlider_done</give_info>
+                <give_info>ds_bandlider_need_money_start</give_info>
                 <action>dialogs.break_dialog</action>
             </phrase>
             <phrase id="7">
@@ -336,6 +330,7 @@
             <phrase id="9">
                 <text>ds_rob_dialog_09</text>
                 <give_info>ds_rob_buying</give_info>
+                <give_info>ds_goto_bandlider_done</give_info>
                 <action>gz_prologue.give_bandits_money</action>
                 <action>dialogs.break_dialog</action>
             </phrase>
@@ -363,11 +358,6 @@
                 <action>dialogs.break_dialog</action>
             </phrase>
 			</phrase_list>
- </dialog>
- 
- <dialog id="ds_rob_dialog2">
-    <has_info>ds_bandlider_need_money_start</has_info>
-  <init_func>dialogs_new_system.ds_rob_dialog2</init_func>    
  </dialog>
 
  <dialog id="dialog_ds_kap_stalker_meet">
