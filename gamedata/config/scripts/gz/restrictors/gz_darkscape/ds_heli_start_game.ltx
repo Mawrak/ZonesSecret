@@ -2,10 +2,10 @@
 active = sr_idle1
 
 [sr_idle1]
-on_info = {+gz_ds_heli_cutscene} sr_idle2 %=play_snd_from_obj(10902:soz\characters_voice\scenario\zhar) =play_snd(soz\characters_voice\scenario\heartbeat_blood)% 
+on_info = {+gz_ds_heli_cutscene} sr_idle2 %=play_snd_from_obj(10902:soz\characters_voice\scenario\zhar) =play_snd(soz\characters_voice\scenario\heartbeat_blood) =hud_off% 
 
 [sr_idle2] 
-on_timer = 3150| sr_idle3 %=run_postprocess(agr_u_fade:01:false)% 
+on_timer = 4150| sr_idle3 %=run_postprocess(agr_u_fade:01:false)% 
 
 [sr_idle3]
 on_timer = 150| sr_idle4 %=play_snd_from_obj(10902:weapons\heli_explosion)% 
@@ -17,4 +17,4 @@ on_timer = 5000| sr_idle5 %=run_postprocess(deadcity_wake) =travel_in_time_9 =te
 on_timer = 5000| sr_idle6 %+gz_ds_iskateli_cutscene -gz_ds_heli_cutscene% 
 
 [sr_idle6]
-on_timer = 10000| nil %=play_snd(actor\pain_222)%
+on_timer = 10000| nil %=play_snd(actor\pain_222) =hud_on%
