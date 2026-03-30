@@ -2,11 +2,11 @@
 active = sr_idle@zero
 
 [sr_idle@zero]
-on_info = {+gz_ds_into_end} %=disable_ui =play_snd(characters_voice\scenario\ds\effect_vertolet)% sr_idle@one
+on_info = {+gz_ds_into_end} sr_idle@one
 
 [sr_idle@one]
 ;on_info = {+gz_ds_into_end} %=disable_ui +gz_ds_heli_cutscene% sr_cutscene
-on_timer = 14500| %+gz_ds_heli_cutscene% sr_cutscene
+on_info = %+gz_ds_heli_cutscene% sr_cutscene
 
 [sr_cutscene]
 point = ds_heli_startgame
