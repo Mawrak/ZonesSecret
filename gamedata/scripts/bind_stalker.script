@@ -72,9 +72,14 @@ local zone_prefixes = {
 }
 
 
---what I believe the main issue with these are is the small shapes or incorrect shape type (box) for anomalies which are meant to procude artifacts (not sure if soc even supports that but they do have parameters for it in all.spawn)
+--what I believe the main issue with these are is the small shapes or incorrect shape type (box) for anomalies which are meant to produce artifacts (not sure if soc even supports that but they do have parameters for it in all.spawn)
+
+--patters to look out for:
+--artefact_spawn_count > 0 with very small shape radius (< 2.0)
+--artefact_spawn_count > 0 with box type shape
+
 local zone_prefixes_1 = { --this fixes it!!
-    "zone_flame_small", "zone_ameba1", "zone_zharka_static_strong", "zone_burning_fuzz1", "electra_witches_galantine_weak", "witches_galantine_strong_noart", "zone_witches_galantine_strong"
+    "zone_flame_small", "zone_ameba1", "zone_zharka_static_strong", "zone_burning_fuzz1", "electra_witches_galantine_weak", "witches_galantine_strong_noart", "zone_witches_galantine_strong", "gar_zone_radioactive_weak", "zone_burning_fuzz", "gar_zone_buzz_average", "gar_zone_gravi_zone_killing", "gar_zone_gravi_zone_weak", "gar_zone_mosquito_bald_strong", "gar_zone_radioactive", "zone_electra"
 }
 
 
