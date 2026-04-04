@@ -38,6 +38,30 @@ function MatchesNamePattern(obj, patterns)
     return false
 end
 
+
+-- Substring match (new)
+function MatchesNameSubstring(obj, patterns)
+    local name = tostring(obj:name())
+    for _, pattern in ipairs(patterns) do
+        if string.find(name, pattern, 1, true) then
+            return true
+        end
+    end
+    return false
+end
+
+-- Substring match (new)
+function MatchesNameSubstring(obj, patterns)
+    local name = tostring(obj:name())
+    for _, pattern in ipairs(patterns) do
+        if string.find(name, pattern, 1, true) then
+            return true
+        end
+    end
+    return false
+end
+
+
 -- List of common name prefixes from your data (add/remove as needed)
 local light_prefixes = {
     "lights_", "light_"
@@ -47,9 +71,13 @@ local zone_prefixes = {
     "zone_", "electra_", "kat_", "witches_", "camp_fire"
 }
 
+
+--what I believe the main issue with these are is the small shapes or incorrect shape type (box) for anomalies which are meant to procude artifacts (not sure if soc even supports that but they do have parameters for it in all.spawn)
 local zone_prefixes_1 = { --this fixes it!!
-    "zone_"
+    "zone_flame_small", "zone_ameba1", "zone_zharka_static_strong", "zone_burning_fuzz1", "electra_witches_galantine_weak", "witches_galantine_strong_noart", "zone_witches_galantine_strong"
 }
+
+
 local zone_prefixes_2 = {
     "electra_"
 }
@@ -148,11 +176,11 @@ function actor_binder:net_spawn(data)
         db.actor:give_info_portion("gz_ds_hack")
         for a = 1, 65535 do
             local obj = alife():object(a)
-            if obj and IsNone(obj) and is_object_online(obj) then
+            if obj and IsNone(obj) then
                 -- Test one category at a time – start with only light_prefixes
                 
                 
-                if MatchesNamePattern(obj, zone_prefixes_1) == true and MatchesNamePattern(obj, safe_prefixes) == false then
+                if MatchesNameSubstring(obj, zone_prefixes_1) == true then
                     --printf("Disabling light/zone object: %s", tostring(obj:name()))
                     alife():release(obj)
                     
