@@ -51,18 +51,6 @@ function MatchesNameSubstring(obj, patterns)
 end
 
 
-
-
--- List of common name prefixes from your data (add/remove as needed)
-local light_prefixes = {
-    "lights_", "light_"
-}
-
-local zone_prefixes = {
-    "zone_", "electra_", "kat_", "witches_", "camp_fire"
-}
-
-
 --what I believe the main issue with these are is the small shapes or incorrect shape type (box) for anomalies which are meant to produce artifacts (not sure if soc even supports that but they do have parameters for it in all.spawn)
 
 --patters to look out for:
@@ -70,67 +58,8 @@ local zone_prefixes = {
 --artefact_spawn_count > 0 with box type shape
 
 local zone_prefixes_1 = { --this fixes it!!
-    "zone_flame_small", "zone_ameba1", "zone_zharka_static_strong", "zone_burning_fuzz1", "electra_witches_galantine_weak", "witches_galantine_strong_noart", "zone_witches_galantine_strong", "gar_zone_radioactive_weak", "zone_burning_fuzz", "gar_zone_buzz_average", "gar_zone_gravi_zone_killing", "gar_zone_gravi_zone_weak", "gar_zone_mosquito_bald_strong", "gar_zone_radioactive", "zone_electra", "zone_gravi_medium"
+    "zone_flame_small", "zone_ameba1", "zone_zharka_static_strong", "zone_burning_fuzz1", "electra_witches_galantine_weak", "witches_galantine_strong_noart", "zone_witches_galantine_strong", "gar_zone_radioactive_weak", "zone_burning_fuzz", "gar_zone_buzz_average", "gar_zone_gravi_zone_killing", "gar_zone_gravi_zone_weak", "gar_zone_mosquito_bald_strong", "gar_zone_radioactive", "zone_electra", "zone_gravi_medium", "labx13_zone_buzz_weak_noart", "yan_zone_buzz_strong", "yan_zone_mine_field", "yan_zone_mosquito_bald_strong_noart", "yan_zone_mosquito_bald_weak_noart", "gz_yan_zone_radioactive_weak", "yan_zone_witches_galantine_weak", "yan_zone_zharka_static_average"
 }
-
-
-local zone_prefixes_2 = {
-    "electra_"
-}
-local zone_prefixes_3 = {
-    "kat_"
-}
-local zone_prefixes_4 = {
-    "witches_"
-}
-local zone_prefixes_5 = {
-    "camp_fire"
-}
-
-
-local sleep_prefixes_3 = {
-    "sleep"
-}
-
-
-local zone_prefixes_6 = {
-    "flame_small"
-}
-local zone_prefixes_empty = {
-    "lol"
-}
-
-local trader_prefixes = {
-    "trader_", "door"
-}
-
-local ds_prefixes = {
-    "ds_"
-}
-
-local safe_prefixes = {
-    "clmbl#", "ds_", "agr_", "gar_", "red_", "yan_", "pz_", "x15_", "lab", "esc_", "dv_", "promz_", "electra_", "kat_", "witches_", "camp_fire", "sleep", "flame_small"
-}
-
-
-
-local level_prefixes = {
-    "clmbl#", "ds_", "agr_", "gar_", "red_", "yan_", "pz_", "x15_", "lab", "esc_", "dv_", "promz_"
-}
-local phys_object_prefixes = {
-    "physic_object", "physic_destroyable_object", "inventory_box", "box_", "shelf_", "cabinet_", "shkaf_", "stol_"
-}
-local device_prefixes = {
-    "device_torch", "wpn_", "af_", "gz_", "level_prefix"
-}
-
--- You can combine them or test one at a time
-local all_none_prefixes = {}
-for _, list in ipairs({light_prefixes, level_prefixes, phys_object_prefixes, device_prefixes}) do
-    for _, p in ipairs(list) do
-        table.insert(all_none_prefixes, p)
-    end
-end
 
 
 function actor_binder:net_spawn(data)
@@ -166,7 +95,7 @@ function actor_binder:net_spawn(data)
 	--' Загружаем настройки дропа
 	death_manager.init_drop_settings()
     
-    --this is needed to prevent crashes due to broken zone object
+    --this is needed to prevent crashes due to broken zone objects
     if not has_alife_info("gz_ds_hack") then
         get_console():execute("hud_draw off")
         db.actor:give_info_portion("gz_ds_hack")
