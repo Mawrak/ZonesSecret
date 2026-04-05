@@ -53,7 +53,7 @@ end
 
 --what I believe the main issue with these are is the small shapes or incorrect shape type (box) for anomalies which are meant to produce artifacts (not sure if soc even supports that but they do have parameters for it in all.spawn)
 
---patters to look out for:
+--patterns to look out for using ACDC:
 --artefact_spawn_count > 0 with very small shape radius (< 2.0)
 --artefact_spawn_count > 0 with box type shape
 
