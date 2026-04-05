@@ -50,16 +50,7 @@ function MatchesNameSubstring(obj, patterns)
     return false
 end
 
--- Substring match (new)
-function MatchesNameSubstring(obj, patterns)
-    local name = tostring(obj:name())
-    for _, pattern in ipairs(patterns) do
-        if string.find(name, pattern, 1, true) then
-            return true
-        end
-    end
-    return false
-end
+
 
 
 -- List of common name prefixes from your data (add/remove as needed)
@@ -79,7 +70,7 @@ local zone_prefixes = {
 --artefact_spawn_count > 0 with box type shape
 
 local zone_prefixes_1 = { --this fixes it!!
-    "zone_flame_small", "zone_ameba1", "zone_zharka_static_strong", "zone_burning_fuzz1", "electra_witches_galantine_weak", "witches_galantine_strong_noart", "zone_witches_galantine_strong", "gar_zone_radioactive_weak", "zone_burning_fuzz", "gar_zone_buzz_average", "gar_zone_gravi_zone_killing", "gar_zone_gravi_zone_weak", "gar_zone_mosquito_bald_strong", "gar_zone_radioactive", "zone_electra"
+    "zone_flame_small", "zone_ameba1", "zone_zharka_static_strong", "zone_burning_fuzz1", "electra_witches_galantine_weak", "witches_galantine_strong_noart", "zone_witches_galantine_strong", "gar_zone_radioactive_weak", "zone_burning_fuzz", "gar_zone_buzz_average", "gar_zone_gravi_zone_killing", "gar_zone_gravi_zone_weak", "gar_zone_mosquito_bald_strong", "gar_zone_radioactive", "zone_electra", "zone_gravi_medium"
 }
 
 
@@ -186,7 +177,7 @@ function actor_binder:net_spawn(data)
                 
                 
                 if MatchesNameSubstring(obj, zone_prefixes_1) == true then
-                    --printf("Disabling light/zone object: %s", tostring(obj:name()))
+                    --printf("Disabling zone object:" .. tostring(obj:name()), tostring(obj:name()))
                     alife():release(obj)
                     
                     --alife():set_switch_online(obj.id, false)
