@@ -349,8 +349,6 @@
             </phrase>
             <phrase id="1">
                 <text>Кто ж его так?</text>
-                <action>gz_prologue.transfer_guitar</action>
-		<give_info>find_guitar_done</give_info>
                 <next>2</next>
             </phrase>
 			<phrase id="2">
@@ -451,8 +449,6 @@
            </phrase>
 			<phrase id="8">
                 <text>Знаешь, зеленый, ты не такой зеленый, каким хочешь казаться.</text>
-				<action>gz_prologue.transfer_guitar</action>
-				<give_info>find_guitar_done</give_info>
                 <next>9</next>
 				</phrase>
 			<phrase id="9">
@@ -471,6 +467,8 @@
                 <text>Это глупо, зеленый. Хорошие люди в Зоне очень много потеряют без меня, и они могут очень сильно обидеться. Понимаешь о чем я? Поэтому, пока я добрый, держи свою рацию и вали, зеленый, вали. </text>
 				<action>gz_prologue.transfer_raciya</action>
 				<give_info>find_raciya_done</give_info>
+                <action>gz_prologue.transfer_guitar</action>
+				<give_info>find_guitar_done</give_info>
 				<give_info>lukash_pogovorili2</give_info>
                 <next>13</next>
            </phrase>
@@ -509,11 +507,12 @@
             </phrase>
             <phrase id="3">
                 <text>Молодцом. Готовься тогда.</text>
-		<give_info>dv_sv_greshbase_lider_talk_done</give_info>
-		<give_info>dv_sv_greshbase_assault</give_info>
+		
                 <next>4</next>
             </phrase>
 			<phrase id="4">
+            <give_info>dv_sv_greshbase_lider_talk_done</give_info>
+		<give_info>dv_sv_greshbase_assault</give_info>
 			<give_info>dv_sv_grehbase_group_ready_to_go</give_info>
                 <text>Ага.</text>
 				<action>dialogs.break_dialog</action>
@@ -531,7 +530,7 @@
             </phrase>
             <phrase id="1">
                 <text>dialog_attack_greh_done_1</text>
-            <give_info>dialog_sv_attack_greh_done</give_info>
+            
                 <next>2</next>
             </phrase>	
            <phrase id="2">
@@ -543,6 +542,7 @@
                 <next>4</next>
             </phrase>	
            <phrase id="4">
+            <give_info>dialog_sv_attack_greh_done</give_info>
                 <text>Одни лишь слухи и догадки.</text>
             </phrase>	
 	</phrase_list>
@@ -684,7 +684,7 @@
             </phrase>
 	         <phrase id="3">
                 <text>dialog_rabota_yar_nagrada</text>
-                 <action>gz_prologue.transfer_raciya_details</action>
+                 
                 <next>4</next>
                 <next>5</next>
             </phrase>
@@ -696,6 +696,7 @@
                 <text>Вот, правильно, так мыслит опытный сталкер. Держи свою игрушку, заслужил.</text>
         <give_info>yar_all_done</give_info>
                <action>gz_prologue.transfer_bizon</action>
+               <action>gz_prologue.transfer_raciya_details</action>
             </phrase>
                    <phrase id="5">
                 <text>Деньги сейчас нужнее.</text>
@@ -704,6 +705,7 @@
                <phrase id="55">
                 <text>Я тоже всегда говорил: "Денег много не бывает".</text>
        <give_info>yar_all_done</give_info>
+       <action>gz_prologue.transfer_raciya_details</action>
                  <action>gz_prologue.transfer_money_yar</action>
             </phrase>
 	</phrase_list>
@@ -762,17 +764,19 @@
             </phrase>
 	         <phrase id="2">
                 <text>Держи.</text>
-				<give_info>find_details_for_yar_done</give_info>
+				
                 <next>3</next>
             </phrase>
 	         <phrase id="3">
                 <text>Теперь иди погуляй часика два. А я пока поработаю над твоей рацией.</text>
-                <action>gz_prologue.transfer_raciya_details</action>
+                
                 <next>4</next>
             </phrase>
 	         <phrase id="4">
                 <text>Хорошо.</text>
+                <give_info>find_details_for_yar_done</give_info>
 				<give_info>yar_idi_pogulyai</give_info>
+                <action>gz_prologue.transfer_raciya_details</action>
 				<action>dialogs.break_dialog</action>
             </phrase>
 	</phrase_list>
@@ -789,7 +793,7 @@
             </phrase>
           <phrase id="1">
                 <text>dialog_rabota_yar_nagrada</text>
-                 <action>gz_prologue.transfer_raciya_details</action>
+                
                 <next>4</next>
                 <next>5</next>
             </phrase>
@@ -801,6 +805,7 @@
                 <text>Вот, правильно, так мыслит опытный сталкер. Держи свою игрушку, заслужил.</text>
         <give_info>yar_all_done</give_info>
                <action>gz_prologue.transfer_bizon</action>
+               <action>gz_prologue.transfer_raciya_details</action>
             </phrase>
                    <phrase id="5">
                 <text>Деньги сейчас нужнее.</text>
@@ -809,6 +814,7 @@
                <phrase id="55">
                 <text>Я тоже всегда говорил: "Денег много не бывает".</text>
        <give_info>yar_all_done</give_info>
+       <action>gz_prologue.transfer_raciya_details</action>
                  <action>gz_prologue.transfer_money_yar</action>
             </phrase>
 	</phrase_list>
@@ -831,8 +837,7 @@
 	         <phrase id="12">
 		<has_info>make_raciya_done</has_info>
                 <text>Да, вот твоя рация, держи.</text>
-				<give_info>find_raciya_done</give_info>
-				<action>gz_prologue.transfer_raciya</action>
+				
                 <next>121</next>
             </phrase>
 	         <phrase id="111">
@@ -846,6 +851,8 @@
 	         <phrase id="21">
                 <text>Кстати, заскочи к Миклухе, он хотел тебя видеть.</text>
 				<give_info>yar_est_raciya</give_info>
+                <give_info>find_raciya_done</give_info>
+				<action>gz_prologue.transfer_raciya</action>
             </phrase>
 	</phrase_list>
     </dialog>
@@ -877,9 +884,6 @@
             </phrase>
           <phrase id="4">
                 <text>Так, давай свой контейнер сюда. Подожди немного... Готово, и что же тут у нас? Хм, какая-то флешка. Ну что ж, вот держи.</text>
-           				<action>gz_prologue.transfer_gz_tainik_case</action>
-           				<action>gz_prologue.transfer_loki_case_flesh</action>
-           				<action>gz_prologue.give_loki_case_money</action>
             <give_info>loki_case_open_done</give_info>
                 <next>5</next>
             </phrase>
@@ -889,6 +893,9 @@
             </phrase>
           <phrase id="6">
                 <text>Всегда пожалуйста, обращайся.</text>
+                <action>gz_prologue.transfer_gz_tainik_case</action>
+           				<action>gz_prologue.transfer_loki_case_flesh</action>
+           				<action>gz_prologue.give_loki_case_money</action>
             </phrase>
 	</phrase_list>
     </dialog>
@@ -902,12 +909,13 @@
             </phrase>
             <phrase id="1">
                 <text>Спасибо, что откликнулся. На нас напал отряд фанатиков Греха, но мы всё же смогли отбиться. Рисковано было конечно просить помощи в общем канале и расскрывать свои координаты, но Греховцы словно безумные. Расстреливают всех, почти не укрываясь от пуль. А их ещё фиг завалишь... Итог: у нас три двухсотых и почти нет медикаментов, чтобы вылечить раненых. Не мог бы ты помочь? Принесёшь 5 любых аптечек, а я... А я в долгу не останусь.</text>
-                <give_info>dv_sos_talk_with_dolg_done</give_info>
+                
                 <next>2</next>
             </phrase>
             <phrase id="2">
                 <text>Хорошо, помогу.</text>
                 <give_info>dv_dolggroup_find_five_medkit_start</give_info>
+                <give_info>dv_sos_talk_with_dolg_done</give_info>
 				<action>dialogs.break_dialog</action>
             </phrase>
 			</phrase_list>
@@ -1022,7 +1030,7 @@
                 <next>1</next>
             </phrase>
             <phrase id="1">
-                <give_info>find_tainik_done_have</give_info>
+                
                 <text>Хорошая работа, "Долг" не забудет оказанной тобой услуги.</text>
                 <next>21</next>
                 <next>22</next>
@@ -1058,6 +1066,7 @@
  			<give_info>contact_with_base_start</give_info>
  			<give_info>find_raciya_alt_done</give_info>
 			<action>gz_prologue.transfer_raciya</action>
+            <give_info>find_tainik_done_have</give_info>
             </phrase>
 			</phrase_list>
  </dialog>

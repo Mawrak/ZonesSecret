@@ -432,12 +432,12 @@
                 <next>12</next>
             </phrase>
           <phrase id="11">
-        <give_info>enter_to_dolgbase_is_open</give_info>
-                <text>*Взятка* Мне нужно к вам на базу. Вот держи конфетки.</text>
+        
+                <text>*Взятка* Мне нужно к вам на базу. Вот, держи конфетки.</text>
                 <next>111</next>
             </phrase>
             <phrase id="111">
-        <give_info>go_to_agroprom_done</give_info>
+        
                 <text>Давай проходи, только не бузи там, а то быстро вынесем ногами вперед.</text>
                 <next>13</next>
             </phrase>
@@ -447,6 +447,8 @@
             </phrase>
            <phrase id="13">
                 <text>Лады.</text>
+                <give_info>go_to_agroprom_done</give_info>
+                <give_info>enter_to_dolgbase_is_open</give_info>
 				<action>dialogs.break_dialog</action>
             </phrase>
 	</phrase_list>

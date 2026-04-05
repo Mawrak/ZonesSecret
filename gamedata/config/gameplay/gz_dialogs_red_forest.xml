@@ -364,7 +364,6 @@
             </phrase>
                    <phrase id="7">
                 <text>Л-л-лес б-б-б...ольшой... пе...щера... м-м-ма...ленькая.</text>
-            <action>gz_prologue.transfer_rf_art</action>
                 <next>8</next>
             </phrase>
             <phrase id="8">
@@ -379,6 +378,7 @@
                 <text>Всё с тобой ясно, бывай.</text>
                         <give_info>give_rf_art_done</give_info>
                                         <give_info>find_rf_docs_start</give_info>
+                                        <action>gz_prologue.transfer_rf_art</action>
             </phrase>
 	</phrase_list>
     </dialog>
@@ -490,8 +490,8 @@
                 <next>8</next>
             </phrase> 
              <phrase id="8">
-                <text>Знаете, профессор, я подумал и решил уйти из Зоны. Пусть даже я никогда и не узнаю правды про свою операцию. Уже слишком меного людей погибло из-за этого и я не хочу стать следующим.</text>
- <give_info>escape_zone_start</give_info>
+                <text>Знаете, профессор, я подумал и решил уйти из Зоны. Пусть даже я никогда и не узнаю правды про свою операцию. Уже слишком много людей погибло из-за этого и я не хочу стать следующим.</text>
+ 
                 <next>9</next>
             </phrase>
             <phrase id="9">
@@ -520,12 +520,14 @@
             </phrase>
              <phrase id="14">
                 <text>Туда ведёт дорога возле капера. Я приду в лагерь на янтарь, но позже. Сейчас мне надо на некоторое время залечь на дно. Потому как военные и наёмники мечтают заполучить мою голову.</text>
-                <action>gz_prologue.transfer_rf_docs</action>
-                <give_info>go_to_scien_assist_start</give_info>
-                <give_info>rf_docs_give</give_info>
+                
                 <next>15</next>
             </phrase>
                    <phrase id="15">
+                   <action>gz_prologue.transfer_rf_docs</action>
+                <give_info>go_to_scien_assist_start</give_info>
+                <give_info>rf_docs_give</give_info>
+                   <give_info>escape_zone_start</give_info>
                 <text>Спасибо за помощь, и удачи вам, профессор.</text>
             </phrase>
 	</phrase_list>
@@ -810,13 +812,13 @@
             </phrase>
     <phrase id="3">
                 <text>Фух, спасибо... я уже думал каюк мне.</text>
-                <action>gz_tasks.transfer_rf_water</action>
                 <next>4</next>
             </phrase>
     <phrase id="4">
                 <text>dialog_rf_ocelot_water</text>
                 <give_info>rf_ocelot_talk_done</give_info>
                 <give_info>ld_find_group_done</give_info>
+                <action>gz_tasks.transfer_rf_water</action>
 				<action>dialogs.break_dialog</action>
             </phrase>
             <phrase id="2">
@@ -1216,7 +1218,7 @@
             </phrase>
             <phrase id="1">
                 <text>Отлично, так, что тебя интересовало? Исследования профессора Маниковсого?</text>
-                <action>gz_prologue.transfer_noyt</action>
+                
                 <next>2</next>
             </phrase>
             <phrase id="2">
@@ -1231,6 +1233,7 @@
                 <text>Что ж спасибо за информацию.</text>
                 <give_info>kill_borman_done</give_info>
                 <give_info>iron_give_noyt</give_info>
+                <action>gz_prologue.transfer_noyt</action>
             </phrase>
 	</phrase_list>
     </dialog>
@@ -1253,18 +1256,20 @@
             </phrase>
             <phrase id="3">
                 <text>Хорошо, я согласен. Что нужно делать?</text>
-			<give_info>rf_hunters_join_to_hunters_done</give_info>
+			
                 <next>4</next>
 				</phrase>
             <phrase id="4">
                 <text>Иди займи позицию у того дерева и жди.</text>
-			<give_info>rf_hunters_kill_gigant_start</give_info>
+                
                 <next>5</next>
             </phrase>
             <phrase id="5">
                 <text>Понял.</text>
 			<give_info>rf_leader_remark_ready</give_info>
 			<give_info>rf_small_giant_dell</give_info>
+            <give_info>rf_hunters_join_to_hunters_done</give_info>
+			<give_info>rf_hunters_kill_gigant_start</give_info>
 				<action>dialogs.break_dialog</action>
             </phrase>
 			</phrase_list>
@@ -1288,13 +1293,14 @@
             </phrase>
             <phrase id="3">
                 <text>Ага, только этой гадине взрывчатка мало, что сделала. Как бежал мутант, так и бежит дальше.</text>
-                <give_info>rf_hunters_transfer_trophey</give_info>
-                <action>gz_prologue.transfer_king_gigant_hand</action>
-                <action>gz_prologue.transfer_saiga</action>
+                
                 <next>4</next>
 				</phrase>
             <phrase id="4">
                 <text>Не хотел бы я встретиться с ним в одиночку... ночью.</text>
+                <give_info>rf_hunters_transfer_trophey</give_info>
+                <action>gz_prologue.transfer_king_gigant_hand</action>
+                <action>gz_prologue.transfer_saiga</action>
 			<give_info>dialog_rf_hunters_kill_gigant_done</give_info>
             </phrase>
 			</phrase_list>
@@ -1354,12 +1360,13 @@
             </phrase>
             <phrase id="1">
                 <text>Молодец. Теперь осталось ещё кое-что сделать.</text>
-                <give_info>rf_cave_documents_complete</give_info>
+                
                 <next>2</next>
 				</phrase>
             <phrase id="2">
                 <text>Что?</text>
                 <give_info>rf_predat_scene_start</give_info>
+                <give_info>rf_cave_documents_complete</give_info>
                 <give_info>rf_predat_scene_remark_start</give_info>
             </phrase>
 			</phrase_list>

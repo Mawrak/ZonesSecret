@@ -87,18 +87,14 @@
             <phrase id="4">
                 <dont_has_info>kill_fracture</dont_has_info>
                 <text>Вы очень нам помогли! Вот ваша награда.</text>
-                <action>gz_prologue.transfer_lab_noyt</action>
-                <action>gz_prologue.transfer_money_lab_noyt</action>
-                <give_info>give_noyt_from_lab_done</give_info>
+                
                 <next>6</next>
             </phrase>
             <phrase id="5">
                 <has_info>kill_fracture</has_info>
                 <text>Вы очень нам помогли! Ещё вам полагается надбавка за уничтожение мутанта, теперь в том старом научном лагере безопасно.</text>
-                <action>gz_prologue.transfer_lab_noyt</action>
-                <action>gz_prologue.transfer_money_lab_noyt_2</action>
-                 <give_info>give_noyt_from_lab_done</give_info>
-                <next>6</next>
+                
+                <next>8</next>
             </phrase>
                <phrase id="6">
                 <text>Кайзановский уже вернулся?</text>
@@ -106,8 +102,36 @@
             </phrase> 
                <phrase id="7">
                 <text>Да, он этажем выше, я ему передал, что вы приходили.</text>
+                <action>gz_prologue.transfer_lab_noyt</action>
+                <action>gz_prologue.transfer_money_lab_noyt</action>
+                <give_info>give_noyt_from_lab_done</give_info>
                 <give_info>spawn_scien_assist</give_info>
             </phrase>
+            
+            
+            
+            
+            
+            <phrase id="8">
+                <text>Кайзановский уже вернулся?</text>
+                <next>9</next>
+            </phrase> 
+               <phrase id="9">
+                <text>Да, он этажем выше, я ему передал, что вы приходили.</text>
+                <give_info>spawn_scien_assist</give_info>
+                <action>gz_prologue.transfer_lab_noyt</action>
+                <action>gz_prologue.transfer_money_lab_noyt_2</action>
+                <give_info>give_noyt_from_lab_done</give_info>
+            </phrase>
+            
+            
+            
+            
+            
+            
+            
+            
+            
 	</phrase_list>
     </dialog>
 
@@ -155,7 +179,6 @@
             </phrase>
             <phrase id="11">
                 <text>Вы сильно ранены? Сейчас я вас перевяжу.</text>
-                <give_info>dialog_sos_bandit_test</give_info>
                 <next>1</next>
             </phrase>
             <phrase id="1">
@@ -182,14 +205,17 @@
                 <text>Но зачем наёмникам нападать на ваш лагерь, что им нужно от Кайзановского?</text>
                 <next>67</next>
             </phrase>
- <phrase id="67">
+            <phrase id="67">
                 <text>dialog_manic_wounded</text>
                 <next>6</next>
             </phrase>
             <phrase id="6">
+                
                 <text>Всё это дерьмо из-за какого-то диска?! Ладно, держитесь, я быстро, найду Кайзоновского и вернусь, вызовем подмогу.</text>
                 <give_info>find_alives_on_base_done</give_info>
                 <give_info>find_scien_in_underground_start</give_info>
+                <give_info>dialog_sos_bandit_test</give_info>
+                
             </phrase>
 	</phrase_list>
     </dialog>
@@ -206,7 +232,7 @@
             </phrase>
             <phrase id="11">
                 <text>Да вот, друга своего ищем. Пропал где-то на Янтаре, всё тут уже обошли - не можем найти, как сквозь землю провалился.</text>
-                <give_info>dialog_sos_bandit_test</give_info>
+                
                 <next>1</next>
             </phrase>
             <phrase id="1">
@@ -233,14 +259,17 @@
    <phrase id="7">
                 <text>Петька Борзой, если его уже нет в живых, то принеси хотя бы его ПДА.</text>
                 <give_info>find_quest_zombie_start</give_info>
+                <give_info>dialog_sos_bandit_test</give_info>
             </phrase>
             <phrase id="6">
                 <text>Не мужики, времени нет ещё чьими-то поисками заниматься.</text>
                 <give_info>find_quest_zombie_fail</give_info>
+                <give_info>dialog_sos_bandit_test</give_info>
                 <action>dialogs.break_dialog</action>
             </phrase>
 	</phrase_list>
     </dialog>
+    
  <dialog id="dialog_about_yan_quest_zombie_1">
                 <has_info>find_quest_zombie_start</has_info>
                 <dont_has_info>find_quest_zombie_fail</dont_has_info>
@@ -253,8 +282,6 @@
             </phrase>
             <phrase id="11">
                 <text>Так значит его всё-таки нет уже в живых? А где-ты нашёл его? Может похороним хоть по человечески.</text>
-                <action>gz_prologue.transfer_yan_pda_zombie</action>
-                <give_info>find_quest_zombie_done</give_info>
                 <next>1</next>
             </phrase>
             <phrase id="1">
@@ -263,7 +290,7 @@
             </phrase>
             <phrase id="2">
                 <text>Да, пожалуй ты прав. Ладно, спасибо тебе большое, держи награду. Большего пока что нет.</text>
-                <action>gz_prologue.transfer_yan_zombie_nagr</action>
+                
                 <next>3</next>
             </phrase>
    <phrase id="3">
@@ -284,6 +311,9 @@
             </phrase>
    <phrase id="7">
                 <text>Ну что ж, бывайте мужики.</text>
+                <action>gz_prologue.transfer_yan_pda_zombie</action>
+                <give_info>find_quest_zombie_done</give_info>
+                <action>gz_prologue.transfer_yan_zombie_nagr</action>
                 <action>dialogs.break_dialog</action>
             </phrase>
 	</phrase_list>
@@ -301,8 +331,7 @@
             </phrase>
             <phrase id="11">
                 <text>Так значит его всё-таки нет уже в живых? А где-ты нашёл его? Может похороним хоть по человечески.</text>
-                <action>gz_prologue.transfer_yan_pda_zombie</action>
-                <give_info>find_quest_zombie_done</give_info>
+                
                 <next>1</next>
             </phrase>
             <phrase id="1">
@@ -311,7 +340,7 @@
             </phrase>
             <phrase id="2">
                 <text>Да, пожалуй ты прав. Ладно, спасибо тебе большое, держи награду. Большего пока что нет.</text>
-                <action>gz_prologue.transfer_yan_zombie_nagr</action>
+                
   <next>3</next>
             </phrase>
    <phrase id="3">
@@ -332,6 +361,9 @@
             </phrase>
    <phrase id="7">
                 <text>Ну что ж, бывайте мужики.</text>
+                <action>gz_prologue.transfer_yan_pda_zombie</action>
+                <give_info>find_quest_zombie_done</give_info>
+                <action>gz_prologue.transfer_yan_zombie_nagr</action>
                 <action>dialogs.break_dialog</action>
             </phrase>
 	</phrase_list>
@@ -402,12 +434,13 @@
             </phrase>
        <phrase id="31">
                 <text>Да, я уже получил сигналы об установке. Все 3 сканнера установлены в нужном месте и уже отправляют нам данные по аномалиям. Спсибо большое, вы нам очень помогли.</text>
-                <action>gz_prologue.transfer_yan_scien_nagr</action>
+                
                 <next>2</next>
             </phrase>
   <phrase id="2">
                 <text>Был рад сотруднечеству.</text>
                 <give_info>setup_dat_done</give_info>
+                <action>gz_prologue.transfer_yan_scien_nagr</action>
                 <action>dialogs.break_dialog</action>
             </phrase>
 	</phrase_list>
@@ -604,12 +637,13 @@
             </phrase>
         <phrase id="1">
                 <text>dialog_zmeelov_rob</text>
-	       <action>gz_prologue.transfer_actors_yan_plasch</action>
+	       
                 <next>2</next>
             </phrase>
      <phrase id="2">
                 <text>Ясно, я на позицию.</text>
                 <give_info>yan_zmeelov_dialog_rob_done</give_info>
+                <action>gz_prologue.transfer_actors_yan_plasch</action>
                 <action>dialogs.break_dialog</action>
             </phrase>
 	</phrase_list>
@@ -740,8 +774,7 @@
             </phrase>
         <phrase id="5">
                 <text>dialog_ocelot_rob_good1</text>
-                <give_info>ld_code_box1_spawn</give_info>
-                <give_info>yan_zmeelov_quest_done</give_info>
+                
                 <next>6</next>
             </phrase>
      <phrase id="6">
@@ -750,6 +783,8 @@
             </phrase>
      <phrase id="7">
                 <text>Ну, ничем другим отблагодарить я тебя не смогу. Я тебе сообщил координаты тайника, а брать его содержимое или нет, это уже твоя забота.</text>
+                <give_info>ld_code_box1_spawn</give_info>
+                <give_info>yan_zmeelov_quest_done</give_info>
             </phrase>
 	</phrase_list>
     </dialog>
@@ -765,7 +800,7 @@
                 <next>1</next>
             </phrase>
         <phrase id="1">
-                <text>Что ж, бывало и лучше. Бронежилет выдержал, я цел. Плохо, что всё прошло не так гладко как хотелось бы. Но что есть, то есть. Спсибо, что помог нам.</text>
+                <text>Что ж, бывало и лучше. Бронежилет выдержал, я цел. Плохо, что всё прошло не так гладко как хотелось бы. Но что есть, то есть. Спасибо, что помог нам.</text>
                 <next>2</next>
             </phrase>
         <phrase id="2">
@@ -782,7 +817,6 @@
             </phrase>
         <phrase id="5">
                 <text>dialog_ocelot_rob_good2</text>
-                <give_info>ld_code_box2_spawn</give_info>
                 <next>6</next>
             </phrase>
      <phrase id="6">
@@ -791,6 +825,7 @@
             </phrase>
      <phrase id="7">
                 <text>Ну, ничем другим отблагодарить я тебя не смогу. Я тебе сообщил координаты тайника, а брать его содержимое или нет, это уже твоя забота.</text>
+                <give_info>ld_code_box2_spawn</give_info>
             </phrase>
 	</phrase_list>
     </dialog>
@@ -1032,7 +1067,6 @@
         <phrase_list>
             <phrase id="0">
                 <text>Видите, господин сталкер, как оно всё вышло?</text>
-				<give_info>find_scien_in_underground_done</give_info>
                 <next>1</next>
             </phrase>
             <phrase id="1">
@@ -1054,6 +1088,7 @@
 			<phrase id="5">
                 <text>Да, обещаю.</text>
 				<give_info>exit_from_underground_start</give_info>
+                <give_info>find_scien_in_underground_done</give_info>
 				<action>dialogs.break_dialog</action>
             </phrase>
 	</phrase_list>
@@ -1063,7 +1098,6 @@
         <phrase_list>
             <phrase id="0">
                 <text>Стой! Спокойно, не стреляй! Вовремя ты их.</text>
-				<give_info>help_scien_lager_complete</give_info>
                 <next>1</next>
             </phrase>
             <phrase id="1">
@@ -1093,6 +1127,7 @@
 			<phrase id="7">
                 <text>Да, пошли!</text>
 				<give_info>back_to_scien_lager_start</give_info>
+                <give_info>help_scien_lager_complete</give_info>
 				<action>dialogs.break_dialog</action>
             </phrase>
 	</phrase_list>

@@ -623,6 +623,7 @@
              <actor_dialog>tm_ds_neutlager_mehanic_reward</actor_dialog>
              <actor_dialog>dialog_meh</actor_dialog>
              <actor_dialog>dialog_gz_mechanic</actor_dialog>
+             <actor_dialog>dialog_gz_hacker</actor_dialog>
 		
 #include "gameplay\character_dialogs.xml"
 

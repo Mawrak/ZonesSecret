@@ -19,11 +19,10 @@
 			<phrase id="12">
 			<precondition>dialogs.actor_have_medkit</precondition>
 				<text>lab_uchen_text_12</text>
-				<action>dialogs.transfer_medkit</action>
-				<next>2</next>
+				<next>100</next>
 			</phrase>
 			<phrase id="2">
-				<text>Наёмники, твари! Перестреляли весь наш персонал... но я то знаю, кто за всем этим стоит... Вся информация у меня в диске, он не должен попасть к ним в руки.</text>
+				<text>Наёмники, твари! Перестреляли весь наш персонал... но я-то знаю, кто за всем этим стоит... Вся информация у меня в диске, он не должен попасть к ним в руки.</text>
 				<next>26</next>
 			</phrase>
 			<phrase id="26">
@@ -40,6 +39,37 @@
 				<action>gz_laba.key_create</action>
 				<action>dialogs.break_dialog</action>
 			</phrase>
+            
+            
+            
+            
+            
+            <phrase id="100">
+				<text>Наёмники, твари! Перестреляли весь наш персонал... но я-то знаю, кто за всем этим стоит... Вся информация у меня в диске, он не должен попасть к ним в руки.</text>
+				<next>126</next>
+			</phrase>
+			<phrase id="126">
+				<text>Всё это просто замечательно, но нам надо выбираться отсюда и как можно скорее.</text>
+				<next>125</next>
+			</phrase>
+			<phrase id="125">
+				<text>lab_uchen_text_2</text>
+				<next>103</next>
+			</phrase>
+			<phrase id="103">
+				<text>lab_text3</text>
+				<give_info>activate_gener_start</give_info>
+				<action>gz_laba.key_create</action>
+				<action>dialogs.break_dialog</action>
+                <action>dialogs.transfer_medkit</action>
+			</phrase>
+            
+            
+            
+            
+            
+            
+            
 		</phrase_list>
 	</dialog>
 </game_dialogs>

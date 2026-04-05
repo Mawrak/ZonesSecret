@@ -261,13 +261,13 @@
             </phrase>
             <phrase id="4">
                 <text>Вот, всё необходимое я скинул тебе на ПДА. Приятно было с тобой поработать.</text>
-        				<action>gz_prologue.transfer_bekas_contr</action> 
                 <next>5</next>
             </phrase>
             <phrase id="5">
                 <text>Взаимно.</text>
                 <give_info>dialog_osvedomel_infa_done</give_info>
                 <give_info>infa_about_heli_have</give_info>
+                <action>gz_prologue.transfer_bekas_contr</action>
             </phrase>
 	</phrase_list>
     </dialog>
@@ -532,7 +532,7 @@
             <phrase id="3">
                 <text>Спасибо, за помощь!</text>
                   <next>4</next>
-                <give_info>gar_self_destroy_the_wall</give_info>     
+ 
             </phrase>
             <phrase id="4">
                 <text>Слушай, у меня к тебе будет одна просьба...</text>
@@ -552,10 +552,12 @@
             </phrase>
             <phrase id="8">
                 <text>Хорошо, постараюсь сделать всё возможное.</text>  
-                <give_info>gar_find_black_digger_diary</give_info>   
+                
                                   <next>10</next>
             </phrase>
             <phrase id="10">
+                <give_info>gar_find_black_digger_diary</give_info>
+                <give_info>gar_self_destroy_the_wall</give_info>
                 <text>Спасибо, для меня действительно это очень важно.</text>  
             </phrase>
             <phrase id="9">
@@ -635,7 +637,7 @@
                 </phrase>
               <phrase id="14">
                 <text>dialog_osvedomel_start_2</text>
-                <give_info>dialog_start_osvedomel_done</give_info>     
+                  
                 <next>15</next>
                 <next>151</next>
                 </phrase>
@@ -646,10 +648,12 @@
                 </phrase>
                    <phrase id="151">
                 <text>Денег нет.</text>
-                <give_info>dialog_osvedomel_about_teams</give_info>     
+                <give_info>dialog_osvedomel_about_teams</give_info>  
+                <give_info>dialog_start_osvedomel_done</give_info>   
                 <action>dialogs.break_dialog</action>
                 </phrase>
                    <phrase id="16">
+                   <give_info>dialog_start_osvedomel_done</give_info>   
                 <text>dialog_osvedomel_teams</text>
                 </phrase>
 	</phrase_list>
@@ -671,7 +675,7 @@
             <phrase id="2">
                 <text>Вот, 2000.</text>
                   <next>3</next>
-				<action>gz_prologue.give_osvedomel_money_2000</action>                
+				                
             </phrase>
               <phrase id="25">
                 <text>Пардон, деньги я ещё не нашёл.</text>
@@ -679,7 +683,8 @@
             </phrase>
             <phrase id="3">
                 <text>dialog_osvedomel_teams</text>
-                <give_info>dialog_osvedomel_teams_done</give_info>     
+                <give_info>dialog_osvedomel_teams_done</give_info>
+                <action>gz_prologue.give_osvedomel_money_2000</action>                
             </phrase>
 	</phrase_list>
     </dialog>
@@ -791,12 +796,13 @@
             </phrase>
       <phrase id="12">
 				<text>Спасибо! Век не забуду, теперь я смогу вылечить свою любимую... Спасибо ещё раз.</text>
-				<action>gz_prologue.transfer_gubka_art</action>   
+				
                 <next>13</next>
             </phrase>
       <phrase id="13">
 				<text>Да пожалуйста.</text>
-                                              <give_info>ds_art_quest_back</give_info>  
+                <give_info>ds_art_quest_back</give_info>  
+                <action>gz_prologue.transfer_gubka_art</action>   
             </phrase>
       <phrase id="11">
 				<text>Ну уж нет, так просто не отдам. Артефакт то редкий.</text>
@@ -824,12 +830,13 @@
             </phrase>
       <phrase id="1">
 				<text>Спасибо! Век не забуду, теперь я смогу вылечить свою любимую... Спасибо ещё раз.</text>
-				<action>gz_prologue.transfer_gubka_art</action>   
+				   
                 <next>2</next>
             </phrase>
       <phrase id="2">
 				<text>Да пожалуйста.</text>
-                                              <give_info>ds_art_quest_back</give_info>  
+                <give_info>ds_art_quest_back</give_info>  
+                <action>gz_prologue.transfer_gubka_art</action>
             </phrase>
 	</phrase_list>
     </dialog>
@@ -855,15 +862,16 @@
             </phrase>
       <phrase id="12">
 				<text>Спасибо! Век не забуду, теперь я смогу вылечить свою любимую... Спасибо ещё раз.</text>
-				<action>gz_prologue.transfer_gubka_art</action>   
+				
                 <next>13</next>
             </phrase>
       <phrase id="13">
 				<text>Да пожалуйста.</text>
                                               <give_info>ds_art_quest_back</give_info>  
+                <action>gz_prologue.transfer_gubka_art</action>   
             </phrase>
       <phrase id="115">
-				<text>Ну уж нет, так просто не отдам. Артефакт то редкий.</text>
+				<text>Ну уж нет, так просто не отдам. Артефакт-то редкий.</text>
                                              <give_info>ds_art_quest_nehoch</give_info>  
             </phrase>
 	</phrase_list>
@@ -893,11 +901,12 @@
             </phrase>
       <phrase id="4">
 				<text>Последний раз его находили в юго-восточной части свалки, поисчи там.</text>
-				<action>gz_prologue.give_art_money</action>   
+				
                 <next>5</next>
             </phrase>
       <phrase id="5">
 				<text>Спасибо.</text>
+                <action>gz_prologue.give_art_money</action>   
                 <give_info>ds_art_quest_osved_done</give_info>  
             </phrase>
 	</phrase_list>
@@ -948,7 +957,7 @@
             </phrase>
           <phrase id="1">
                 <text>Да, да, всё уже готово.</text>
-            <give_info>open_agr_merc_pda_done</give_info>
+            
                 <next>2</next>
             </phrase>
           <phrase id="2">
@@ -956,6 +965,7 @@
                 <next>3</next>
             </phrase>
           <phrase id="3">
+                <give_info>open_agr_merc_pda_done</give_info>
                 <text>Да не за что, рад быть полезным.</text>
             </phrase>
 	</phrase_list>
@@ -1298,10 +1308,7 @@
             </phrase>
           <phrase id="4">
                 <text>Так, давай свой контейнер сюда. Подожди немного... Готово, и что же тут у нас? Хм, какая-то флешка. Ну что ж, вот держи.</text>
-           				<action>gz_prologue.transfer_gz_tainik_case</action>
-           				<action>gz_prologue.transfer_loki_case_flesh</action>
-           				<action>gz_prologue.give_loki_case_money</action>
-            <give_info>loki_case_open_done</give_info>
+           				
                 <next>5</next>
             </phrase>
           <phrase id="5">
@@ -1310,6 +1317,10 @@
             </phrase>
           <phrase id="6">
                 <text>Всегда пожалуйста, обращайся.</text>
+                <action>gz_prologue.transfer_gz_tainik_case</action>
+           				<action>gz_prologue.transfer_loki_case_flesh</action>
+           				<action>gz_prologue.give_loki_case_money</action>
+            <give_info>loki_case_open_done</give_info>
             </phrase>
 	</phrase_list>
     </dialog>
