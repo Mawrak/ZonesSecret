@@ -121,7 +121,31 @@ tips_icons = {
     prizrak  	= { "ui\\ui_iconsTotal", 0, 658},
     killer   	= { "ui\\ui_iconsTotal", 0, 658},
 	
-	diary_tip   = { "ui\\ui_iconstotal_new", 166, 282}
+	diary_tip   = { "ui\\ui_iconstotal_new", 166, 282},
+    
+    -- soz --
+	rf_military_pda   = {"ui\\ui_iconsTotal", 664, 1128},
+	rf_military_com   = {"ui\\ui_iconsTotal", 581, 1128},
+	agr_scien   = {"ui\\ui_iconsTotal", 747, 1128},
+	agr_merc_com   = {"ui\\ui_iconsTotal", 830, 1128},
+	oka   = {"ui\\ui_iconsTotal", 581, 1175},
+	ds_iskateli_tepa   = {"ui\\ui_iconsTotal", 664, 1175},
+	ds_bridge_rob   = {"ui\\ui_iconsTotal", 747, 1175},
+	ds_kamaz_stalker   = {"ui\\ui_iconsTotal", 830, 1175},
+	dv_lukash   = {"ui\\ui_iconsTotal", 913, 1175},
+	dv_mikluha   = {"ui\\ui_iconsTotal", 996, 1175},
+	cheh   = {"ui\\ui_iconsTotal", 498, 940},
+	kuprian   = {"ui\\ui_iconsTotal", 498, 987},
+	shpil   = {"ui\\ui_iconsTotal", 249, 705},
+	solomon   = {"ui\\ui_iconsTotal", 498, 47},
+	yan_sos   = {"ui\\ui_iconsTotal", 332, 141},
+	cache_map   = {"ui\\ui_iconsTotal", 166, 1316},
+	cache_diary   = {"ui\\ui_iconsTotal", 0, 1269},
+	base   = {"ui\\ui_iconsTotal", 249, 1222},
+	seryi   = {"ui\\ui_iconsTotal", 415, 141},
+	osved   = {"ui\\ui_iconsTotal", 498, 987},
+	karavai   = {"ui\\ui_iconsTotal", 332, 94},
+	mil   = {"ui\\ui_iconsTotal", 415, 987}
 	--[[
 	max   		= { "ui\\ui_iconsTotal", 415, 282},
 	luka   		= { "ui\\ui_iconsTotal", 415, 235},
