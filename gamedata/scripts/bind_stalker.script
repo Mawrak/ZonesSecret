@@ -120,6 +120,24 @@ function actor_binder:net_spawn(data)
         get_console():execute("hud_draw on")
     end
     
+    if level.name() == "gz_agroprom_underground" then
+    
+        get_console():execute("r2_slight_fade_multiplier 0.02")
+        get_console():execute("shadows 1")
+        
+    elseif level.name() == "gz_labx15" then
+        
+        get_console():execute("shadows 0")
+        get_console():execute("r2_slight_fade_multiplier 0")
+        
+    else
+    
+        get_console():execute("shadows 1")
+        get_console():execute("r2_slight_fade_multiplier 0")
+        
+    end
+
+    
 	return true
 end
 ----------------------------------------------------------------------------------------------------------------------
