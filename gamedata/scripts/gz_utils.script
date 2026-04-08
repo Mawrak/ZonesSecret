@@ -8,36 +8,33 @@ local snd_obj = xr_sound.get_safe_sound_object([[$no_sound]])
 -- удаляем объект из игры
 function remove_item(remove_item)
   if remove_item~=nil then
-    alife():release(alife():object(remove_item:id(), true))
+    alife():release(alife():object(remove_item:id()), true)
+
     return true
   end
   return false
 end
 
---записываем переменную
-function save_variable(variable_name, value)
- xvars[variable_name] = value
+function remove_item_from_inventory_by_name(remove_item_name,npc) --+
+	remove_item_from_inventory(npc:object(remove_item_name),npc)
 end
 
---загружаем переменную
-function load_variable(variable_name, value_if_not_found)
-  local var = xvars[variable_name]
-  if var ~= nil then
-   return var
-  end
-  return value_if_not_found or nil
+function remove_item_from_inventory(remove_item,npc) --+
+	if npc==nil then npc=db.actor end
+	if remove_item~=nil then
+	    npc:mark_item_dropped(remove_item)
+		local sobj = alife():object(remove_item:id())
+		if sobj then
+			alife():release(sobj, true)
+			return true
+		else	
+			return false
+		end
+	end
+	return false
 end
 
---удаляем переменную
-function del_variable(variable_name)
-  xvars[variable_name] = nil
-end
 
---сохраняем таблицу
-function save_table(table_name, value)
- value = table.compress(value) --/ пакуем таблицу в строку
- xvars[table_name] = value
-end
 
 --загружаем таблицу
 function load_table(sVarName, DefValue)

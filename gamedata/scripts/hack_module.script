@@ -1,0 +1,469 @@
+-- Модуль взлома различных девайсов (ПДА, флешки, ноутбуки, ПК и т.п.)
+-- Автор: Kondr48
+-- По факту система состоит из двух частей: взлом у персонажей и через личный КПК. Однако обе системы сведены в один модуль для удобства и компактности, т. к. имеют общие моменты.
+
+-- Дописать функцию выдачи "ништяков" чтобы была одна универсальная, а не две больших, с почти полностью повторяющимися элементами
+-- Попытаться сделать динамическую генерацию списка предлагаемых для взлома девайсов. Чтение как у движкового окна ПДА.
+
+
+local selected_pda = nil
+
+local ini = system_ini()
+local actor = db.actor
+
+--// Список статей, которые рандомно выдаются при успешном взломе
+local enciclopedy_list = {
+"encyclopedy_zone_artifact_af-medusa",
+"encyclopedy_zone_artifact_af-cristall-flower",
+"encyclopedy_zone_artifact_af-night-star",
+"encyclopedy_zone_artifact_af-vyvert",
+"encyclopedy_zone_artifact_af-gravi",
+"encyclopedy_zone_artifact_af-gold-fish",
+"encyclopedy_zone_artifact_af-blood",
+"encyclopedy_zone_artifact_af-mincer-meat",
+"encyclopedy_zone_artifact_af-soul",
+"encyclopedy_zone_artifact_af-drops",
+"encyclopedy_zone_artifact_af-fireball",
+"encyclopedy_zone_artifact_af-cristall",
+"encyclopedy_zone_artifact_af-electra-sparkler",
+"encyclopedy_zone_artifact_af-electra-flash",
+"encyclopedy_zone_artifact_af-electra-moonlight",
+"encyclopedy_zone_artifact_af-rusty-thorn",
+"encyclopedy_zone_artifact_af-rusty-kristall",
+"encyclopedy_zone_artifact_af-rusty-sea-urchin", 
+"encyclopedy_zone_artifact_af-fuzz-kolobok",
+"encyclopedy_zone_artifact_af-ameba-slime",
+"encyclopedy_zone_artifact_af-ameba-slug",
+"encyclopedy_zone_artifact_af-ameba-mica",
+"encyclopedy_zone_artifact_af-dummy-glassbeads",
+"encyclopedy_zone_artifact_af-dummy-pellicle",
+"encyclopedy_zone_artifact_af-dummy-battery",
+"encyclopedy_zone_artifact_af-dummy-dummy",
+"encyclopedy_zone_artifact_af-dummy-spring",
+"encyclopedy_zone_zone-story_story-2006",
+"encyclopedy_zone_zone-story_story-2008",
+"encyclopedy_zone_zone-story_story-2010",
+"encyclopedy_zone_zone-story_story-raid",
+"encyclopedy_zone_anomalies_bald",
+"encyclopedy_zone_anomalies_gravi",
+"encyclopedy_zone_anomalies_meat",
+"encyclopedy_zone_anomalies_zharka",
+"encyclopedy_zone_anomalies_electra",
+"encyclopedy_zone_anomalies_fuzz",
+"encyclopedy_zone_anomalies_radioactive",
+"encyclopedy_zone_anomalies_ameba",
+"encyclopedy_zone_locations_escape",
+"encyclopedy_zone_locations_garbage",
+"encyclopedy_zone_locations_agroprom",
+"encyclopedy_zone_locations_darkdolina",
+"encyclopedy_zone_locations_bar",
+"encyclopedy_zone_locations_rostok",
+"encyclopedy_zone_locations_yantar",
+"encyclopedy_zone_locations_military-loc",
+"encyclopedy_zone_locations_radar",
+"encyclopedy_zone_locations_pripiat",
+"encyclopedy_zone_locations_stancia",
+"encyclopedy_mutant_crow_general",
+"encyclopedy_mutant_rat_general",
+"encyclopedy_mutant_flesh_general",
+"encyclopedy_mutant_blind_general",
+"encyclopedy_mutant_tushkano",
+"encyclopedy_mutant_boar_general",
+"encyclopedy_mutant_pseudodog_general",
+"encyclopedy_mutant_bloodsucker_general",
+"encyclopedy_mutant_burer_general",
+"encyclopedy_mutant_pseudogiant_general",
+"encyclopedy_mutant_poltergeist_general",
+"encyclopedy_mutant_controller_general",
+"encyclopedy_mutant_snork_general",
+"encyclopedy_social_military_army",
+"encyclopedy_social_military_milstalkers",
+"encyclopedy_social_scientists_mobile-labs",
+"encyclopedy_social_stalker-clans_duty",
+"encyclopedy_social_stalker-clans_freedom",
+"encyclopedy_social_stalker-clans_monolith",
+"encyclopedy_social_stalker-clans_zomstalkers",
+"encyclopedy_social_stalker-clans_bandits",
+"encyclopedy_social_stalker-clans_killers",
+"encyclopedy_social_stalker-clans_loners",
+"encyclopedy_tutorial_binocular",
+"encyclopedy_tutorial_crouch",
+"encyclopedy_tutorial_hide_weapon",
+"encyclopedy_tutorial_jump",
+"encyclopedy_tutorial_overload",
+"encyclopedy_tutorial_radiation",
+"encyclopedy_tutorial_relation",
+"encyclopedy_tutorial_sprint",
+"encyclopedy_tutorial_weakness",
+"encyclopedy_tutorial_weapon",
+"encyclopedy_tutorial_wound",
+"encyclopedy_tutorial_diary"
+}
+
+--// Уровни шифрования
+local encrypt_to_num = {
+["el_weak"] = 1,
+["el_average"] = 2,
+["el_strong"] = 3,
+["el_very_strong"] = 4
+}
+
+--// Сообщения от Хакера (выбирается рандомно)
+local table_sms = {
+"hacker_message_01",
+"hacker_message_02",
+"hacker_message_03",
+"hacker_message_04",
+"hacker_message_05"
+}
+
+-- // Взлом с помощью Хакера
+
+--/Функции для работы диалога с хакером.
+function precondition_pda_stalker_novice()
+ if actor:object("pda_stalker_novice") then
+  return true
+ end
+end
+function action_pda_stalker_novice()
+ local obj = actor:object("pda_stalker_novice")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_stalker_regular()
+ if actor:object("pda_stalker_regular") then
+  return true
+ end
+end
+function action_pda_stalker_regular()
+ local obj = actor:object("pda_stalker_regular")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_stalker_veteran()
+ if actor:object("pda_stalker_veteran") then
+  return true
+ end
+end
+function action_pda_stalker_veteran()
+ local obj = actor:object("pda_stalker_veteran")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_stalker_master()
+ if actor:object("pda_stalker_master") then
+  return true
+ end
+end
+function action_pda_stalker_master()
+ local obj = actor:object("pda_stalker_master")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+---//Квестовые уникальные ПДА
+function precondition_pda_bekas()
+ if actor:object("pda_bekas") then
+  return true
+ end
+end
+function action_pda_bekas()
+ local obj = actor:object("pda_bekas")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_petro()
+ if actor:object("pda_petro") then
+  return true
+ end
+end
+function action_pda_petro()
+ local obj = actor:object("pda_petro")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_ld_code()
+ if actor:object("pda_ld_code") then
+  return true
+ end
+end
+function action_pda_ld_code()
+ local obj = actor:object("pda_ld_code")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_maps()
+ if actor:object("pda_maps") then
+  return true
+ end
+end
+function action_pda_maps()
+ local obj = actor:object("pda_maps")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_noyt_borman()
+ if actor:object("noyt_borman") then
+  return true
+ end
+end
+function action_noyt_borman()
+ local obj = actor:object("noyt_borman")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_yan_guard_pda()
+ if actor:object("yan_guard_pda") then
+  return true
+ end
+end
+function action_yan_guard_pda()
+ local obj = actor:object("yan_guard_pda")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_quest_pda_zombie()
+ if actor:object("quest_pda_zombie") then
+  return true
+ end
+end
+function action_quest_pda_zombie()
+ local obj = actor:object("quest_pda_zombie")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_quest_agr_merc_pda()
+ if actor:object("quest_agr_merc_pda") then
+  return true
+ end
+end
+function action_quest_agr_merc_pda()
+ local obj = actor:object("quest_agr_merc_pda")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_scien_flash()
+ if actor:object("scien_flash") then
+  return true
+ end
+end
+function action_scien_flash()
+ local obj = actor:object("scien_flash")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_ds_pda_bool()
+ if actor:object("ds_pda_bool") then
+  return true
+ end
+end
+function action_ds_pda_bool()
+ local obj = actor:object("ds_pda_bool")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_quest_pda_otshel()
+ if actor:object("quest_pda_otshel") then
+  return true
+ end
+end
+function action_quest_pda_otshel()
+ local obj = actor:object("quest_pda_otshel")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_borman()
+ if actor:object("pda_borman") then
+  return true
+ end
+end
+function action_pda_borman()
+ local obj = actor:object("pda_borman")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_maps_band()
+ if actor:object("pda_maps_band") then
+  return true
+ end
+end
+function action_pda_maps_band()
+ local obj = actor:object("pda_maps_band")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_depo_dead_stalker()
+ if actor:object("pda_depo_dead_stalker") then
+  return true
+ end
+end
+function action_pda_depo_dead_stalker()
+ local obj = actor:object("pda_depo_dead_stalker")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_dolg_kuprianov()
+ if actor:object("pda_dolg_kuprianov") then
+  return true
+ end
+end
+function action_pda_dolg_kuprianov()
+ local obj = actor:object("pda_dolg_kuprianov")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_sv_cheh()
+ if actor:object("pda_sv_cheh") then
+  return true
+ end
+end
+function action_pda_sv_cheh()
+ local obj = actor:object("pda_sv_cheh")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_sv_loki()
+ if actor:object("pda_sv_loki") then
+  return true
+ end
+end
+function action_pda_sv_loki()
+ local obj = actor:object("pda_sv_loki")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_bandit_leshui()
+ if actor:object("pda_bandit_leshui") then
+  return true
+ end
+end
+function action_pda_bandit_leshui()
+ local obj = actor:object("pda_bandit_leshui")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_hunt()
+ if actor:object("pda_hunt") then
+  return true
+ end
+end
+function action_pda_hunt()
+ local obj = actor:object("pda_hunt")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_pda_gorb()
+ if actor:object("pda_gorb") then
+  return true
+ end
+end
+function action_pda_gorb()
+ local obj = actor:object("pda_gorb")
+ if obj then 
+   selected_pda = obj:section()
+ end
+end
+
+function precondition_money()
+ local money = 3000 --3000
+ if actor:money() >= money then
+  return true
+ end
+end
+
+--//Вычисляем всё, что надо для формирования цены:
+function cost_and_time_calc(phr_tbl, phr_k, dlg, block_name, block_input_key)
+ 
+end
+
+function agreed_to_work(phr_tbl, phr_k, dlg, block_name, block_input_key)
+
+end
+
+--//Ломаем ПДА
+function pda_hack_start()	
+ 
+ hacking_hacker_complete()
+ actor:give_money(-3000)
+ if selected_pda then
+    amk.remove_item_from_inventory_by_name(tostring(selected_pda), db.actor)
+ end
+end
+
+function hacking_hacker_complete()
+ local section_pda = selected_pda
+ local level_lock = ini:r_string(section_pda, "encryption_level")
+ local encrypt_level = encrypt_to_num[level_lock]
+ 
+ --// Выдача статей энциклопедии
+ local new_statja_num = 0 
+ local enciclopedy_rnd = math.random(1, encrypt_level)
+ for i = 1, enciclopedy_rnd do
+     local statja_for_pda = enciclopedy_list[math.random(#enciclopedy_list)]
+         if not has_alife_info(statja_for_pda) then
+             gz_utils.give_info(statja_for_pda)
+             new_statja_num = new_statja_num + 1
+         end
+ end
+ 
+ --// Выдача уникальных инфопоршей
+ if ini:line_exist(section_pda, "unical_info") then 
+     local unic_info = ini:r_string(section_pda, "unical_info")
+     local t = string.split(unic_info, 1, ",")
+         for i = 1, #t, 1 do
+		   gz_utils.give_info(i)
+		 end
+ end
+ 
+ local hacker_name = "Хакер."
+ local hacker_sms = table_sms[math.random(#table_sms)]
+ local new_encilopedy = game.translate_string("new_entries")
+ news_manager.send_tip(actor, "%c[255,255,0,0]"..hacker_name..":\\n%c[255,0,0,220]"..game.translate_string(hacker_sms))
+ news_manager.send_tip(actor, "%c[255,0,0,220]"..new_encilopedy.."%c[255,0,220,0] "..new_statja_num)
+ gz_treasure_manager.spawn_box(encrypt_level)
+
+end

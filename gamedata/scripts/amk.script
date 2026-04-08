@@ -1,0 +1,19 @@
+
+function remove_item_from_inventory_by_name(remove_item_name,npc) --+
+	remove_item_from_inventory(npc:object(remove_item_name),npc)
+end
+
+function remove_item_from_inventory(remove_item,npc) --+
+	if npc==nil then npc=db.actor end
+	if remove_item~=nil then
+	    npc:mark_item_dropped(remove_item)
+		local sobj = alife():object(remove_item:id())
+		if sobj then
+			alife():release(sobj, true)
+			return true
+		else	
+			return false
+		end
+	end
+	return false
+end

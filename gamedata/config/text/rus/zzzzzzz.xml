@@ -2,6 +2,8 @@
 <string_table>
 	
 	
-	
+	<string id="gz_pda_yes">
+      <text>Стоимость - три штуки за ПДА.</text>
+    </string>
 		
 </string_table>
