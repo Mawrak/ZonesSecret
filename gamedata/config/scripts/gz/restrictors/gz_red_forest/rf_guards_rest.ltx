@@ -29,13 +29,4 @@ on_timer = 1000|%=play_snd_from_obj(54005:characters_voice\soz\gz_red_forest\ld_
 on_timer = 2500|%+rf_ld_blockp_ok_racia_end% sr_idle9
 
 [sr_idle9]
-on_info = {+rf_scien_going_conf} %=disable_ui% sr_idle10
-
-[sr_idle10]
-on_info = {+rf_scien_going_conf_done} %=run_postprocess(agr_u_fade:01:false)% sr_idle11
-
-[sr_idle11]
-on_timer = 5000|%=travel_in_time_1% sr_idle12
-
-[sr_idle12]
-on_info = {+rf_scien_going_conf_end} %=enable_ui% nil
+on_info = {+rf_scien_going_conf} nil

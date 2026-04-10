@@ -32,7 +32,9 @@ on_info = {+rf_scien_going_conf} walker@rf_manik3
 
 [walker@rf_manik3]
 path_walk = rf_manik_on_conf
-on_signal = rf_scien3 | %+rf_scien_going_conf_done% walker@rf_manik4
+on_signal = rf_scien3 | %+rf_scien_going_conf_done%
+on_timer = 30000| %+rf_scien_going_conf_done% walker@rf_manik4
+meet = no_meet
 
 [walker@rf_manik4]
 path_walk = rf_manik_stay

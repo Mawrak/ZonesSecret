@@ -30,6 +30,7 @@
  <dialog id="dialog_scien_rf_done">
                 <dont_has_info>rf_scien_stay_done</dont_has_info>
                 <has_info>rf_scien_going_conf</has_info>
+                <has_info>rf_scien_going_conf_done</has_info>
   <init_func>dialogs_new_system.dialog_scien_rf_done</init_func>    
  </dialog>
 
