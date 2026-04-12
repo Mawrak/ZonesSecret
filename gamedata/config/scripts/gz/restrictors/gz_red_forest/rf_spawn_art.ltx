@@ -1,10 +1,8 @@
 [logic]
-active = sr_idle@day
+active = sr_idle@night
 
-[sr_idle@day]
-on_info = {!is_day +find_rf_art_start -spawn_art_test} %=spawn_obj_in_zone(quest_rf_art:rf_spawn_art) +spawn_art_test -dell_art_test% sr_idle@night
-on_info2 = {+rf_art_have} nil
 
 [sr_idle@night]
-on_info =  {=is_day +find_rf_art_start +spawn_art_test} %=rf_art_del +dell_art_test -spawn_art_test% sr_idle@day
-on_info2 = {+rf_art_have} nil
+on_info =  {=actor_has_item(quest_rf_art) -rf_art_have} %+rf_art_have% sr_idle@day
+on_info2 = {+find_rf_art_start -spawn_art_new} %=spawn_obj_in_zone(quest_rf_art:rf_spawn_art) =spawn_obj_in_zone(quest_rf_art:rf_spawn_art) =spawn_obj_in_zone(quest_rf_art:rf_spawn_art) +spawn_art_new%
+

@@ -2245,6 +2245,7 @@
 		<action>gz_sms.agr_digger_ds_sms</action>
 	</info_portion>
 	<info_portion id="spawn_art_test"></info_portion>
+    <info_portion id="spawn_art_new"></info_portion>
 	<info_portion id="dell_art_test"></info_portion>
 	<info_portion id="dv_prisoner_dialog_end"></info_portion>
 	<info_portion id="gar_dell_mutants"></info_portion>
