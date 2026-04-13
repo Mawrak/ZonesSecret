@@ -391,12 +391,13 @@ function date_and_time(phr_tbl, phr_k, dlg, block_name, block_input_key)
  --game.translate_string(m_s_level)
  local mounth_table = {"aJanuary", "aFebruary", "aMarch", "aApril", "aMay", "aJune", "aJuly", "aAugust", "aSeptember", "aOctober", "aNovember", "aDecember"}
  local phrase_text_now, phrase_text_year = game.translate_string("aNow"), game.translate_string("aYear")
- local year = level.get_time_year()
- local month = game.translate_string(mounth_table[level.get_time_month()])
- local day = level.get_time_days()
+ local year = 2010
+ local day = game.translate_string("aSummer")
+ local month = game.translate_string("aSummer2")
+ local today_time = game.translate_string("aSummer3")
  local hours = level.get_time_hours()
  local minutes = level.get_time_minutes()
- local time_text = string.format("%s: %d %s %d %s, %02d:%02d", phrase_text_now, day, month, year, phrase_text_year, hours, minutes)
+ local time_text = string.format("%s %s %s %d %s, %s %02d:%02d.", phrase_text_now, day, month, year, phrase_text_year, today_time, hours, minutes)
  local PHR_id = block_name.."p1"
  local a_tbl, p_tbl = {}, {}
  assembly_dialogs.assembly_phrase_ex(time_text, phr_tbl, phr_k, dlg, PHR_id, block_input_key, a_tbl, p_tbl)

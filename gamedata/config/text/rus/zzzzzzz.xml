@@ -5,5 +5,17 @@
 	<string id="gz_pda_yes">
       <text>Стоимость - три штуки за ПДА.</text>
     </string>
+    
+    <string id="aSummer">
+      <text>конец</text>
+    </string>
+    
+    <string id="aSummer2">
+      <text>лета</text>
+    </string>
+    
+    <string id="aSummer3">
+      <text>время</text>
+    </string>
 		
 </string_table>
