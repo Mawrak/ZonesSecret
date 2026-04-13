@@ -662,9 +662,6 @@
 
 <dialog id="dialog_ld_find_group">
                 <dont_has_info>rf_ld_find_group_start</dont_has_info>
-                <has_info>lead_agr_scien_start</has_info>
-                <dont_has_info>dialog_rf_pd_lead_done</dont_has_info>
-                <dont_has_info>rf_iron_otkaz</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Может быть у вас есть какая-нибудь работа?</text>
@@ -676,73 +673,21 @@
                 <next>3</next>
             </phrase>
             <phrase id="2">
-                <text>Лес то не маленький, где именно их искать?</text>
+                <text>Лес-то не маленький, где именно их искать?</text>
                 <next>4</next>
             </phrase>
-     <phrase id="3">
-                <text>Не, извините ребят, я пас. Не до того сейчас.</text>
-                <give_info>rf_iron_otkaz</give_info>
+            <phrase id="3">
+                <text>Не, извините ребят, я пас. Не до того сейчас.</text> 
             </phrase>
             <phrase id="4">
                 <text>Последний раз они выходили на связь в районе большой аномалии на поляне.</text>
                 <give_info>rf_ld_find_group_start</give_info>
-            </phrase>
-	</phrase_list>
-    </dialog>
-<dialog id="dialog_ld_find_group_2">
-                <dont_has_info>rf_ld_find_group_start</dont_has_info>
-                <dont_has_info>lead_agr_scien_start</dont_has_info>
-                <dont_has_info>dialog_rf_pd_lead_done</dont_has_info>
-                <dont_has_info>rf_iron_otkaz</dont_has_info>
-        <phrase_list>
-            <phrase id="0">
-                <text>Сталкер, есть предложение, не желаешь подзаработать?</text>
-                <next>1</next>
-            </phrase>
-     <phrase id="1">
-                <text>Ну а как именно?</text>
-                <next>1</next>
-            </phrase>
-     <phrase id="1">
-                <text>dialog_rf_iron_quest_1</text>
-                <next>2</next>
-                <next>3</next>
-            </phrase>
-     <phrase id="2">
-                <text>Лес то не маленький, где именно их искать?</text>
-                <next>4</next>
-            </phrase>
-     <phrase id="3">
-                <text>Не, извините ребят, я пас. Не до того сейчас.</text>
-                <give_info>rf_iron_otkaz</give_info>
-            </phrase>
-            <phrase id="4">
-                <text>Последний раз они выходили на связь в районе большой аномалии на поляне.</text>
-                <give_info>rf_ld_find_group_start</give_info>
+                <give_info>rf_spawn_puzir</give_info>
             </phrase>
 	</phrase_list>
     </dialog>
 
-<dialog id="dialog_ld_find_group_done">
-                <dont_has_info>ld_group_thanks</dont_has_info>
-                <dont_has_info>rf_ld_find_group_start</dont_has_info>
-                <has_info>ld_find_group_done</has_info>
-                <has_info>rf_ocelot_talk_done_2</has_info>
-        <phrase_list>
-            <phrase id="0">
-                <text>Я связывался с вашими по рации. Оцелот живой и здоровый доставлен на базу. Ещё чуть-чуть и не успели бы спасти бедолагу.</text>
-                <next>1</next>
-            </phrase>
-         <phrase id="1">
-                <text>dialog_rf_iron_quest_3</text>
-                <next>2</next>
-            </phrase>
-            <phrase id="2">
-                <text>Спасибо. Ну ладно, я к Оцелоту, он хотел ещё о чём-то поговорить. </text>
-                <give_info>ld_group_thanks</give_info>
-            </phrase>
-	</phrase_list>
-    </dialog>
+
 
 <dialog id="dialog_ld_find_group_done_2">
                 <dont_has_info>ld_group_thanks</dont_has_info>
