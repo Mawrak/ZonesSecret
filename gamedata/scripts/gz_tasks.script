@@ -216,13 +216,15 @@ function killer_suit_update()
  if not has_alife_info("pz_actor_enemy_merclager") then
   local actor = db.actor 
    if actor:item_in_slot(6) and actor:item_in_slot(6):section() == 'killer_outfit_green' then 
-    gz_utils.give_info("actor_is_killer") 
-   else 
-    gz_utils.del_info("actor_is_killer") 
+    db.actor:give_info_portion("actor_is_killer")
+    --gz_utils.give_info("actor_is_killer") 
+   else
+    db.actor:disable_info_portion("actor_is_killer")
+    --gz_utils.del_info("actor_is_killer") 
     --gz_utils.give_info("pz_actor_enemy_merclager") 
    end 
   end
- end
+end
 
 function bandit_suit_update()
  local actor = db.actor

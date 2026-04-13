@@ -3,6 +3,12 @@ active = sr_idle
 
 [sr_idle]
 on_info = {+pz_heli_start_fly} sr_idle1
+on_info2 = {=killer_suit_update} %+actor_is_killer%, {!killer_suit_update} %-actor_is_killer%
 
 [sr_idle1]
-on_timer = 7000|%+pz_heli_sms% nil
+on_timer = 7000|%+pz_heli_sms% sr_idle2
+on_info = {=killer_suit_update} %+actor_is_killer%, {!killer_suit_update} %-actor_is_killer%
+
+
+[sr_idle2]
+on_info = {=killer_suit_update} %+actor_is_killer%, {!killer_suit_update} %-actor_is_killer%

@@ -3438,3 +3438,16 @@ end
 function hud_on()
 	get_console():execute("hud_draw on")
 end
+
+function yan_block_door_me()
+	local snd = sound_object([[characters_voice\soz\gz_yantar\gg_yan_block]]) 
+snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector():set(0, 0, 0), 2.0) 
+	news_manager.send_tip(db.actor, "%c[255,255,128,128] \n%c[default] Дверь заблокирована...", 0, "default", 15000)
+end
+
+
+function give_item_red_container(actor, npc, p)
+    
+    alife():create("pz_merclager_documents", db.actor:position(), db.actor:level_vertex_id(), db.actor:game_vertex_id(), db.actor:id())
+
+end
