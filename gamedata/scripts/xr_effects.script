@@ -1714,6 +1714,15 @@ function aes_kill_actor (actor, npc)
     end   
 end
 
+function mine_ambush_mawrak (actor, npc)
+    if actor ~= nil and actor.health > 0 then 
+       db.actor.health = -0.75
+       local snd_obj = xr_sound.get_safe_sound_object([[affects\hit_fist]])
+       snd_obj:play_no_feedback(db.actor, sound_object.s2d, 0, vector(), 1.0)
+       level.add_cam_effector("camera_effects\\fusker.anm", 999, false, "")		
+    end   
+end
+
 function set_sidorovich_animation (npc)
     local sidor = level_object_by_sid (1118)
     if sidor == nil then
@@ -2936,9 +2945,12 @@ end
 
 -- Игрок подорвался
 function yan_merc_message_surprise()
-	local snd = sound_object([[characters_voice\soz\gz_yantar\yan_merc_message_surprise]]) 
-snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector():set(0, 0, 0), 2.0) 
-	news_manager.send_tip(db.actor, "%c[255,255,128,128] Наемники:\n%c[default] Командир! Гость получил наш подарок.", nil, nil, 5000)
+    if not has_alife_info("yan_merc_message_surprise_done") then
+        db.actor:give_info_portion("yan_merc_message_surprise_done")
+        local snd = sound_object([[characters_voice\soz\gz_yantar\yan_merc_message_surprise]]) 
+        snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector():set(0, 0, 0), 2.0) 
+        news_manager.send_tip(db.actor, "%c[255,255,128,128] Наемники:\n%c[default] Командир! Гость получил наш подарок.", nil, nil, 5000)
+    end
 end
 
 ----- X-15 -----

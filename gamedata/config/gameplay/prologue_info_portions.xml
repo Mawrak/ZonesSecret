@@ -1902,6 +1902,8 @@
 	<info_portion id="gz_yan_ambush_mine2_activate"></info_portion>
 	<info_portion id="gz_yan_ambush_mine2_stop"></info_portion>
 	<info_portion id="gz_yan_ambush_mine2_dell"></info_portion>
+    
+    <info_portion id="yan_merc_message_surprise_done"></info_portion>
 	<!-- - ПДА командира наймов -  -->
 	<info_portion id="open_agr_merc_pda_start">
 		<task>agr_merc_pda_open</task>
