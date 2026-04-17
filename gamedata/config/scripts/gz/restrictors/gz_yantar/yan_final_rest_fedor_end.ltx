@@ -2,14 +2,13 @@
 active = sr_idle
 
 [sr_idle]
-on_actor_inside = {+yan_endgame_spawn_predately} %+yan_final_weapon_off% sr_idle1
+on_actor_inside = {+yan_endgame_spawn_predately} sr_idle1
 
 [sr_idle1]
 on_actor_inside = {+yan_endgame_spawn_predately -yan_fin_dalog_end} %+on_talk_kobold% sr_idle2
 
 [sr_idle2]
 on_actor_inside = {+yan_fin_dalog_end} sr_idle31
-on_actor_outside = {+yan_endgame_spawn_predately} %+kobold_vrag% nil
 
 [sr_idle31]
 on_game_timer = 16|%+yan_kill_kobold =play_snd(weapons\svd\svd_shoot)% sr_idle3

@@ -1530,8 +1530,8 @@ end
 
 
 function on_talk_kobold()
-    local npc = level_object_by_sid(65000) 
-    db.actor:run_talk_dialog(npc)
+    --local npc = level_object_by_sid(65000) 
+    --db.actor:run_talk_dialog(npc)
 end
 
 --x15

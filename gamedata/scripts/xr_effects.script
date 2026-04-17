@@ -2811,7 +2811,7 @@ local t_m = {
  end
  
 function military_war(actor, npc)
-relation_registry.set_community_goodwill ("military", db.actor:id (), -5000)
+    relation_registry.set_community_goodwill ("military", db.actor:id (), -5000)
 end
 
 function predateli_dead()

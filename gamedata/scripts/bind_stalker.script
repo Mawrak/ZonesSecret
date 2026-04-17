@@ -136,7 +136,11 @@ function actor_binder:net_spawn(data)
         get_console():execute("r2_slight_fade_multiplier 0")
         
     end
-
+    
+    
+    if has_alife_info("find_scien_in_underground_start") then
+        relation_registry.set_community_goodwill ("military", db.actor:id (), -500)
+    end
     
 	return true
 end
