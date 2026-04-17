@@ -225,7 +225,8 @@
 	<info_portion id="prisoner_yan_remark"></info_portion>
 	<info_portion id="yan_sniper_position_2"></info_portion>
 	<!-- "Спуститься в подземелье и найти ученого" -->
-	<info_portion id="find_scien_in_underground_start">
+    <info_portion id="find_scien_in_underground_start">	</info_portion>
+	<info_portion id="find_scien_in_underground_start_task">
 		<task>find_scien_in_underground</task>
 		<article>infa_about_scien_lager</article>
 		<action>gz_prologue.diary_tip</action>
