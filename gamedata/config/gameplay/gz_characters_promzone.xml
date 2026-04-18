@@ -1143,8 +1143,8 @@
 		<community>iskateli</community> <terrain_sect>stalker_iskateli_terrain</terrain_sect>
 		<money min="200" max="600" infinitive="0"></money>
 
-		<rank>250</rank>
-		<reputation>20</reputation>
+		<rank>0</rank>
+		<reputation>-20</reputation>
 
 				<visual>actors\ecolog\stalker_ecolog</visual>
 		<snd_config>characters_voice\human_03\stalker\</snd_config>
