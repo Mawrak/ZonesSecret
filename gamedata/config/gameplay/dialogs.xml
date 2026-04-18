@@ -4,6 +4,14 @@
     <dialog id="dm_hello_dialog">
 		<init_func>dialog_manager.init_intro_dialog</init_func>
     </dialog>
+    
+    <dialog id="dm_hello_dialog_cap">
+		<phrase_list>
+            <phrase id="0">
+                <text>mawrak_cap_dialogue_hello</text>
+            </phrase>
+        </phrase_list>
+    </dialog>
 
     <dialog id="dm_trade_info_dialog" priority="-1">
 		<init_func>dialog_manager.init_trade_info_dialog</init_func>

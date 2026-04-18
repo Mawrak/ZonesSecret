@@ -915,12 +915,12 @@
 		<bio>mil_Svoboda_blockpost_leader_bio</bio>
 		
 		<class>agr_military_commander_cap</class>
-		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<community>military</community> <terrain_sect>stalker_terrain</terrain_sect>
 
 		<rank>916</rank>
 		<reputation>149</reputation>
 
-        <snd_config>characters_voice\human_02\freedom\</snd_config>
+        <snd_config>characters_voice\human_02\military\</snd_config>
 		<crouch_type>-1</crouch_type>
 
 		<visual>gz\npc\neutral\kap</visual>
@@ -935,12 +935,14 @@
 #include "gameplay\character_items.xml" \n
 #include "gameplay\character_criticals_3.xml"
 		</supplies>
+        
+        <start_dialog>dm_hello_dialog_cap</start_dialog>
 
 		<actor_dialog>dialog_cap_about_scien</actor_dialog>
 		
 		<money min="600" max="2000" infinitive="0" />
 					
-    <start_dialog>dm_hello_dialog</start_dialog>
+    
 
 	</specific_character>
 	

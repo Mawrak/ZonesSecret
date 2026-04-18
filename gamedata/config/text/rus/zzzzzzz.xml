@@ -25,5 +25,11 @@
     <string id="tips_labx16switcher_press">
       <text>Рубильник</text>
     </string>
-		
+	
+    
+    <string id="mawrak_cap_dialogue_hello">
+      <text>Зорин? Взапраду ли это ты... Или еще одна галлюцинация...</text>
+    </string>
+        
+        
 </string_table>
