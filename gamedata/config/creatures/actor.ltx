@@ -56,10 +56,10 @@ weapon_bone2				= bip01_r_finger11
 
 damage						= actor_damage
 
-hit_probability_gd_novice		= 1
-hit_probability_gd_stalker		= 1
-hit_probability_gd_veteran		= 1
-hit_probability_gd_master		= 1
+hit_probability_gd_novice		= 0.79
+hit_probability_gd_stalker		= 0.79
+hit_probability_gd_veteran		= 0.79
+hit_probability_gd_master		= 0.79
 hit_sounds					= actor_hit_snds
 ;actor condition
 
@@ -158,16 +158,16 @@ explosion_immunity 		= 1.0
 fire_wound_immunity 	= 1.0
 
 [actor_condition]
-satiety_v				    = 0.0000005 ;0.0000162				;скорость уменьшения сытости со временем
+satiety_v				    = 0.000015 ;0.0000162				;скорость уменьшения сытости со временем
 thirst_v					= 0.0000005 ;0.0000162				;скорость увеличения жажды со временем
 thirst_in_sprint_v          = 0.000001 ;0.0000324                ;скорость увеличения жажды со временем во время бега
 
 battery_energy_loss			= 0.0
 
-radiation_v					= 0.0				;скорость уменьшения радиации
-satiety_power_v				= 0.0				;увеличение силы при уменьшении сытости 
-satiety_health_v			= 0.0				;увеличение здоровья при уменьшении сытости 
-satiety_critical			= 0.0					;критическое значения сытости (в процентах от 0..1) когда здоровье начианает уменьшаться
+radiation_v					= 0.0001				;скорость уменьшения радиации
+satiety_power_v				= 0.001				;увеличение силы при уменьшении сытости 
+satiety_health_v			= 0.00015				;увеличение здоровья при уменьшении сытости 
+satiety_critical			= 0.05					;критическое значения сытости (в процентах от 0..1) когда здоровье начианает уменьшаться
 radiation_health_v			= 0.004					;уменьшение здоровья при воздействии радиации
 morale_v					= 0.0001				;скорость восстановления морали 						
 psy_health_v				= 0.001					;скорость восстановления psy-здоровья
@@ -195,7 +195,7 @@ alcohol_v_sleep				= -0.0005
 bleeding_v_sleep			= 0.0
 wound_incarnation_v_sleep	= 0.0
 max_power_leak_speed_sleep	= -0.00001;
-health_restore_v			= 0.00001
+health_restore_v			= 0.00005
 
 ;;;;;;;;
 ;actor_condition only
@@ -204,12 +204,12 @@ jump_power				=	0.01			;0.005					;умешьшение силы с прыжком без учета веса ноши
 jump_weight_power			=	0.05		;0.045					;умешьшение силы с прыжком с учетом веса ноши, для максимального допустимого веса
 overweight_jump_k			=	5;10		;10					;коэффициент влияние перегрузки прыжок с весом (умножается на jump_weight_power)
 
-stand_power				=  -0.005								
-walk_power				=	0.00001				;умешьшение силы за секнду во время ходьбы без учета веса ноши
-walk_weight_power		=	0.00005;			;умешьшение силы за секнду во время ходьбы с учетом веса ноши, для максимального допустимого веса
-overweight_walk_k		=	5;9	;10				;коэффициент влияние перегрузки ноши (умножается на walk_weight_power)
-accel_k					=	3;5					;коэффициент на бег (умножается walk_power, walk_weight_power)
-sprint_k				=	75;150;185;180;200;	;коэффициент на "sprint" бег (умножается walk_power, walk_weight_power)
+stand_power				=  -0.010								
+walk_power				=	0.000001				;умешьшение силы за секнду во время ходьбы без учета веса ноши
+walk_weight_power		=	0.000005;			;умешьшение силы за секнду во время ходьбы с учетом веса ноши, для максимального допустимого веса
+overweight_walk_k		=	2.5;9	;10				;коэффициент влияние перегрузки ноши (умножается на walk_weight_power)
+accel_k					=	30;5					;коэффициент на бег (умножается walk_power, walk_weight_power)
+sprint_k				=	750;150;185;180;200;	;коэффициент на "sprint" бег (умножается walk_power, walk_weight_power)
 
 ; хромота
 limping_health_begin =	0.1		;порог здоровья меньше которого актер начинает хромать
