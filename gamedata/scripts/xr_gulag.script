@@ -1173,6 +1173,10 @@ function setup_gulag_and_logic_on_spawn( obj, st, sobject, stype, loaded )
 			local need_setup_restrictors = strn.gulag.Object_begin_job[obj:id()]
 
 			strn:initialize_if_needed()
+            
+            -- Add from cop: start
+			db.offline_objects[obj.id] = {}
+			-- Add from cop: end
 
 			strn.gulag:object_setup_online( obj:id(), obj, need_setup_logic, need_setup_restrictors )
 
