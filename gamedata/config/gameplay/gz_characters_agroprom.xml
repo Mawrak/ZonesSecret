@@ -940,7 +940,7 @@
 		
 		<money min="600" max="2000" infinitive="0" />
 					
-#include "gameplay\character_dialogs.xml"
+    <start_dialog>dm_hello_dialog</start_dialog>
 
 	</specific_character>
 	
