@@ -21,5 +21,9 @@
     <string id="gz_labx15">
       <text>Лаборатория X15</text>
     </string>
+    
+    <string id="tips_labx16switcher_press">
+      <text>Рубильник</text>
+    </string>
 		
 </string_table>
