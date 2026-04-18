@@ -4,7 +4,7 @@
 		<text>В создании модификации участвовали:</text>
 	</string>
 	<string id="gz_team">
-		<text>GZ Mod Team:</text>
+		<text>GZ Mod Team</text>
 	</string>
 	<string id="gz_beersek">
 		<text>Сергей "BeeRsek" Ткаченко - локации, квесты, сюжет</text>
@@ -21,10 +21,8 @@
 	
 	
 	
-	
-	
 	<string id="gz_storyline">
-		<text>Разработка сюжета:</text>
+		<text>Разработка сюжета</text>
 	</string>
 	<string id="gz_tepa">
 		<text>Сергей "TeIIa" Теплов</text>
@@ -32,7 +30,7 @@
 	<string id="gz_max">
 		<text>Максим "MaxOFF"</text>
 	</string>
-	<string id="gz_otis">
+	<string id="gz_otis_2">
 		<text>Федор "Otis" Римарович</text>
 	</string>
 	<string id="gz_azrael">
@@ -68,17 +66,21 @@
 	</string>
 	
 	
+    <string id="gz_new_teplov">
+		<text>Сергей Теплов</text>
+	</string>
+	
 	
 
 
 	<string id="st_stuff">
-		<text>GSC:</text>
+		<text>Создатели игры:</text>
 	</string>
 	<string id="st_producer">
 		<text>Продюсер</text>
 	</string>
 	<string id="st_gsc">
-		<text>Сергей "-GSC-" Григорович</text>
+		<text>Сергей Григорович</text>
 	</string>
 	<string id="st_project_lead">
 		<text>Лидер проекта</text>
