@@ -16,6 +16,15 @@ boost_health_restore	 = 0.01
 boost_bleeding_restore	 = 0.005
 use_sound			     = interface\inv_medkit
 
+; eatable item
+eat_health			= 0.6
+eat_satiety			= 0
+eat_power			= 0.0
+eat_radiation		= -0.1
+wounds_heal_perc	= 0.3
+eat_portions_num	= 1
+eat_max_power		= 0.1
+
 [medkit_army]:medkit ; Синяя аптечка
 $spawn 				     = "food and drugs\medkit_army"
 visual				     = equipments\item_aptechka3.ogf
@@ -30,6 +39,15 @@ cost				     = 650
 boost_time				 = 5.0
 boost_health_restore	 = 0.02
 boost_bleeding_restore	 = 0.02
+
+; eatable item
+eat_health			= 1.0
+eat_satiety			= 0
+eat_power			= 0.0
+eat_radiation		= -0.1
+wounds_heal_perc	= 0.6
+eat_portions_num	= 1
+eat_max_power		= 0.1
 
 [medkit_scientic]:medkit ; Желтая аптечка
 $spawn 				     = "food and drugs\medkit_scientic"
@@ -46,6 +64,15 @@ boost_time				 = 10.0
 boost_health_restore	 = 0.01
 boost_radiation_restore	 = 0.01
 boost_bleeding_restore	 = 0.005
+
+; eatable item
+eat_health			= 1.0
+eat_satiety			= 0
+eat_power			= 0.0
+eat_radiation		= -1.0
+wounds_heal_perc	= 0.3
+eat_portions_num	= 1
+eat_max_power		= 0.1
 
 [bandage]:items_base    ; Бинт
 $spawn 				     = "food and drugs\bandage"
@@ -64,6 +91,14 @@ boost_time			 	 = 5.0
 boost_bleeding_restore	 = 0.02
 use_sound			     = interface\inv_bandage
 
+; eatable item
+eat_health = 	0.14
+eat_satiety = 	0
+eat_power = 	0.0
+eat_radiation = 0.0
+wounds_heal_perc = 0.5
+eat_portions_num = 1	;100
+
 [drug_booster]:items_base ; Геркулес
 $spawn 				     = "food and drugs\drug_booster"
 class				     = II_MEDKI
@@ -79,6 +114,10 @@ cost				     = 200
 boost_time			     = 300.0
 boost_max_weight	     = 20.0
 use_sound			     = interface\inv_softdrink
+
+eat_alcohol				= 0.0
+eat_power			= 3.0
+eat_max_power		= 3.0
 
 [drug_psy_blockade]:items_base ; Пси-блокада
 $spawn 				     = "food and drugs\drug_psy_blockade"
@@ -96,6 +135,9 @@ boost_time			     = 60.0
 boost_telepat_protection = 0.05
 use_sound			     = interface\inv_pills
 
+eat_health = 1.0
+eat_alcohol	= 0.1
+
 [drug_anabiotic]:items_base ; Анабиотик
 $spawn 				     = "food and drugs\drug_anabiotic"
 class				     = II_MEDKI
@@ -109,6 +151,9 @@ inv_grid_x			     = 11
 inv_grid_y			     = 29
 cost				     = 1000
 use_sound			     = interface\inv_pills
+
+eat_health = 1.0
+eat_alcohol	= 0.5
 
 [antirad]:items_base     ; Антирад
 $spawn 				     = "food and drugs\antirad"
@@ -127,6 +172,8 @@ boost_time			     = 10.0
 boost_radiation_restore	 = 0.01
 use_sound			     = interface\inv_pills
 
+eat_radiation = -1.0
+
 [drug_radioprotector]:items_base ; Радиопротектор
 $spawn 				        = "food and drugs\drug_radioprotector"
 class				        = II_MEDKI
@@ -143,6 +190,9 @@ boost_time					= 60.0
 boost_radiation_protection	= 0.015
 use_sound			        = interface\inv_pills
 
+eat_radiation = -0.5
+
+
 [drug_coagulant]:items_base
 $spawn 				    = "food and drugs\drug_coagulant"
 class				    = II_MEDKI
@@ -158,3 +208,11 @@ cost				    = 200
 boost_time				= 20.0
 boost_bleeding_restore	= 0.03 
 use_sound			    = interface\inv_pills
+
+; eatable item
+eat_health = 	0
+eat_satiety = 	0
+eat_power = 	0.0
+eat_radiation = 0.0
+wounds_heal_perc = 5.5
+eat_portions_num = 1	;100

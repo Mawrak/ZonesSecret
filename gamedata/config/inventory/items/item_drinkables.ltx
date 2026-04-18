@@ -20,8 +20,10 @@ break_sound			    = material\bottle\collide\bottle_break_1
 boost_time				= 5.0
 boost_radiation_restore	= 0.005
 eat_alcohol				= 0.1
-eat_satiety				= -0.2
+eat_satiety				= 0
 eat_thirst			    = 0.2
+eat_radiation	= -0.3
+eat_health		= 0.01
 use_sound			    = interface\inv_vodka
 
 [water]:items_base      ; Ѕутылка воды
@@ -45,6 +47,8 @@ break_particles		    = explosions\explosion_bottle
 break_sound			    = material\bottle\collide\bottle_break_1
 eat_thirst			    = -1.0
 use_sound			    = interface\inv_vodka
+eat_power			= 0.5
+eat_health = 0.15
 
 [energy_drink]:vodka    ; Ёнергетический напиток
 $spawn 				    = "food and drugs\energy_drink"
@@ -65,4 +69,6 @@ boost_radiation_restore	= 0
 boost_power_restore		= 0.005
 eat_thirst			    = -0.35
 eat_alcohol				= 0.0
+eat_power			= 1.0
+eat_max_power		= 0.2
 use_sound			    = interface\inv_softdrink
