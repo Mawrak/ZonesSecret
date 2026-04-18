@@ -1,0 +1,12 @@
+
+
+<ui_texture>
+    <file_name>ui\ui_actor_monsters_PDA_2</file_name>
+
+    <texture id="ui_npc_monster_cat" x="0" y="0" width="393" height="200" />
+	<texture id="ui_npc_monster_zombie" x="0" y="200" width="393" height="200" />
+	<texture id="ui_npc_monster_fracture" x="393" y="200" width="393" height="200" />
+    <texture id="ui_npc_monster_chimera" x="0" y="600" width="393" height="200" />
+
+        
+</ui_texture>
