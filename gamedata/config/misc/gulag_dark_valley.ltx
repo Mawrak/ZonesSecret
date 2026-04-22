@@ -112,19 +112,13 @@ active = walker@dv_svobbase_guard_cheh_walker1
 [walker@dv_svobbase_guard_cheh_walker1]
 path_walk = guard_cheh_walker1_walk
 path_look = guard_cheh_walker1_look
-on_info = {+dv_cheh_wait} walker@dv_svobbase_guard_cheh_walker2
-
-[walker@dv_svobbase_guard_cheh_walker2]
-path_walk = guard_cheh_walker1_walk
-path_look = guard_cheh_walker1_look
-meet = no_meet
-on_info = {=actor_in_zone(dv_guard_cheh_restrictor)} walker@dv_svobbase_guard_cheh_walker3
+on_info = {+dv_cheh_wait} walker@dv_svobbase_guard_cheh_walker3
 
 [walker@dv_svobbase_guard_cheh_walker3]
 path_walk = guard_cheh_walker3_walk
 path_look = guard_cheh_walker3_look
 meet = no_meet
-on_info = {=actor_out_zone(dv_guard_cheh_restrictor)} walker@dv_svobbase_guard_cheh_walker2
+
 ;-----------------------------------------------------------------------
 ;---------------Атака на базу греха----------
 

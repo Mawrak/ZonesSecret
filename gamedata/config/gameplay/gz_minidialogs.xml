@@ -406,16 +406,11 @@
             <phrase id="0">
                 <text>Стой! Тебе нельзя, посторонним вход воспрещен!</text>
                 <next>11</next>
-                <next>12</next>
             </phrase>
             <phrase id="11">
         <has_info>go_to_lager_dv_done</has_info>
         <give_info>dv_cheh_wait</give_info>
-                <text>Мне можно,меня ждут.</text>
-				<action>dialogs.break_dialog</action>
-            </phrase>
-            <phrase id="12">
-                <text>Понял, не дурак.</text>
+                <text>Мне можно, меня ждут.</text>
 				<action>dialogs.break_dialog</action>
             </phrase>
 	</phrase_list>
