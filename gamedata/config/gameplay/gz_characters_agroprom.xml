@@ -931,6 +931,7 @@
 			device_torch \n
                         und_agr_cap_cross \n
                         und_agr_cap_jeton \n
+                        racya_b \n
 
 #include "gameplay\character_items.xml" \n
 #include "gameplay\character_criticals_3.xml"
