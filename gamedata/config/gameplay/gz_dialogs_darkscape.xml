@@ -12,7 +12,6 @@
  
  <dialog id="dialog_ds_cap">
   <dont_has_info>ds_sumka_ld_start</dont_has_info>
-  <dont_has_info>ds_sumka_ld_otkaz</dont_has_info>
   <init_func>dialogs_new_system.ds_cap</init_func>
  </dialog>
 
