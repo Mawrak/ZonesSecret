@@ -384,7 +384,7 @@
 			
 		<start_dialog>hello_dialog</start_dialog>
 		<actor_dialog>dialog_about_cap_def_2</actor_dialog>
-		<actor_dialog>dialog_about_raciya_def_5</actor_dialog>
+		<actor_dialog>dialog_about_raciya_def_4</actor_dialog>
 #include "gameplay\character_dialogs.xml"
 	</specific_character>
 
@@ -561,7 +561,7 @@
 			
 		<start_dialog>hello_dialog</start_dialog>
 		<actor_dialog>dialog_about_cap_def_2</actor_dialog>
-		<actor_dialog>dialog_about_raciya_def_2</actor_dialog>
+		<actor_dialog>dialog_about_raciya_def_1</actor_dialog>
 #include "gameplay\character_dialogs.xml"
 	</specific_character>
 
@@ -596,7 +596,7 @@
 			
 		<start_dialog>hello_dialog</start_dialog>
 		<actor_dialog>dialog_about_cap_def_2</actor_dialog>
-		<actor_dialog>dialog_about_raciya_def_2</actor_dialog>
+		<actor_dialog>dialog_about_raciya_def_4</actor_dialog>
 #include "gameplay\character_dialogs.xml"
 	</specific_character>
 
@@ -631,7 +631,7 @@
 			
 		<start_dialog>hello_dialog</start_dialog>
 		<actor_dialog>dialog_about_cap_def_2</actor_dialog>
-		<actor_dialog>dialog_about_raciya_def_2</actor_dialog>
+		<actor_dialog>dialog_about_raciya_def_5</actor_dialog>
 #include "gameplay\character_dialogs.xml"
 	</specific_character>
 	
@@ -667,7 +667,7 @@
 			
 		<start_dialog>hello_dialog</start_dialog>
 		<actor_dialog>dialog_about_cap_def_2</actor_dialog>
-		<actor_dialog>dialog_about_raciya_def_2</actor_dialog>
+		<actor_dialog>dialog_about_raciya_def_4</actor_dialog>
 #include "gameplay\character_dialogs.xml"
 	</specific_character>
 

@@ -78,13 +78,14 @@
 	
     <dialog id="dialog_about_raciya_def_1">
         <has_info>dlg_actor_need_raciya</has_info>
+		<dont_has_info>talk_with_baseleader_done</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Слушай, не знаешь у кого можно взять рацию?</text>
                 <next>1</next>
             </phrase>
             <phrase id="1">
-                <text>Рацию? Спроси у Варяга, торговца нашего, у него-то наверно есть.</text>
+                <text>Рацию? Спроси у Миклухи, у него-то наверно есть.</text>
                 <next>2</next>
             </phrase>
             <phrase id="2">
@@ -96,14 +97,14 @@
 	
     <dialog id="dialog_about_raciya_def_2">
         <has_info>dlg_actor_need_raciya</has_info>
-        <dont_has_info>find_raciya_done</dont_has_info>
+        <dont_has_info>talk_with_baseleader_done</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Слушай, не знаешь у кого можно взять рацию?</text>
                 <next>1</next>
             </phrase>
             <phrase id="1">
-                <text>У Лукаша есть, только он вряд ли тебе ее даст.</text>
+                <text>У Миклухи есть, только он вряд ли тебе ее даст.</text>
                 <next>2</next>
             </phrase>
             <phrase id="2">
@@ -115,13 +116,14 @@
 	
     <dialog id="dialog_about_raciya_def_3">
         <has_info>dlg_actor_need_raciya</has_info>
+        <dont_has_info>talk_with_baseleader_done</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Слушай, не знаешь у кого можно взять рацию?</text>
                 <next>1</next>
             </phrase>
             <phrase id="1">
-                <text>У Дядьки Яра может быть завалялась где-то.</text>
+                <text>У Миклухи может быть завалялась где-то.</text>
                 <next>2</next>
             </phrase>
             <phrase id="2">
@@ -133,6 +135,7 @@
 	
     <dialog id="dialog_about_raciya_def_4">
         <has_info>dlg_actor_need_raciya</has_info>
+        <dont_has_info>talk_with_baseleader_done</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Слушай, не знаешь у кого можно взять рацию?</text>
@@ -151,13 +154,14 @@
 	
     <dialog id="dialog_about_raciya_def_5">
         <has_info>dlg_actor_need_raciya</has_info>
+        <dont_has_info>talk_with_baseleader_done</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Слушай, не знаешь у кого можно взять рацию?</text>
                 <next>1</next>
             </phrase>
             <phrase id="1">
-                <text>Деньги есть? Тогда к торговцу сходи, думаю договоритесь.</text>
+                <text>К Миклухе сходи, думаю договоритесь.</text>
                 <next>2</next>
             </phrase>
             <phrase id="2">
@@ -169,13 +173,14 @@
 	
     <dialog id="dialog_about_raciya_def_6">
         <has_info>dlg_actor_need_raciya</has_info>
+        <dont_has_info>talk_with_baseleader_done</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Слушай, не знаешь у кого можно взять рацию?</text>
                 <next>1</next>
             </phrase>
             <phrase id="1">
-                <text>Яр, может, смастерит тебе за отдельную плату.</text>
+                <text>Яр может смастерить, но не без разрешения командира.</text>
                 <next>2</next>
             </phrase>
             <phrase id="2">
@@ -186,6 +191,7 @@
     </dialog>
 	
     <dialog id="dialog_about_raciya_def_7">
+        <dont_has_info>talk_with_baseleader_done</dont_has_info>
         <has_info>dlg_actor_need_raciya</has_info>
         <phrase_list>
             <phrase id="0">
@@ -204,6 +210,7 @@
     </dialog>
 	
     <dialog id="dialog_about_raciya_def_8">
+        <dont_has_info>talk_with_baseleader_done</dont_has_info>
         <has_info>find_raciya_start</has_info>
 		<dont_has_info>find_raciya_done</dont_has_info>
         <phrase_list>
@@ -212,7 +219,7 @@
                 <next>1</next>
             </phrase>
             <phrase id="1">
-                <text>К Кулибину нашему сходи, за пузырь сделает тебе... Хе-хе...</text>
+                <text>К Кулибину нашему сходи, за пузырь сделает тебе... Хе-хе... Шутка.</text>
                 <next>2</next>
             </phrase>
             <phrase id="2">
@@ -223,6 +230,7 @@
     </dialog>
 	
     <dialog id="dialog_about_raciya_def_9">
+        <dont_has_info>talk_with_baseleader_done</dont_has_info>
         <has_info>find_raciya_start</has_info>
 		<dont_has_info>find_raciya_done</dont_has_info>
         <phrase_list>
@@ -231,7 +239,7 @@
                 <next>1</next>
             </phrase>
             <phrase id="1">
-                <text>С Лукашом, командиром блокпоста поговори, я у него видел.</text>
+                <text>С Миклухой поговори, я у него видел.</text>
                 <next>2</next>
             </phrase>
             <phrase id="2">
@@ -242,17 +250,16 @@
     </dialog>
 	
     <dialog id="dialog_about_raciya_def_10">
+        <dont_has_info>talk_with_baseleader_done</dont_has_info>
         <has_info>find_raciya_start</has_info>
-		<dont_has_info>find_raciya_done</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Здорова. Не знаешь, где можно достать рацию?</text>
                 <next>1</next>
             </phrase>
             <phrase id="1">
-                <text>У Чехова спрашивал?</text>
+                <text>У Миклухи спрашивал?</text>
                 <next>21</next>
-                <next>22</next>
             </phrase>
             <phrase id="21">
 		<dont_has_info>chehov_dialog_raciya_done</dont_has_info>
@@ -264,19 +271,6 @@
                 <next>2111</next>
             </phrase>
             <phrase id="2111">
-                <text>Хорошо.</text>
-				<action>dialogs.break_dialog</action>
-            </phrase>
-           <phrase id="22">
-		<has_info>chehov_dialog_raciya_done</has_info>
-                <text>Да. Сказал у механика.</text>
-                <next>221</next>
-            </phrase>
-           <phrase id="221">
-                <text>Так иди к Яру. Еще можешь у Лукаша спросить...</text>
-                <next>2211</next>
-            </phrase>
-            <phrase id="2211">
                 <text>Хорошо.</text>
 				<action>dialogs.break_dialog</action>
             </phrase>
