@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="windows-1251" ?>
 <game_dialogs>
     <dialog id="dialog_about_cap_def_1">
-        <dont_has_info>find_commander_done</dont_has_info>
+        <dont_has_info>kep_speak_done</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Не видел сталкера? Здоровый, небритый, шрам на роже, с оружием.</text>
@@ -19,7 +19,7 @@
     </dialog>
 	
     <dialog id="dialog_about_cap_def_2">
-        <dont_has_info>find_commander_done</dont_has_info>
+        <dont_has_info>kep_speak_done</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Не видел сталкера? Здоровый, небритый, шрам на роже, с оружием.</text>
@@ -37,7 +37,7 @@
     </dialog>
 	
     <dialog id="dialog_about_cap_def_3">
-        <dont_has_info>find_commander_done</dont_has_info>
+        <dont_has_info>kep_speak_done</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Не видел сталкера? Здоровый, небритый, шрам на роже, с оружием.</text>
@@ -55,7 +55,7 @@
     </dialog>
 	
     <dialog id="dialog_about_cap_def_4">
-        <dont_has_info>find_commander_done</dont_has_info>
+        <dont_has_info>kep_speak_done</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Не видел сталкера? Здоровый, небритый, шрам на роже, с оружием.</text>
