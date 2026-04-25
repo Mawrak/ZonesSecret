@@ -114,22 +114,22 @@
 		</objective>
 	</game_task>
 <game_task id="find_doc_medkit_case" prio="10">
-	<title>Найти мед.набор</title>
+	<title>Найти мед. набор</title>
 		<objective>
-			<text>Принести мед.набор Доку</text>
+			<text>Принести мед. набор Доку</text>
 			<icon>ui_icons_storyline_med_nabor</icon>
                         <article>quest_find_medkit_case_doc</article>
 			<infoportion_complete>give_doc_medkit_case</infoportion_complete>
 			<function_fail>gz_prologue.is_actor_enemy_ds_neutlager</function_fail>
 		</objective>
 		<objective>
-			<text>Найти мед.набор</text>
+			<text>Найти мед. набор</text>
 			<icon>ui_icons_storyline_find_tainik</icon>
                         <article>quest_find_medkit_case_doc</article>
 			<infoportion_complete>find_doc_medkit_case</infoportion_complete>
 		</objective>
 		<objective>
-			<text>Принести мед.набор Доку</text>
+			<text>Принести мед. набор Доку</text>
 			<icon>ui_icons_storyline_find_tainik</icon>
 			<infoportion_complete>give_doc_medkit_case</infoportion_complete>
 		</objective>

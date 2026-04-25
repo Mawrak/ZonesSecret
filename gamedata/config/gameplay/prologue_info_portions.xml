@@ -442,6 +442,7 @@
 		<article>storyline_soz_stalk_info</article>
 	</info_portion>
 	<info_portion id="find_raciya_done"></info_portion>
+    <info_portion id="find_raciya_in_dsneutlager_donq"></info_portion>
 	<info_portion id="oka_dialog1_start">
 		<task>gz_prologue.oka_dialog1</task>
 	</info_portion>

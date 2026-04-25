@@ -104,6 +104,8 @@
 			wpn_fort \n
 			ammo_9x18_fmj \n
 			device_torch \n
+            
+            team_diary \n
 		</supplies>
 		
 		<start_dialog>hello_dialog</start_dialog>		
@@ -132,6 +134,7 @@
 			wpn_pm \n
 			ammo_9x18_fmj \n
 			device_torch \n
+            quest_medkit_case_doc \n
 		</supplies>
 		
 		<start_dialog>hello_dialog</start_dialog>		
@@ -731,7 +734,6 @@
 		<actor_dialog>dialog_ds_neut_doctor_about_rac</actor_dialog>
         <actor_dialog>dialog_doc_medkit_case</actor_dialog>
         <actor_dialog>dialog_doc_medkit_case_2</actor_dialog>
-        <actor_dialog>dialog_doc_medkit_case_3</actor_dialog>
         <actor_dialog>tm_ds_neutlager_doctor_dialog</actor_dialog>
         <actor_dialog>tm_ds_neutlager_doctor_reward</actor_dialog>
         <actor_dialog>dialog_doc_about_shved</actor_dialog>
