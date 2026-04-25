@@ -11,4 +11,4 @@ on_timer = 100| %+play_snd_rgd5_explode =run_postprocess(deadcity_wake)%  sr_idl
 on_timer = 100| %=teleport_actor(yan_gg_walk:yan_gg_look)% sr_idle4
 
 [sr_idle4]
-on_timer = 8000| nil %+yan_endgame_spawn_predately%
+on_timer = 8000| nil %=teleport_actor(yan_gg_walk:yan_gg_look) +yan_endgame_spawn_predately%
