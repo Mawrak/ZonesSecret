@@ -244,16 +244,8 @@
                 <has_info>dialog_rf_beglec_done</has_info>
                 <dont_has_info>find_rf_art_start</dont_has_info>
         <phrase_list>
- <phrase id="0">
-                <text>Здравствуйте.</text>
-                <next>01</next>
-            </phrase>
-            <phrase id="01">
-                <text>Приветствую, сынок. Не видел тебя здесь раньше. Ты кто таков и зачем пожаловал?</text>
-                <next>1</next>
-            </phrase>
-            <phrase id="1">
-                <text>Да я, отец, за помощью к тебе пришел. Очень помощь нужна и быстро.</text>
+            <phrase id="0">
+                <text>Здравствуйте... Я за помощью к вам пришел.</text>
                 <next>2</next>
             </phrase>
             <phrase id="2">
@@ -285,23 +277,7 @@
                 <next>9</next>
             </phrase>
             <phrase id="9">
-                <text>Отец, говори быстрее - время же на исходе! Если не успею, то...</text>
-                <next>10</next>
-            </phrase>
-            <phrase id="10">
-                <text>Успокойся. Тот артефакт можно найти лишь ночью, так что... все равно сейчас твоему другу не помочь.</text>
-                <next>11</next>
-            </phrase>
-                  <phrase id="11">
-                <text>Почему именно ночью?</text>
-                <next>12</next>
-            </phrase>
-                  <phrase id="12">
-                <text>dialog_rf_lesnik_3</text>
-                <next>13</next>
-            </phrase>
-                 <phrase id="13">
-                <text>Понял. Темное это дело. Тогда где этот артефакт лежит?</text>
+                <text>Где мне найти этот артефакт? Время на исходе! Если не успею, то...</text>
                 <next>14</next>
             </phrase>
                  <phrase id="14">
@@ -309,7 +285,7 @@
                 <next>15</next>
             </phrase>
                    <phrase id="15">
-                <text>Хорошо. Спасибо, отец, за подсказку. </text>
+                <text>Хорошо. Благодарю вас за подсказку.</text>
                 <give_info>find_rf_art_start</give_info>
             </phrase>
 	</phrase_list>
@@ -491,7 +467,7 @@
                 <next>8</next>
             </phrase> 
              <phrase id="8">
-                <text>Знаете, профессор, я подумал и решил уйти из Зоны. Пусть даже я никогда и не узнаю правды про свою операцию. Уже слишком много людей погибло из-за этого и я не хочу стать следующим.</text>
+                <text>Знаете, профессор, я подумал и решил уйти из Зоны. Пусть даже я никогда и не узнаю правды про свою операцию. Уже слишком много людей погибло из-за этого, и я не хочу стать следующим.</text>
  
                 <next>9</next>
             </phrase>

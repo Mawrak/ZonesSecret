@@ -3463,3 +3463,14 @@ function give_item_red_container(actor, npc, p)
     alife():create("pz_merclager_documents", db.actor:position(), db.actor:level_vertex_id(), db.actor:game_vertex_id(), db.actor:id())
 
 end
+
+
+function spawn_tulpan_fixed()
+    
+    local lupan1 = alife():create("quest_rf_art", vector():set(203.343,-7.761,-114.465), 166221, 525)
+    local lupan2 = alife():create("quest_rf_art", vector():set(229.572,-6.847,-122.657), 182704, 525)
+    local lupan3 = alife():create("quest_rf_art", vector():set(244.461,-6.466,-94.119), 191209, 525)
+    local lupan4 = alife():create("quest_rf_art", vector():set(220.266,-11.268,-101.170), 177036, 525)
+    
+
+end
