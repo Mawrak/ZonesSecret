@@ -35,6 +35,7 @@
 		<actor_dialog>dialog_pz_isk_leader_hitman_dialog</actor_dialog>
 		<actor_dialog>dialog_pz_isk_leader_dialog3</actor_dialog>
 		<actor_dialog>dialog_pz_isk_after_lab_dialog</actor_dialog>
+        <actor_dialog>dialog_gz_hacker</actor_dialog>
 	</specific_character>
 	
 	

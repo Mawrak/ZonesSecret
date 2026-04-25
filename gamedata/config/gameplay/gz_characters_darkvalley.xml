@@ -195,7 +195,7 @@
 		<actor_dialog>dialog_about_raciya_yar2</actor_dialog>
 		<actor_dialog>dialog_about_raciya_yar3</actor_dialog>
 		<actor_dialog>quest_rabota</actor_dialog>
-	<actor_dialog>yar_repair_dialog</actor_dialog>
+        <actor_dialog>dialog_gz_hacker</actor_dialog>
 	<actor_dialog>dialog_about_raciya_yar_alt</actor_dialog>
 	<actor_dialog>dialog_dv_loki_case_open</actor_dialog>
 #include "gameplay\character_dialogs.xml"

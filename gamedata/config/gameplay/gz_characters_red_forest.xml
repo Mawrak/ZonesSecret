@@ -188,7 +188,7 @@
 
                 <start_dialog>dialog_rf_pd_lead</start_dialog>
                 <actor_dialog>dialog_kom_pd</actor_dialog>
-                <actor_dialog>rf_repair_dialog</actor_dialog>
+                <actor_dialog>dialog_gz_hacker</actor_dialog>
                 <actor_dialog>dialog_ld_find_group</actor_dialog>
                 <actor_dialog>dialog_ld_find_group_done_2</actor_dialog>
 		                <actor_dialog>dialog_rf_noyt</actor_dialog>

@@ -62,6 +62,7 @@
 		
 		<start_dialog>dialog_kain_about_manik_1</start_dialog>
 		<actor_dialog>dialog_kain_about_manik_2</actor_dialog>
+        <actor_dialog>dialog_gz_hacker</actor_dialog>
 		
 #include "gameplay\character_criticals_3.xml"
 					

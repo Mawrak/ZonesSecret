@@ -61,6 +61,7 @@
 #include "gameplay\character_criticals_6.xml"
 		
 		#include "gameplay\character_dialogs.xml"
+        <actor_dialog>dialog_gz_hacker</actor_dialog>
 	</specific_character>
 	
 	<specific_character id="agr_dolgbase_trader_mityai" team_default = "1">
