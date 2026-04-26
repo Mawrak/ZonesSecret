@@ -17,4 +17,7 @@ on_timer = 5000| sr_idle5 %=run_postprocess(deadcity_wake) =travel_in_time_9 =te
 on_timer = 5000| sr_idle6 %+gz_ds_iskateli_cutscene -gz_ds_heli_cutscene% 
 
 [sr_idle6]
-on_timer = 10000| nil %=play_snd(actor\pain_222) =hud_on%
+on_timer = 10000| sr_idle7 %=play_snd(actor\pain_222) =hud_on%
+
+[sr_idle7]
+on_timer = 1000| %=save_start_all% nil

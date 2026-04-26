@@ -3451,6 +3451,16 @@ function hud_on()
 	get_console():execute("hud_draw on")
 end
 
+function save_start_all()
+
+    if not has_alife_info("saved_all") then
+    
+        db.actor:give_info_portion("saved_all")
+        get_console():execute("save all")
+        
+    end
+end
+
 function yan_block_door_me()
 	local snd = sound_object([[characters_voice\soz\gz_yantar\gg_yan_block]]) 
 snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector():set(0, 0, 0), 2.0) 
