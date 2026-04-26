@@ -155,6 +155,24 @@ function motivator_binder:clear_callbacks()
 end
 
 function motivator_binder:hit_callback(obj, amount, local_direction, who, bone_index)
+
+    if ( obj and obj:id()~=db.actor:id() and IsStalker(obj)) then
+        if (obj:object("invulnerable") ~= nil) and (obj:relation(db.actor) ~= game_object.enemy) then
+            --mawrak invincibility / invulnerability
+            --news_manager.send_tip(db.actor, "NPC CANNOT BE DAMAGED OR KILLED!", nil)
+            --obj.health = 1
+            obj:invulnerable(true)
+        else
+        
+            obj:invulnerable(false)
+            
+        end
+        
+        
+        
+    end
+
+
 	-- FIXME: коллбеки неплохо было бы регистрировать в общем storage, а не посхемно...
 	-- просто всегда ставить их при включении схемы и снимать при отключении.
 	if self.st.active_section then
