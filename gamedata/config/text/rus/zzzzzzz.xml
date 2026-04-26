@@ -36,8 +36,25 @@
     </string>
         
         
-        <string id="Fuelcan">
+    <string id="Fuelcan">
       <text>Топливо</text>
     </string>
+    
+    <string id="kb_turn_engine">
+      <text>Завести двигатель</text>
+    </string>
+    
+    <string id="kb_grp_weapons">
+      <text>БОЙ</text>
+    </string>
+    
+    <string id="kb_grp_inventory">
+      <text>ИНВЕНТАРЬ</text>
+    </string>
+    
+    <string id="gz_yan_canal_message">
+      <text>Вода явно заражена!!</text>
+    </string>
+    
         
 </string_table>

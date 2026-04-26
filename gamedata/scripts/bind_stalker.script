@@ -97,6 +97,10 @@ function actor_binder:net_spawn(data)
     
     --this is needed to prevent crashes due to broken zone objects
     if not has_alife_info("gz_ds_hack") then
+    
+        alife():create("vehicle_niva",vector():set(-576.449, -1.679, -429.959),2059,0)
+        alife():create("vehicle_niva2",vector():set(-23.927, -0.003, -2.721),55099,474)
+    
         get_console():execute("hud_draw off")
         db.actor:give_info_portion("gz_ds_hack")
         for a = 1, 65535 do
