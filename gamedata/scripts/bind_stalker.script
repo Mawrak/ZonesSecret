@@ -122,6 +122,7 @@ function actor_binder:net_spawn(data)
                 
             end
         end
+        ui_load_dialog.delete_save_game("all")
     else
         get_console():execute("hud_draw on")
     end
