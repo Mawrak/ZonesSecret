@@ -518,6 +518,7 @@
 			ammo_9x19_fmj\n
 			device_torch \n
                         pda_ld_code \n
+                        quest_medkit_case_doc \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
