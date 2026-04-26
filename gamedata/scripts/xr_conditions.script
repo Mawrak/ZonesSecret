@@ -1418,3 +1418,7 @@ function killer_suit_update()
         --db.actor:disable_info_portion("actor_is_killer")
    end 
 end
+
+function actor_has_item_med()
+	return db.actor:object("quest_medkit_case_doc") ~= nil
+end

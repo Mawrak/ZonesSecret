@@ -65,7 +65,7 @@
  </dialog>
 	
  <dialog id="dialog_doc_medkit_case_2">
-  <dont_has_info>give_doc_medkit_case</dont_has_info>
+  <precondition>xr_conditions.actor_has_item_med</precondition>
   <has_info>find_doc_medkit_case</has_info>
   <has_info>dialog_ds_quest_doc_medkit_case_alt</has_info>
   <init_func>dialogs_new_system.ds_doc_medkit_case_2</init_func>           
