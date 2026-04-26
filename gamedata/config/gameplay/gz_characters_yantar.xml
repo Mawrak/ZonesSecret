@@ -58,6 +58,7 @@
 			[spawn] \n
 			wpn_hk416 \n
 			ammo_5.56x45_ap = 1 \n
+            invulnerable \n
 		</supplies>
 		
 		<start_dialog>dialog_kain_about_manik_1</start_dialog>
@@ -89,6 +90,7 @@
 			[spawn] \n
 			wpn_hk416 \n
 			ammo_5.56x45_ap = 1 \n
+            invulnerable \n
 		</supplies>
 		
 		<start_dialog>dialog_kain_about_zone</start_dialog>
@@ -688,6 +690,7 @@
 			[spawn] \n
 			wpn_hk416 \n
 			ammo_5.56x45_ap = 1 \n
+            invulnerable \n
 		</supplies>
 		
 		<start_dialog>dialog_yan_assist</start_dialog>
@@ -717,6 +720,7 @@
 			[spawn] \n
 			wpn_hk416 \n
 			ammo_5.56x45_ap = 3 \n
+            invulnerable \n
 		</supplies>
 
 		<actor_dialog>dialog_yan_scien_lead_in_lager</actor_dialog>
@@ -747,6 +751,7 @@
 			[spawn] \n
 			wpn_hk416 \n
 			ammo_5.56x45_ap = 3 \n
+
 		</supplies>
 		
 		
@@ -938,6 +943,7 @@
 		<crouch_type>-1</crouch_type>
 		<supplies>
 			[spawn] \n
+            invulnerable \n
 		</supplies>
 
 		<actor_dialog>dialog_scien_datchiki_1</actor_dialog>
@@ -965,6 +971,7 @@
 		<crouch_type>-1</crouch_type>
 		<supplies>
 			[spawn] \n
+            invulnerable \n
 		</supplies>
 
 		
@@ -1336,6 +1343,7 @@
 			wpn_colt_m1 \n
 			ammo_11.43x23_fmj = 1 \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
 		</supplies>
@@ -1702,6 +1710,7 @@
 			wpn_beretta \n
 			ammo_9x19_fmj = 1 \n
 			device_torch \n
+            invulnerable \n
 		</supplies>
 		<actor_dialog>dialog_ocelot_rob_good</actor_dialog>
 		<actor_dialog>dialog_ocelot_rob_bad</actor_dialog>
@@ -1762,6 +1771,7 @@
 			wpn_g36_m1 \n
 			ammo_5.56x45_ss190 \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
 		</supplies>
@@ -1792,6 +1802,7 @@
 			wpn_g36_m1 \n
 			ammo_5.56x45_ss190 \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
 		</supplies>

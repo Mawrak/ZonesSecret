@@ -23,6 +23,7 @@
 
 		<supplies>
 			[spawn] \n
+            invulnerable \n
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
 		</supplies>
@@ -54,6 +55,7 @@
 
 		<supplies>
 			[spawn] \n
+            invulnerable \n
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
 		</supplies>
@@ -83,6 +85,7 @@
 
 		<supplies>
 			[spawn] \n
+            invulnerable \n
 			device_torch \n			
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
@@ -404,6 +407,7 @@
 			ammo_11.43x23_fmj \n			
 			wpn_ak74 \n
 			ammo_5.45x39_fmj \n
+            invulnerable \n
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
 		</supplies>
@@ -773,6 +777,7 @@
 		<crouch_type>0</crouch_type>
 		<supplies>
 			[spawn] \n
+            invulnerable \n
 			device_torch \n			
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
@@ -813,6 +818,7 @@
 		<crouch_type>-1</crouch_type>
 		<supplies>
 			[spawn] \n
+            invulnerable \n
 			wpn_sig220 \n
 			ammo_11.43x23_fmj \n
 			wpn_ak74 \n
@@ -851,6 +857,7 @@
 		<crouch_type>0</crouch_type>
 		<supplies>
 			[spawn] \n
+            invulnerable \n
 			wpn_sig220 \n
 			ammo_11.43x23_fmj \n
 			wpn_ak105 \n
@@ -889,6 +896,7 @@
 		<crouch_type>0</crouch_type>
 		<supplies>
 			[spawn] \n
+            invulnerable \n
 			wpn_colt1911 \n
 			ammo_11.43x23_fmj \n
 			wpn_ak74 \n
@@ -1034,6 +1042,7 @@
 			[spawn] \n
 			wpn_colt1911 \n
 			ammo_11.43x23_fmj \n
+            invulnerable \n
 		</supplies>
 
                 <start_dialog>rf_scien_bef_meet</start_dialog> 
@@ -1485,6 +1494,7 @@
 			wpn_akm \n
 			ammo_7.62x39_fmj \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_drugs.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_items.xml"
@@ -1641,6 +1651,7 @@
 			wpn_ak74 \n
 			ammo_5.45x39_fmj \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
 		</supplies>

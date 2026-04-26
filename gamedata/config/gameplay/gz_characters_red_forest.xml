@@ -181,6 +181,7 @@
 			wpn_glock \n
 			ammo_9x19_fmj \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -441,6 +442,7 @@
 			wpn_toz34_m1 \n
 			ammo_12x70_buck = 3 \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_items.xml"\n
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
@@ -478,6 +480,7 @@
                         wpn_glock \n
 			ammo_9x19_fmj = 1 \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
 		</supplies>
@@ -511,6 +514,7 @@
 			wpn_toz34_m1 \n
 			ammo_12x70_buck = 3 \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_items.xml"\n
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
@@ -549,6 +553,7 @@
 			wpn_val \n
 			ammo_9x39_sp5 = 4 \n
 			device_torch \n
+            invulnerable \n
 		</supplies>
 
 <start_dialog>dialog_rf_ocelot</start_dialog>
@@ -635,6 +640,7 @@
 			ammo_9x18_fmj = 1 \n
 			wpn_val \n
 			ammo_9x39_sp5 = 4 \n
+            invulnerable \n
 			device_torch \n
 		</supplies>
 		<start_dialog>hello_dialog</start_dialog>
@@ -789,6 +795,7 @@
 			ammo_9x18_fmj = 1 \n
 			wpn_spas12 \n
 			ammo_12x76_dart \n
+            invulnerable \n
 			hand_radio \n
 		</supplies>
                 <start_dialog>rf_ld_blockp</start_dialog>
@@ -885,6 +892,7 @@
                         wpn_pm \n
 			ammo_9x18_fmj = 1 \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"

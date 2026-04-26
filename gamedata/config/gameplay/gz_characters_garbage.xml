@@ -28,6 +28,7 @@
 			wpn_ak74 \n
 			ammo_5.45x39_fmj \n
 			device_torch \n
+            invulnerable \n
 		</supplies>
 		<start_dialog>dialog_gar_seriy1</start_dialog>
 		<actor_dialog>dialog_serui_about_agro</actor_dialog>
@@ -692,6 +693,7 @@
 		
 		<supplies>
 			[spawn] \n
+            invulnerable \n
 		</supplies>
      
                 <actor_dialog>dialog_cezar_quest</actor_dialog>
@@ -752,6 +754,7 @@
 
 		<supplies>
 			[spawn] \n
+            invulnerable \n
 			ammo_5.56x45_ss190 \n
 			wpn_addon_grenade_launcher \n
                         wpn_pm \n
@@ -963,6 +966,7 @@
   <supplies>
    [spawn] \n
    device_torch \n
+   invulnerable \n
    #include "gameplay\character_items.xml" \n
    #include "gameplay\character_drugs.xml" \n
    #include "gameplay\character_food.xml"

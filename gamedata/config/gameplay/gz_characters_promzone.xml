@@ -26,6 +26,7 @@
 			wpn_colt1911 \n
 			ammo_11.43x23_fmj = 2 \n
 			hand_radio \n
+            invulnerable \n
 		</supplies>
 		
 #include "gameplay\character_criticals_3.xml"
@@ -60,6 +61,7 @@
 			wpn_val \n
 			ammo_9x39_sp5 = 3 \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -95,6 +97,7 @@
 			wpn_val \n
 			ammo_9x39_sp5 = 3 \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -130,6 +133,7 @@
 			wpn_val \n
 			ammo_9x39_sp5 = 3 \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -735,6 +739,7 @@
 			wpn_hk416 \n
 			ammo_5.56x45_ss190 \n
 			device_torch\n
+            invulnerable \n
 		</supplies>
 		
 		<start_dialog>dialog_pz_tepa</start_dialog>
@@ -763,6 +768,7 @@
 			[spawn] \n
 			wpn_colt1911 \n
 			ammo_11.43x23_fmj = 2 \n
+            invulnerable \n
 		</supplies>
 		
 		
@@ -1021,6 +1027,7 @@
 			wpn_val \n
 			ammo_9x39_sp5 = 3 \n
 			device_torch \n
+            invulnerable \n
                         kruglov_flash \n
 		</supplies>
 
@@ -1058,6 +1065,7 @@
 			wpn_val \n
 			ammo_9x39_sp5\n
 			device_torch \n
+            invulnerable \n
                         wpn_binoc \n
 		</supplies>
 #include "gameplay\character_criticals_3.xml"
@@ -1094,6 +1102,7 @@
 			wpn_g36 \n
 			ammo_5.56x45_ss190 \n
 			device_torch \n
+            invulnerable \n
 		</supplies>
                 <start_dialog>dialog_pz_lab_scien</start_dialog>
 		<actor_dialog>dialog_pz_scien_1_return</actor_dialog>
@@ -1126,6 +1135,7 @@
 			wpn_ak74 \n
 			ammo_5.45x39_fmj \n
 			device_torch \n
+            invulnerable \n
 		</supplies>
 		<actor_dialog>dialog_pz_scien_2_return</actor_dialog>
 
@@ -1155,6 +1165,7 @@
 			wpn_hk416 \n
 			ammo_5.56x45_ss190 \n
 			device_torch \n
+            invulnerable \n
 		</supplies>
 		<actor_dialog>dialog_pz_scien_3_return</actor_dialog>
 
