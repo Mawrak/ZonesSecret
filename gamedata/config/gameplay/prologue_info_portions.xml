@@ -924,7 +924,9 @@
 	<info_portion id="rf_gigant_spawn"></info_portion>
 	<info_portion id="rf_gigant_attack"></info_portion>
 	<info_portion id="rf_gigant_to_home"></info_portion>
-	<info_portion id="rf_hunters_have_trophey"></info_portion>
+	<info_portion id="rf_hunters_have_trophey">
+        <action>gz_sms.rf_hunt_sms_3</action>
+    </info_portion>
 	<info_portion id="rf_hunters_transfer_trophey"></info_portion>
 	<info_portion id="rf_hunters_open_fire"></info_portion>
 	<!-- Поршни новое -->

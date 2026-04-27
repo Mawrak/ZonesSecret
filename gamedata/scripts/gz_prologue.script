@@ -1191,6 +1191,8 @@ end
 
 function transfer_saiga (first_speaker, second_speaker)
 	dialogs.relocate_item_section(second_speaker, "wpn_saiga12c", "in")
+    db.actor:give_money(5000)
+    news_manager.relocate_money(db.actor, "in", 5000)
 end
 
 function transfer_detector (first_speaker, second_speaker)

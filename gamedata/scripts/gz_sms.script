@@ -594,17 +594,18 @@ end
 function rf_hunt_sms()
 	local snd = sound_object([[characters_voice\soz\gz_red_forest\go_to_me_stalker_rac]]) 
 snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector():set(0, 0, 0), 2.0) 
-	news_manager.send_tip(db.actor, "%c[255,255,128,128] Сверчок:\n%c[default] Эй, сталкер, подойди ко мне, хочу кое-что предложить.", 0, "default", 15000)
+	news_manager.send_tip(db.actor, "%c[255,255,128,128]Сверчок:\n%c[default] Эй, сталкер, подойди ко мне, хочу кое-что предложить.", 0, "default", 15000)
 end
 
 function rf_hunt_sms_2()
-	news_manager.send_tip(db.actor, "%c[255,255,128,128] Сверчок:\n%c[default] Внимание! Всем занять свои позиции и ждать объект, скоро он будет.", 0, "default", 15000)
+	news_manager.send_tip(db.actor, "%c[255,255,128,128]Сверчок:\n%c[default] Внимание! Всем занять свои позиции и ждать объект, тварь уже должна была учуять приманку, и не заставит себя долго ждать.", 0, "default", 15000)
+    xr_effects.spawn_king_gigant()
 end
 
 function rf_hunt_sms_3()
-	local snd = sound_object([[characters_voice\soz\gz_red_forest\wait_monster_kep_2_rac]]) 
-snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector():set(0, 0, 0), 2.0) 
-	news_manager.send_tip(db.actor, "%c[255,255,128,128] Сверчок:\n%c[default] Сталкер, сходи до этой туши и притащи его лапу в качестве трофея, и я с тобой расчитаюсь.", 0, "default", 15000)
+	--local snd = sound_object([[characters_voice\soz\gz_red_forest\wait_monster_kep_2_rac]]) 
+    --snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector():set(0, 0, 0), 2.0) 
+	news_manager.send_tip(db.actor, "%c[255,255,128,128]Сверчок:\n%c[default] Спасибо за помощь, Сталкер! Притащи его лапу в качестве трофея Леснику, он с тобой расчитается.", 0, "default", 15000)
 end
 
 

@@ -1165,7 +1165,7 @@
 			<has_info>rf_hunters_actor_ready_to_help</has_info>
 			<phrase_list>
             <phrase id="0">
-				<text>Ну, что сталкер, поможешь нам одну зверюгу завалить?</text>
+				<text>Ну что, сталкер, поможешь нам одну зверюгу завалить?</text>
                 <next>1</next>
             </phrase>
             <phrase id="1">
@@ -1192,6 +1192,7 @@
 			<give_info>rf_small_giant_dell</give_info>
             <give_info>rf_hunters_join_to_hunters_done</give_info>
 			<give_info>rf_hunters_kill_gigant_start</give_info>
+            
 				<action>dialogs.break_dialog</action>
             </phrase>
 			</phrase_list>
@@ -1202,7 +1203,7 @@
                         <dont_has_info>dialog_rf_hunters_kill_gigant_done</dont_has_info>
 			<phrase_list>
             <phrase id="0">
-				<text>Вот трофей, тяжеленный падла.</text>
+				<text>Вот трофей от королевского псевдогиганта, тяжеленный падла.</text>
                 <next>1</next>
             </phrase>
             <phrase id="1">
@@ -1210,20 +1211,11 @@
                 <next>2</next>
             </phrase>
             <phrase id="2">
-                <text>Да уж, большая хреновина. И динамитов, честно говоря, не ожидал, а вы молодцы, подготовились.</text>
-                <next>3</next>
-            </phrase>
-            <phrase id="3">
-                <text>Ага, только этой гадине взрывчатка мало, что сделала. Как бежал мутант, так и бежит дальше.</text>
-                
-                <next>4</next>
-				</phrase>
-            <phrase id="4">
-                <text>Не хотел бы я встретиться с ним в одиночку... ночью.</text>
+                <text>Да уж, большая хреновина. Не хотел бы я встретиться с ним в одиночку... ночью.</text>
                 <give_info>rf_hunters_transfer_trophey</give_info>
                 <action>gz_prologue.transfer_king_gigant_hand</action>
                 <action>gz_prologue.transfer_saiga</action>
-			<give_info>dialog_rf_hunters_kill_gigant_done</give_info>
+                <give_info>dialog_rf_hunters_kill_gigant_done</give_info>
             </phrase>
 			</phrase_list>
     </dialog>

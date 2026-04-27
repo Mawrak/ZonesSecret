@@ -3484,3 +3484,8 @@ function spawn_tulpan_fixed()
     
 
 end
+
+
+function spawn_king_gigant()
+    alife():create("gigant_king", vector():set(197.405,-6.578,-141.628), 161917, 525)
+end
