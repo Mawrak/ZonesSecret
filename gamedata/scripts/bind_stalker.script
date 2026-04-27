@@ -99,7 +99,7 @@ function actor_binder:net_spawn(data)
     if not has_alife_info("gz_ds_hack") then
     
         alife():create("vehicle_niva",vector():set(-576.449, -1.679, -429.959),2059,0)
-        alife():create("vehicle_niva2",vector():set(-23.927, -0.003, -2.721),55099,474)
+        alife():create("vehicle_niva2",vector():set(-366.572, -0.001, 3.767),9200,534)
         
         alife():create("racya_b",vector():set(-69.843, -6.874, -68.96),4002,716)
     
