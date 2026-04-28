@@ -1407,10 +1407,10 @@
 			ammo_9x18_fmj\n
 			device_torch \n
                         quest_pda_otshel \n
+                        invulnerable \n
 		</supplies>
 
 		<actor_dialog>dialog_otshel</actor_dialog>
-		<actor_dialog>dialog_otshel_15</actor_dialog>
 		<actor_dialog>dialog_otshel_2</actor_dialog>
 		<actor_dialog>dialog_otshel_3</actor_dialog>
 			

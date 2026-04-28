@@ -448,7 +448,6 @@
 
  <dialog id="dialog_otshel">
                 <dont_has_info>yan_otshel_walk_start</dont_has_info>
-                <dont_has_info>yan_othsel_otkaz</dont_has_info>
                 <has_info>yan_find_otshel</has_info>
         <phrase_list>
             <phrase id="0">
@@ -474,11 +473,6 @@
   <phrase id="31">
                 <text>dialog_yan_otshel_2</text>
                 <next>32</next>
-                <next>33</next>
-            </phrase>
-  <phrase id="33">
-                <text>Ну уж нет, хоть это и детёныши, я не хочу рисковать своей шкурой.</text>
-                <give_info>yan_othsel_otkaz</give_info>
             </phrase>
       <phrase id="32">
                 <text>Действительно надо что-то делать, каков план?</text>
@@ -497,26 +491,6 @@
 	</phrase_list>
     </dialog>
 
- <dialog id="dialog_otshel_15">
-                <dont_has_info>yan_otshel_walk_start</dont_has_info>
-                <has_info>yan_othsel_otkaz</has_info>
-        <phrase_list>
-            <phrase id="0">
-                <text>Я передумал, я всё-таки помогу вам.</text>
-                <next>31</next>
-            </phrase>
-       <phrase id="31">
-                <text>Отлично, готов выдвигатся?</text>
-                <next>2</next>
-            </phrase>
-      <phrase id="2">
-                <text>Да, готов.</text>
-                <give_info>yan_otshel_walk_start</give_info>
-                <give_info>yan_chimera_spawn</give_info>
-                <action>dialogs.break_dialog</action>
-            </phrase>
-	</phrase_list>
-    </dialog>
 
  <dialog id="dialog_otshel_2">
                 <dont_has_info>yan_otshel_dialog_done</dont_has_info>
@@ -535,7 +509,7 @@
                 <next>3</next>
             </phrase>
        <phrase id="3">
-                <text>В схватке даже с одной взрослой химмерой у нас было бы мало шансов.</text>
+                <text>В схватке даже с одной взрослой химерой у нас было бы мало шансов.</text>
                 <next>4</next>
             </phrase>
        <phrase id="4">

@@ -514,8 +514,7 @@
 
 <dialog id="dialog_rf_lesnik_quest">
                 <dont_has_info>rf_lesnik_quest_start</dont_has_info>
-                <dont_has_info>rf_lesnik_talk_otkaz</dont_has_info>
-                <dont_has_info>rf_lesnik_quest_start_alt</dont_has_info>
+                <has_info>rf_ld_find_group_start</has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Дедушка, а чего ж вы в Зоне остались? Не лучше ли вам было бы на Большой земле? Извините, что с распросами пристаю, просто интересно.</text>
@@ -554,37 +553,9 @@
             </phrase>
   <phrase id="55">
                 <text>Да ладно, я всё понимаю, это я тут сижу, порой по долгу ничего не делаю. У тебя есть дела.</text>
-                <give_info>rf_lesnik_talk_otkaz</give_info>
             </phrase>
             <phrase id="8">
                 <text>Вот рации к сожелению нет, но я постараюсь найти её. И тогда смогу прослушать радиосигнал.</text>
-                <give_info>rf_lesnik_quest_start_alt</give_info>
-            </phrase>
-	</phrase_list>
-    </dialog>
-
-<dialog id="dialog_rf_lesnik_quest_alt">
-                <has_info>rf_lesnik_talk_otkaz</has_info>
-                <dont_has_info>rf_lesnik_quest_start</dont_has_info>
-                <dont_has_info>rf_lesnik_quest_start_alt</dont_has_info>
-        <phrase_list>
-            <phrase id="0">
-                <text>Я по поводу странного радиосигнала. Я всё-таки решился помочь вам.</text>
-                <next>1</next>
-            </phrase>
-    <phrase id="1">
-                <text>dialog_rf_lesnik_signal_4</text>
-                <next>2</next>
-                <next>3</next>
-            </phrase>
-   <phrase id="2">
-                <precondition>gz_tasks.have_racia</precondition>
-                <text>Да, рация есть, сейчас попробую подняться и проверить сигнал.</text>
-                <give_info>rf_lesnik_quest_start</give_info>
-            </phrase>
-            <phrase id="3">
-                <text>Вот рации к сожелению нет, но я постараюсь найти её. И тогда смогу прослушать радиосигнал.</text>
-                <give_info>rf_lesnik_quest_start_alt</give_info>
             </phrase>
 	</phrase_list>
     </dialog>
@@ -658,7 +629,6 @@
             <phrase id="4">
                 <text>Последний раз они выходили на связь в районе большой аномалии на поляне.</text>
                 <give_info>rf_ld_find_group_start</give_info>
-                <give_info>rf_spawn_puzir</give_info>
             </phrase>
 	</phrase_list>
     </dialog>
@@ -1192,8 +1162,7 @@
 			<give_info>rf_small_giant_dell</give_info>
             <give_info>rf_hunters_join_to_hunters_done</give_info>
 			<give_info>rf_hunters_kill_gigant_start</give_info>
-            
-				<action>dialogs.break_dialog</action>
+            <action>dialogs.break_dialog</action>
             </phrase>
 			</phrase_list>
     </dialog>
@@ -1304,7 +1273,7 @@
 				</phrase>
             <phrase id="31">
                 <text>Ну, давай постреляем.</text>
-			<give_info>rf_hunters_actor_ready_to_help</give_info>
+                <give_info>rf_hunters_actor_ready_to_help</give_info>
 				<action>dialogs.break_dialog</action>
             </phrase>
           <phrase id="32">
