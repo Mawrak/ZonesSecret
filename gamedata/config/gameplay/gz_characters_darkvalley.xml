@@ -1899,7 +1899,7 @@ invulnerable \n
 	</specific_character>
 
 	<specific_character id="dv_greh_empty" team_default = "1">
-		<name>Сталкер группировки "Грех"</name>
+		<name>"Грех"</name>
 		<icon>ui_npc_u_dv_greh_default1</icon>
 		<bio>Сталкер группировки "Грех". Детальная информация отсутствует.</bio>
 
@@ -1912,6 +1912,7 @@ invulnerable \n
 		<visual>gz\npc\greh\stalker_grehnik_2_soc</visual>
 		<supplies>
 			[spawn] \n
+            quest_medkit_case_doc \n
 		</supplies>
 					
 		<start_dialog>hello_dialog</start_dialog>
@@ -1919,7 +1920,7 @@ invulnerable \n
 
 
 	<specific_character id="dv_greh_diary" team_default = "1">
-		<name>Сталкер группировки "Грех"</name>
+		<name>"Грех"</name>
 		<icon>ui_npc_u_dv_greh_default1</icon>
 		<bio>Сталкер группировки "Грех". Детальная информация отсутствует.</bio>
 
@@ -2136,6 +2137,7 @@ invulnerable \n
 			wpn_pm \n
 			ammo_9x18_fmj \n
 			device_torch \n
+            shpion_papka \n
 #include "gameplay\character_drugs.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_items.xml"

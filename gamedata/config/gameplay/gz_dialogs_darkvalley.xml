@@ -884,7 +884,7 @@
             </phrase>
           <phrase id="4">
                 <text>Так, давай свой контейнер сюда. Подожди немного... Готово, и что же тут у нас? Хм, какая-то флешка. Ну что ж, вот держи.</text>
-            <give_info>loki_case_open_done</give_info>
+            
                 <next>5</next>
             </phrase>
           <phrase id="5">
@@ -896,6 +896,7 @@
                 <action>gz_prologue.transfer_gz_tainik_case</action>
            				<action>gz_prologue.transfer_loki_case_flesh</action>
            				<action>gz_prologue.give_loki_case_money</action>
+                        <give_info>loki_case_open_done</give_info>
             </phrase>
 	</phrase_list>
     </dialog>
@@ -908,8 +909,7 @@
                 <next>1</next>
             </phrase>
             <phrase id="1">
-                <text>Спасибо, что откликнулся. На нас напал отряд фанатиков Греха, но мы всё же смогли отбиться. Рисковано было конечно просить помощи в общем канале и расскрывать свои координаты, но Греховцы словно безумные. Расстреливают всех, почти не укрываясь от пуль. А их ещё фиг завалишь... Итог: у нас три двухсотых и почти нет медикаментов, чтобы вылечить раненых. Не мог бы ты помочь? Принесёшь 5 любых аптечек, а я... А я в долгу не останусь.</text>
-                
+                <text>zzz_dolg_1</text>
                 <next>2</next>
             </phrase>
             <phrase id="2">
@@ -931,9 +931,7 @@
             </phrase>
             <phrase id="1">
                 <text>Ну что, нашел медикаменты?</text>
-                <next>2</next>
                 <next>3</next>
-                <next>4</next>
                 <next>5</next>
             </phrase>
             <phrase id="2">
@@ -958,7 +956,7 @@
                                 <give_info>dv_dolggroup_find_five_medkit_done</give_info>
 			</phrase>
                         <phrase id="62">
-				<text>Ну спасибо, выручил нас! Вот тебе в награду.</text>
+				<text>Ну спасибо, выручил нас! Вот тебе в награду... Этот артефакт помог моим людям не загнуться, пока ждали тебя. Но теперь, когда у нас есть лекарства, можешь взять его себе. Заслужил, боец!</text>
                                 <action>gz_prologue.transfer_medkit_army</action>
                                 <action>gz_prologue.transfer_art</action>
                                 <give_info>dv_dolggroup_find_five_medkit_done</give_info>
@@ -982,19 +980,19 @@
  			<has_info>dv_dolggroup_find_five_medkit_done</has_info>
        <phrase_list>
             <phrase id="0">
-                <text>Может у тебя найдётся лишняя рация?</text>
+                <text>Может, у тебя найдётся лишняя рация?</text>
                 <next>1</next>
             </phrase>
             <phrase id="1">
-                <text>Хм рация? Ну есть, но как понимаешь она мне самому нужна.</text>
+                <text>Хм, рация? Ну есть, но как понимаешь она мне самому нужна.</text>
                 <next>2</next>
             </phrase>
             <phrase id="2">
-                <text>А одолжить не можешь? Мне надо выйти надо выйти на связь с одним человеком, и потом сразу верну.</text>
+                <text>Неужели мы не сможем договориться?</text>
                 <next>3</next>
             </phrase>
             <phrase id="3">
-                <text>Хм, хотя знаешь, могу хоть на всё время отдать, но за это тебе надо будет выполнить ещё одну мою просьбу.</text>
+                <text>Вообще это против протокола, но, ты ведь спас жизни моим ребятам... Знаешь, думаю, я могу отдать её тебе, но за это тебе надо будет выполнить ещё одну мою просьбу.</text>
                 <next>4</next>
             </phrase>
             <phrase id="4">
@@ -1002,11 +1000,11 @@
                 <next>5</next>
             </phrase>
             <phrase id="5">
-                <text>Нам необходимо встретиться с нашим информатором, чтобы он передал добытые сведения. Для нас сейчас очень рискованно перемещаться по Тёмной Долине, из-за большой активности фанатиков Греха. Ты должен будешь встретиться с нашим информатором, взять у него собранную информацию, и вернуться ко мне. Делаешь это - отдадим тебе одну из раций нашей группы. Ну, что берёшься?</text>
+                <text>zzz_dolg_2</text>
                 <next>6</next>
             </phrase>
             <phrase id="6">
-                <text>Да выбора то особо нет. Куда топать надо?</text>
+                <text>Да выбора-то особо и нет. Куда топать надо?</text>
                 <next>7</next>
             </phrase>
             <phrase id="7">
@@ -1015,7 +1013,7 @@
             </phrase>
             <phrase id="8">
                 <text>Хорошо, выполню я твоё поручение.</text>
- 			<give_info>find_tainik_quest</give_info>
+                <give_info>find_tainik_quest</give_info>
 				<action>dialogs.break_dialog</action>
             </phrase>
 			</phrase_list>
@@ -1036,12 +1034,12 @@
                 <next>22</next>
             </phrase>
             <phrase id="21">
- 			<has_info>dv_shpion_dead</has_info>
+                <has_info>dv_shpion_dead</has_info>
                 <text>При передаче информации на нас напали три адепта Греха и ... Кривого убили, я не смог ничего сделать.</text>
                 <next>31</next>
             </phrase>
             <phrase id="22">
- 			<dont_has_info>dv_shpion_dead</dont_has_info>
+                <dont_has_info>dv_shpion_dead</dont_has_info>
                 <text>При передаче информации нас напали три фанатика греха, мы с Кривым еле отбились.</text>
                 <next>32</next>
             </phrase>
@@ -1058,7 +1056,7 @@
                 <next>5</next>
             </phrase>
             <phrase id="5">
-                <text>Так, где она у меня завалялась... Вот, держи. Кстати, есть предложение: мы собираемся атаковать базу фанатиков Греха и помощь нам не помешала бы. Не желаешь помочь Долгу в борьбе с порождениями Зоны? Хорошую награду гарантирую.</text>
+                <text>zzz_dolg_3</text>
                 <next>6</next>
             </phrase>
             <phrase id="6">

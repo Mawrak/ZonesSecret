@@ -90,6 +90,13 @@ end
 
 function item_take(obj)
  local section = obj:section()
+ 
+ if section == "shpion_papka" then
+ 
+    gz_utils.give_info("dv_shpion_atack")
+ 
+ end
+ 
  if table_quest_item_info[section] then
   gz_utils.give_info(table_quest_item_info[section])
  elseif section == 'quest_diary_dead_digger1' then
@@ -310,11 +317,11 @@ snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector():set(0, 0, 0), 2.0)
 end
 
 function have_water(first_speaker, second_speaker)
-    return first_speaker:object("water") ~= nil
+    return db.actor:object("water") ~= nil
 end
 
 function have_racia(first_speaker, second_speaker)
-    return first_speaker:object("racya_b") ~= nil
+    return db.actor:object("racya_b") ~= nil
 end
 
 function transfer_rf_water(first_speaker, second_speaker)
