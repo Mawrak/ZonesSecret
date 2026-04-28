@@ -2,12 +2,10 @@
 active = sr_idle1
 
 [sr_idle1]
-on_info = {+rf_racia_start}  sr_idle2
+on_info = {+rf_racia_start} %=lesnik_racia_message%  sr_idle2
 
 [sr_idle2]
-on_info = {+rf_racia_connect} sr_idle3
+on_timer = 8000| %+rf_racia_connect% sr_idle3
 
 [sr_idle3]
-on_game_timer = 15|%+rf_lesnik_quest_radio_done% sr_idle@nil
-
-[sr_idle@nil]
+on_timer = 16000| %+rf_lesnik_quest_radio_done =lesnik_racia_message2% nil

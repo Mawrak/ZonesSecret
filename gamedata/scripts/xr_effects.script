@@ -3487,5 +3487,22 @@ end
 
 
 function spawn_king_gigant()
+    level.add_pp_effector ("blink.ppe", 234, false)
     alife():create("gigant_king", vector():set(197.405,-6.578,-141.628), 161917, 525)
+end
+
+function s_play(path)
+	snd_obj = xr_sound.get_safe_sound_object(path)
+	if snd_obj then
+		snd_obj:play_at_pos(db.actor, vector():set(0, 0, 0), 0, sound_object.s2d)
+	end
+end
+
+function lesnik_racia_message()
+    s_play([[characters_voice\scenario\radio\radio_voice_3]])
+    --db.actor:give_info_portion("rf_racia_connect")
+end
+
+function lesnik_racia_message2()
+    s_play([[characters_voice\scenario\radio\talk_1\radio_1]])
 end
