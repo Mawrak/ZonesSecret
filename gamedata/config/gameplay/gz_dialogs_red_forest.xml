@@ -627,7 +627,7 @@
                 <text>Не, извините ребят, я пас. Не до того сейчас.</text> 
             </phrase>
             <phrase id="4">
-                <text>Последний раз они выходили на связь в районе большой аномалии на поляне.</text>
+                <text>zzz_redforest_1</text>
                 <give_info>rf_ld_find_group_start</give_info>
             </phrase>
 	</phrase_list>
@@ -647,9 +647,9 @@
             </phrase>
        <phrase id="1">
                 <text>dialog_rf_iron_quest_2</text>
-                <next>1</next>
+                <next>2</next>
             </phrase>
-            <phrase id="1">
+            <phrase id="2">
                 <text>Спасибо. Ну ладно, я к Оцелоту, он хотел ещё о чём-то поговорить. </text>
                 <give_info>ld_group_thanks</give_info>
             </phrase>
@@ -659,6 +659,7 @@
 <dialog id="dialog_rf_lesnik_tank">
                 <dont_has_info>rf_meet_lesnik_with_art_1</dont_has_info>
                 <has_info>lesnik_sms</has_info>
+                <dont_has_info>rf_spawn_puzir</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Ну как успехи, повидался с Отшельником?</text>
@@ -695,10 +696,8 @@
             <phrase id="0">
                 <text>Мужик... Дай воды, помираю...</text>
                 <next>1</next>
-                <next>2</next>
             </phrase>
             <phrase id="1">
-                <precondition>gz_tasks.have_water</precondition>
                 <text>Конечно, вот. Держись дружище, только не вырубайся.</text>
                 <next>3</next>
             </phrase>

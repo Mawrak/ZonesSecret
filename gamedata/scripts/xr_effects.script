@@ -3098,9 +3098,6 @@ end
 --------------------
 
 --Проигрывание партиклов
-function spawn_zerkalo()
- alife():create("af_zerkalo", vector():set(180.09,9.64,229.48), 381778, 618)
-end
 
 function play_puzir_particle(actor, rest)
 local particle = particles_object("kalmah\\teleport_for_serg\\sphere") 
@@ -3505,4 +3502,16 @@ end
 
 function lesnik_racia_message2()
     s_play([[characters_voice\scenario\radio\talk_1\radio_1]])
+end
+
+
+
+function spawn_zerkalo()
+    --alife():create("af_zerkalo", vector():set(180.09,9.64,229.48), 381778, 618)
+    
+    alife():create("af_zerkalo", vector():set(-181.663, -23.427, 273.025), 165362, 551)
+    
+    alife():create("af_zerkalo", vector():set(-219.408, -6.309, 226.443), 165362, 551)
+    
+    alife():create("af_zerkalo", vector():set(-190.422, -16.412, 245.197), 153999, 551)
 end
