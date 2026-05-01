@@ -1009,6 +1009,13 @@
 		<class>rf_ld_ocelot</class>
 	</character>
 
+    
+    <character id="rf_lt_ocelot">
+		<class>rf_lt_ocelot</class>
+	</character>
+    
+    
+    
  <character id="yan_dead_hunt_1">
 		<class>yan_dead_hunt_1</class>
 	</character>
