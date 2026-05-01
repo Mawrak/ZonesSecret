@@ -184,7 +184,7 @@ local key_to_block_table = {
 }
 
 function huds_block()
- gz_utils.give_info("slot_zanyat")
+ db.actor:give_info_portion("slot_zanyat")
  for i=1, #key_to_block_table, 1 do
   actor_obj:block_action(key_bindings[key_to_block_table[i]])
  end 

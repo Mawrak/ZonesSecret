@@ -57,7 +57,7 @@ end
 function yes()
    quest = gz_utils.load_variable("quest", "no")
    if quest ~= "no" then
-    gz_utils.give_info(quest)
+    db.actor:give_info_portion(quest)
 
    end
 end

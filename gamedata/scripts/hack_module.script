@@ -445,7 +445,7 @@ function hacking_hacker_complete()
  for i = 1, enciclopedy_rnd do
      local statja_for_pda = enciclopedy_list[math.random(#enciclopedy_list)]
          if not has_alife_info(statja_for_pda) then
-             gz_utils.give_info(statja_for_pda)
+             db.actor:give_info_portion(statja_for_pda)
              new_statja_num = new_statja_num + 1
          end
  end
@@ -455,7 +455,7 @@ function hacking_hacker_complete()
      local unic_info = ini:r_string(section_pda, "unical_info")
      local t = string.split(unic_info, 1, ",")
          for i = 1, #t, 1 do
-		   gz_utils.give_info(i)
+		   db.actor:give_info_portion(i)
 		 end
  end
  

@@ -191,7 +191,7 @@ end
 --//Ломаем ПДА
 function pda_hack_start()	
    m_timers.start_game_timer(encrypt_level*2*3600, "gz_caches.give_nistyak"):set_name("start_pda_hack_hacker") 
-   gz_utils.give_info("hacker_its_job")
+   db.actor:give_info_portion("hacker_its_job")
    actor:give_money(-500*encrypt_level)
    section_pda = gz_utils.load_variable("pda_clicked")
    gz_utils.remove_item(actor:object(section_pda))
@@ -212,7 +212,7 @@ function give_nistyak()
  for i = 1, enciclopedy_rnd do
    statja_for_pda = enciclopedy_list[math.random(table.getn(enciclopedy_list))]
    if gz_utils.has_info(statja_for_pda) == false then
-    gz_utils.give_info(statja_for_pda)
+    db.actor:give_info_portion(statja_for_pda)
     new_statja_num = new_statja_num + 1
    end
  end
@@ -221,7 +221,7 @@ function give_nistyak()
 	 for i = 1, unic_info do
       if ini:line_exist(section_pda, "unical_info_"..i) then 
        unic_info_paste = ini:r_string(section_pda, "unical_info_"..i)
-	   gz_utils.give_info(unic_info_paste)
+	   db.actor:give_info_portion(unic_info_paste)
       end
      end
  end

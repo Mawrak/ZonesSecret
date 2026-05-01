@@ -102,7 +102,7 @@ function mm_on_kbd(mm,dik, keyboard_action)
 			_G.ui_main_menu.main_menu.Update = _G.ap_mm_upd
 			get_console():execute("main_menu off")
 			if not has_alife_info("intro_rolik") then	
-			 gz_utils.give_info("intro_rolik")
+			 db.actor:give_info_portion("intro_rolik")
 			 game.start_tutorial("start_soz_intro_video")
 			end
 		end

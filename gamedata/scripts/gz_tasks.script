@@ -93,12 +93,12 @@ function item_take(obj)
  
  if section == "shpion_papka" then
  
-    gz_utils.give_info("dv_shpion_atack")
+    db.actor:give_info_portion("dv_shpion_atack")
  
  end
  
  if table_quest_item_info[section] then
-  gz_utils.give_info(table_quest_item_info[section])
+  db.actor:give_info_portion(table_quest_item_info[section])
  elseif section == 'quest_diary_dead_digger1' then
    local snd = sound_object([[characters_voice\soz\gz_darkscape\dscol_digger1_diary]]) 
   snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector():set(0, 0, 0), 2.0)
@@ -112,7 +112,7 @@ elseif section == 'quest_diary_dead_digger2' then
   snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector():set(0, 0, 0), 2.0)
   	news_manager.send_tip(db.actor, "%c[255,255,128,128] Воспроизведение записи с найденного ПДА\n%c[default]", 0, "base", 15000)
  elseif section == 'af_whispers' then
-  gz_utils.give_info("und_find_art")
+  db.actor:give_info_portion("und_find_art")
   local snd = sound_object([[ambient\X-18\9]]) 
   snd:play_no_feedback(db.actor,sound_object.s2d, 0, vector():set(0, 0, 0), 2.0)
  elseif section == 'ds_money' then
@@ -122,8 +122,8 @@ elseif section == 'quest_diary_dead_digger2' then
   obj:set_condition(0.5)
   obj:set_ammo_elapsed(1)
  elseif section == 'quest_pda_otshel' and has_alife_info("rf_lesnik_quest_talk_done") then // ВНИМАНИЕ. Переделать на то чтобы "квест" снимался с ПДА.
-  gz_utils.give_info("yan_find_zerkalo_start")
-  gz_utils.give_info("infa_yan_othsel_pda")
+  db.actor:give_info_portion("yan_find_zerkalo_start")
+  db.actor:give_info_portion("infa_yan_othsel_pda")
  end
 end   
 
@@ -224,11 +224,11 @@ function killer_suit_update()
   local actor = db.actor 
    if actor:item_in_slot(6) and actor:item_in_slot(6):section() == 'killer_outfit_green' then 
     db.actor:give_info_portion("actor_is_killer")
-    --gz_utils.give_info("actor_is_killer") 
+    --db.actor:give_info_portion("actor_is_killer") 
    else
     db.actor:disable_info_portion("actor_is_killer")
     --gz_utils.del_info("actor_is_killer") 
-    --gz_utils.give_info("pz_actor_enemy_merclager") 
+    --db.actor:give_info_portion("pz_actor_enemy_merclager") 
    end 
   end
 end
@@ -236,9 +236,10 @@ end
 function bandit_suit_update()
  local actor = db.actor
  if actor:item_in_slot(6) and actor:item_in_slot(6):section() == 'bandit_veteran_outfit' then
-  gz_utils.give_info("actor_is_bandit")
+    db.actor:give_info_portion("actor_is_bandit")
+  db.actor:give_info_portion("actor_is_bandit")
  else
-  gz_utils.del_info("actor_is_bandit")
+    db.actor:disable_info_portion("actor_is_bandit")
  end
 end
 
@@ -250,7 +251,7 @@ function fire_merc_check()
   test = tostring(item.silencer_name)
   news_manager.send_tip(actor, status.." Выстрел из "..actor:active_item():section().." Какой глушак может стоять = "..test)
   --gz_utils.del_info("actor_is_killer")
-  --gz_utils.give_info("pz_actor_enemy_merclager")
+  --db.actor:give_info_portion("pz_actor_enemy_merclager")
  end
 end
 
@@ -281,7 +282,7 @@ function CondFunc() -- таймер в реальном времени.
  return false
 end
 function snakalsja_done()
-  gz_utils.give_info("dv_bekas_actor_cover_f")
+  db.actor:give_info_portion("dv_bekas_actor_cover_f")
 end
 function return_bekas_obj()
   if beakas_obj then
@@ -296,14 +297,14 @@ function dolg_tainiki(box, item)
   local story_id = box:story_id()
    if item:section() == 'quest_gps' then
      if story_id == 14152 then
-      gz_utils.give_info("dolgs_t_1")
+      db.actor:give_info_portion("dolgs_t_1")
 	  news_manager.send_tip(actor, "varyag_tainik_nagrada_one", 0, "varag", 15000)
      elseif story_id == 14153 then
-      gz_utils.give_info("dolgs_t_2")
+      db.actor:give_info_portion("dolgs_t_2")
 	  gz_utils.save_variable("dolg_tainik", 3)
 	  news_manager.send_tip(actor, "varyag_tainik_nagrada_two", 0, "varag", 15000)
      elseif story_id == 14154 then
-      gz_utils.give_info("dolgs_t_3")
+      db.actor:give_info_portion("dolgs_t_3")
 	  news_manager.send_tip(actor, "varyag_tainik_nagrada_tri", 0, "varag", 15000)
 	 end
     end
@@ -339,7 +340,7 @@ function quest_restored()
 end
 
 function give_info_noyt()
- gz_utils.give_info("yan_find_noyt_done_sms")
+ db.actor:give_info_portion("yan_find_noyt_done_sms")
 end
 
 --Ограбление на Янтаре.
@@ -389,7 +390,7 @@ end
 function monster_death(victim, who)
  local sid = victim:story_id()
  if sid < 4294967296 and sid == 65010 then
-  gz_utils.give_info("kill_fracture")
+  db.actor:give_info_portion("kill_fracture")
  end
 end
 

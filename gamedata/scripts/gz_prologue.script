@@ -284,7 +284,7 @@ local snd_obj = xr_sound.get_safe_sound_object([[characters_voice\scenario\dv\dv
                           return not(snd_obj:playing()) 
                       end, 
                       function () 
-                          gz_utils.give_info("dv_help_dolg_group")	
+                          db.actor:give_info_portion("dv_help_dolg_group")	
                       end 
                      ) 
 end
@@ -305,7 +305,7 @@ local snd_obj = xr_sound.get_safe_sound_object([[detectors\bomb_timer]])
                           return not(snd_obj:playing()) 
                       end, 
                       function () 
-                          db.actor:give_info_portion ("go_to_evacuation_zone_start") 
+                          db.actor:give_info_portion("go_to_evacuation_zone_start") 
                       end 
                      ) 
 end
