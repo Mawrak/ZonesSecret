@@ -642,7 +642,7 @@
                 <has_info>rf_ocelot_talk_done_2</has_info>
         <phrase_list>
             <phrase id="0">
-                <text>Оцелот живой и здоровый доставлен на базу. Ещё чуть-чуть и не успели бы спасти бедолагу.</text>
+                <text>Оцелот жив и доставлен на базу. Ещё чуть-чуть и не успели бы спасти бедолагу.</text>
                 <next>1</next>
             </phrase>
        <phrase id="1">
@@ -652,6 +652,7 @@
             <phrase id="2">
                 <text>Спасибо. Ну ладно, я к Оцелоту, он хотел ещё о чём-то поговорить. </text>
                 <give_info>ld_group_thanks</give_info>
+                <action>gz_prologue.transfer_reward_ocelot</action>
             </phrase>
 	</phrase_list>
     </dialog>
@@ -931,11 +932,11 @@
                 <next>101</next>
             </phrase>
             <phrase id="11">
-                <text>Я наверное пас, сейчас есть дела и поважнее.</text>
+                <text>Я, наверное, пас, сейчас есть дела и поважнее.</text>
                 <give_info>rf_ld_ocelot_talk_cross_done</give_info>
 				<action>dialogs.break_dialog</action>
             </phrase>
- <phrase id="101">
+            <phrase id="101">
                 <text>dialog_rf_ocelot_grab4</text>
                 <give_info>rf_ld_ocelot_talk_cross_done</give_info>
                 <give_info>yan_zmeelov_quest_start</give_info>
