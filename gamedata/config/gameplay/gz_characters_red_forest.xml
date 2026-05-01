@@ -535,7 +535,7 @@
 
 	<specific_character id="rf_ld_puzir_1" team_default = "1">
 		<name>ќцелот</name>
-		<icon>ui_npc_u_green_stalker_antigas</icon>
+		<icon>ui_npc_u_ds_lastday_mask</icon>
 		<map_icon x="0" y="0"></map_icon>
 		<bio>sim_stalker_novice_bio</bio>
 
@@ -623,7 +623,7 @@
 
 	<specific_character id="rf_ld_ocelot" team_default = "1">
 		<name>ќцелот</name>
-		<icon>ui_npc_u_green_stalker_antigas</icon>
+		<icon>ui_npc_u_ds_lastday_mask</icon>
 		<map_icon x="0" y="0"></map_icon>
 		<bio>sim_stalker_novice_bio</bio>
 

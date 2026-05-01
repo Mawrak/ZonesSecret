@@ -585,7 +585,6 @@
             </phrase>
      <phrase id="5">
                 <text>Я пожалуй предпочту не ввязываться в это.</text>
-                <give_info>yan_zmeelov_dialog_done1</give_info>
                 <action>dialogs.break_dialog</action>
             </phrase>
        <phrase id="3">
@@ -618,7 +617,6 @@
                 <text>Ясно, я на позицию.</text>
                 <give_info>yan_zmeelov_dialog_rob_done</give_info>
                 <action>gz_prologue.transfer_actors_yan_plasch</action>
-                <action>dialogs.break_dialog</action>
             </phrase>
 	</phrase_list>
     </dialog>
@@ -641,6 +639,7 @@
      <phrase id="2">
                 <text>Хорошо, за работу.</text>
                 <give_info>yan_ocelot_rob_done</give_info>
+                <give_info>yan_ocelot_rob_done_pre</give_info>
                 <action>dialogs.break_dialog</action>
             </phrase>
 	</phrase_list>
@@ -717,13 +716,6 @@
     </dialog>
 
  <dialog id="dialog_ocelot_rob_good">
-                <has_info>yan_rob_ocelot_shot</has_info>
-                <has_info>yan_ocelot_rob_done</has_info>
-                <has_info>ocelot_rob_start</has_info>
-                <dont_has_info>yan_ocelot_guard1_dead</dont_has_info>
-                <dont_has_info>yan_ocelot_guard2_dead</dont_has_info>
-                <dont_has_info>yan_zmeelov_rob_dead</dont_has_info>
-                <dont_has_info>yan_zmeelov_rob_guard1_dead</dont_has_info>
                 <dont_has_info>ld_code_box1_spawn</dont_has_info>
         <phrase_list>
             <phrase id="0">
@@ -852,7 +844,7 @@
                 <next>2</next>
             </phrase>
         <phrase id="2">
-                <text>Несовсем, сейчас с деньгами туго. Вот и приходится работать на учёных, чтоб были хоть какие-то деньги на провизию и аммуницию.</text>
+                <text>Не совсем, сейчас с деньгами туго. Вот и приходится работать на учёных, чтоб были хоть какие-то деньги на провизию и аммуницию.</text>
                 <next>3</next>
             </phrase>
         <phrase id="3">
@@ -881,7 +873,7 @@
             </phrase>
         <phrase id="9">
                 <text>Давай, удачи.</text>
-                    <give_info>yan_slepoi_dialog_done</give_info>
+                <give_info>yan_slepoi_dialog_done</give_info>
             </phrase>
 	</phrase_list>
     </dialog>

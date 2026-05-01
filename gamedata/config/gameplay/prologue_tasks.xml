@@ -1012,7 +1012,6 @@
 			<icon>ui_icons_storyline_find_alive</icon>
 			<article>yan_zmeelov_kill_done</article>
 			<infoportion_complete>yan_zmeelov_quest_done</infoportion_complete>
-			<function_complete>gz_tasks.bandit_suit_update</function_complete>
 			<infoportion_fail>yan_rob_outside_zone_fail</infoportion_fail>
 			<infoportion_fail>yan_rob_ocelot_dead</infoportion_fail>
 		</objective>
@@ -1035,7 +1034,7 @@
 			<infoportion_complete>yan_rob_ocelot_shot</infoportion_complete>
 		</objective>
 	        <objective>
-			<text>Поговорить с Оцелотом</text>
+			<text>Поговорить со Змееловом</text>
 			<infoportion_complete>yan_ocelot_rob_done</infoportion_complete>
 		</objective>
 	        <objective>

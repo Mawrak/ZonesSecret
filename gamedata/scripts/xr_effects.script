@@ -3211,8 +3211,9 @@ end
 
 ---Много функций, разобраться нужно что это
 
-function friendactor (actor, npc) 
-npc:set_relation (game_object.friend, actor) 
+function friendactor(actor, npc) 
+    npc:set_relation(game_object.friend, db.actor) 
+
 end
 
 function pz_ghost_sleep() 
@@ -3515,3 +3516,4 @@ function spawn_zerkalo()
     
     alife():create("af_zerkalo", vector():set(-190.422, -16.412, 245.197), 153999, 551)
 end
+

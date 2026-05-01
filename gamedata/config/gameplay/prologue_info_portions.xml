@@ -1803,6 +1803,8 @@
 	<info_portion id="yan_zmeelov_about_prizrak_done"></info_portion>
 	<info_portion id="yan_zmeelov_rob_zombi_off"></info_portion>
 	<info_portion id="yan_zmeelov_rob_dell_npc"></info_portion>
+    <info_portion id="yan_rob_tech"></info_portion>
+    <info_portion id="yan_rob_tech2"></info_portion>
 	<!-- - Êגוסע ס ןמהחולךמי ÏÇ-  -->
 	<info_portion id="pz_otis_lab_start">
 		<task>pz_lab_diggers</task>
