@@ -2,6 +2,6 @@
 active = sr_idle
 
 [sr_idle]
-on_actor_inside = {=has_zerkalo} %+rf_spawn_puzir -art_get_away =play_snd(anomaly\teleport_incoming)% sr_idle@nil
+on_actor_inside = {=has_zerkalo} %=sms_puzir_destroyed +rf_spawn_puzir -art_get_away =play_snd(anomaly\teleport_incoming)% sr_idle@nil
 
 [sr_idle@nil]

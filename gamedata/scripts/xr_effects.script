@@ -3517,3 +3517,8 @@ function spawn_zerkalo()
     alife():create("af_zerkalo", vector():set(-190.422, -16.412, 245.197), 153999, 551)
 end
 
+
+function sms_puzir_destroyed()
+    news_manager.send_tip(db.actor, "sms_puzir_destroyed", 5, "stalker", 4000)
+end
+

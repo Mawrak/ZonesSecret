@@ -5,6 +5,6 @@ active = sr_idle
 on_actor_inside = {=has_zerkalo} %-art_get_away% sr_idle2
 
 [sr_idle2]
-on_game_timer = 25|%+dv_spawn_black_diger=play_snd(anomaly\teleport_incoming)% sr_idle@nil
+on_game_timer = 25|%=sms_puzir_destroyed +dv_spawn_black_diger =play_snd(anomaly\teleport_incoming)% sr_idle@nil
 
 [sr_idle@nil]
