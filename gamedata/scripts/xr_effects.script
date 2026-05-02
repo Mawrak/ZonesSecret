@@ -3522,3 +3522,9 @@ function sms_puzir_destroyed()
     news_manager.send_tip(db.actor, "sms_puzir_destroyed", 5, "stalker", 4000)
 end
 
+
+function spawn_yantar_spacial_hidden()
+    alife():create("af_zerkalo", vector():set(-60.91, -12.775, 307.646), 345350, 556)
+    alife():create("wpn_vintorez", vector():set(-62.101, -12.784, 304.71), 343616, 556)
+end
+
