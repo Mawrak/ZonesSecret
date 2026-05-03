@@ -281,7 +281,7 @@ function load_dialog:OnListItemClicked()
         if file_exist_screenshot(ui_save_temp_name .. ".dds") then
         
         
-            if string.find(item_text, "autosave", 1, true) then
+            if string.find(item_text, "autosave", 1, true) or item_text == "all" then
                 picture:InitTexture("ui\\ui_noise")
             else
                 picture:InitTexture("temp\\"..ui_save_temp_name)
