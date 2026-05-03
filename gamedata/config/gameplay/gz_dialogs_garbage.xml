@@ -750,7 +750,6 @@
     </dialog>
 
     <dialog id="dialog_bedolaga">
-		<dont_has_info>ds_art_quest_dialog_done</dont_has_info>
 		<dont_has_info>ds_art_quest_start</dont_has_info>
 		<dont_has_info>ds_art_quest_nehoch</dont_has_info>
         <phrase_list>
@@ -774,45 +773,16 @@
 				<text>dialog_bedolaga_1</text>
                 <next>5</next>
                 <next>6</next>
-                <next>8</next>
             </phrase>
       <phrase id="6">
 				<text>Да уж... ну ладно, не буду мешать.</text>
-                              <give_info>ds_art_quest_dialog_done</give_info>  
-            </phrase>
-      <phrase id="8">
-                <precondition>gz_prologue.have_gar_quest_art</precondition>
-				<text>По счастливой случайности, есть у меня с собой этот артефакт.</text>
-                <next>9</next>
-            </phrase>
-      <phrase id="9">
-				<text>Дружище, можешь мне его отдать? Только... у меня нет ничего взамен.</text>
-                <next>10</next>
-                <next>11</next>
-            </phrase>
-      <phrase id="10">
-				<text>Держи, может ещё сочтёмся как-нибудь.</text>
-                <next>12</next>
-            </phrase>
-      <phrase id="12">
-				<text>Спасибо! Век не забуду, теперь я смогу вылечить свою любимую... Спасибо ещё раз.</text>
-				
-                <next>13</next>
-            </phrase>
-      <phrase id="13">
-				<text>Да пожалуйста.</text>
-                <give_info>ds_art_quest_back</give_info>  
-                <action>gz_prologue.transfer_gubka_art</action>   
-            </phrase>
-      <phrase id="11">
-				<text>Ну уж нет, так просто не отдам. Артефакт то редкий.</text>
-                                             <give_info>ds_art_quest_nehoch</give_info>  
+                <give_info>ds_art_quest_dialog_done</give_info>  
             </phrase>
       <phrase id="5">
-				<text>Ну,может я смогу найти тебе эту "Губку"?</text>
+				<text>Ну, может я смогу найти тебе эту "Губку"?</text>
                 <next>7</next>
             </phrase>
- <phrase id="7">
+      <phrase id="7">
                 <text>Было бы хорошо, да только где ж ты её возьмёшь сейчас.</text>
                 <give_info>ds_art_quest_start</give_info>  
             </phrase>
@@ -822,9 +792,9 @@
     <dialog id="dialog_gubka_nehoch">
 		<dont_has_info>ds_art_quest_back</dont_has_info>
 		<has_info>ds_art_quest_nehoch</has_info>
+        <precondition>gz_prologue.have_gar_quest_art</precondition>
         <phrase_list>
             <phrase id="0">
-                <precondition>gz_prologue.have_gar_quest_art</precondition>
 				<text>Ладно, я передумал. Держи свою "Губку".</text>
                 <next>1</next>
             </phrase>
@@ -845,9 +815,10 @@
 		<dont_has_info>ds_art_quest_back</dont_has_info>
 		<dont_has_info>ds_art_quest_nehoch</dont_has_info>
 		<has_info>ds_art_quest_start</has_info>
+        <precondition>gz_prologue.have_gar_quest_art</precondition>
         <phrase_list>
             <phrase id="0">
-                <precondition>gz_prologue.have_gar_quest_art</precondition>
+                
 				<text>Нашёл я твою "Губку".</text>
                 <next>11</next>
             </phrase>
@@ -867,12 +838,12 @@
             </phrase>
       <phrase id="13">
 				<text>Да пожалуйста.</text>
-                                              <give_info>ds_art_quest_back</give_info>  
+                <give_info>ds_art_quest_back</give_info>  
                 <action>gz_prologue.transfer_gubka_art</action>   
             </phrase>
       <phrase id="115">
 				<text>Ну уж нет, так просто не отдам. Артефакт-то редкий.</text>
-                                             <give_info>ds_art_quest_nehoch</give_info>  
+                <give_info>ds_art_quest_nehoch</give_info>  
             </phrase>
 	</phrase_list>
     </dialog>
@@ -900,7 +871,7 @@
 				<text>Это того не стоит.</text>
             </phrase>
       <phrase id="4">
-				<text>Последний раз его находили в юго-восточной части свалки, поисчи там.</text>
+				<text>Последний раз его находили в Депо, в подземных ходах.</text>
 				
                 <next>5</next>
             </phrase>

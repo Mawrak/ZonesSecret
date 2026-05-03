@@ -920,7 +920,7 @@
 	</game_task>
 
 
-              <game_task id="gar_art_osved">
+    <game_task id="gar_art_osved">
 	<title>Найти Артефакт для Бори</title>
 		<objective>
 			<text>Найти артефакт для Бори</text>
@@ -928,14 +928,14 @@
 			<infoportion_complete>ds_art_quest_back</infoportion_complete>
 		</objective>
 		<objective>
-			<text>Найти артефакт Губка на Юго-Востоке свалки и принести его Боре</text>
+			<text>Найти артефакт Губка в Депо и принести его Боре</text>
 			<infoportion_complete>ds_art_quest_back</infoportion_complete>
 		</objective>
 
 	</game_task>
 
 
-              <game_task id="agr_merc_pda_open">
+    <game_task id="agr_merc_pda_open">
 	<title>Найти способ взломть защиту в ноутбуке</title>
 		<objective>
 			<text>Взломать защиту в ноутбуке командира наёмникв</text>
