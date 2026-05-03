@@ -292,51 +292,7 @@
   <init_func>dialogs_new_system.dv_lukash_proverka</init_func>      
  </dialog>
 
-        <dialog id="dialog_lukash_quest">
-        <dont_has_info>lukash_pogovorili_2</dont_has_info>
-        <phrase_list>
-            <phrase id="0">
-                <text>Мне сейчас деньги нужны, может найдётся для меня какая-нибудь работёнка?</text>
-                <next>1</next>
-            </phrase>
-            <phrase id="1">
-                <text>Хм, работёнка думаю найдётся.</text>
-                <next>2</next>
-            </phrase>
-			<phrase id="2">
-                <text>А что от меня требуется?</text>
-                <next>3</next>
-            </phrase>
-			<phrase id="3">
-                <text>dialog_about_maps_5</text>
-                <next>4</next>
-                <next>5</next>
-            </phrase>
-			<phrase id="4">
-                <text>Согласен, сколько платишь?</text>
-                <next>6</next>
-				</phrase>
-			<phrase id="5">
-                <text>Такое не интересует.</text>
-                <give_info>lukash_pogovorili_2</give_info>
-				</phrase>
-			<phrase id="6">
-                <text>Три тысячи, или уникальный ствол, на твой выбор.</text>
-                <next>7</next>
-                <next>8</next>
-				</phrase>
-                <phrase id="8">
-                <text>Всего хорошего, нашел идиота.</text>
-                <give_info>lukash_pogovorili_2</give_info>
-				</phrase>
-			<phrase id="7">
-                <text>По рукам.</text>
-				<give_info>lukash_pogovorili_2</give_info>
-                                 <give_info>find_guitar_start</give_info>
-				<action>dialogs.break_dialog</action>
-				</phrase>
-	</phrase_list>
-    </dialog>
+       
 	
 
         <dialog id="dialog_lukash_quest_2">
