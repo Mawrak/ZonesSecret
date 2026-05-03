@@ -1030,7 +1030,7 @@
 			<infoportion_complete>ocelot_rob_start</infoportion_complete>
 		</objective>
 	        <objective>
-			<text>Выстрелить в Оцелота в нужный момент</text>
+			<text>Выстрелить в Оцелота в нужный момент из ПМ</text>
 			<infoportion_complete>yan_rob_ocelot_shot</infoportion_complete>
 		</objective>
 	        <objective>
