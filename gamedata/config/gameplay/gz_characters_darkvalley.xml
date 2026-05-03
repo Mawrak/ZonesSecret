@@ -1689,9 +1689,10 @@ invulnerable \n
 #include "gameplay\character_criticals_4.xml"
 		
 		<start_dialog>dm_hello_dialog</start_dialog>	
-	</specific_character>	
+    </specific_character>	
         
-                	<specific_character id="dv_kamaz_stalker_2" team_default = "1">
+        
+    <specific_character id="dv_kamaz_stalker_2" team_default = "1">
 		<name>Слепой</name>
 		<icon>ui_npc_u_green_stalker_7</icon>
 		<bio>esc_stalker_novice_bio</bio>
@@ -1710,6 +1711,7 @@ invulnerable \n
 		<supplies>
 			[spawn] \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_items.xml" \n
 #include "gameplay\character_drugs.xml" \n
 #include "gameplay\character_food.xml"
@@ -1804,6 +1806,7 @@ invulnerable \n
 			wpn_akm \n
 			ammo_7.62x39_fmj \n
                         pda_bekas \n
+                        invulnerable \n
 		</supplies>
 		
 #include "gameplay\character_criticals_4.xml"
@@ -1834,6 +1837,7 @@ invulnerable \n
 			ammo_9x18_fmj \n
 			wpn_mp133 \n
 			ammo_12x70_buck \n
+            invulnerable \n
 		</supplies>
 		
 #include "gameplay\character_criticals_4.xml"
