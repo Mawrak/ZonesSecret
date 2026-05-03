@@ -208,6 +208,7 @@
 			ammo_5.56x45_ap = 2 \n
 			device_torch \n
 			hand_radio \n
+            quest_art_kolokol \n
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
 		</supplies>
