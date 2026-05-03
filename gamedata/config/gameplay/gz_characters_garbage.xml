@@ -567,6 +567,7 @@
                         wpn_g3 \n
 			ammo_7.62x51_fmj \n
                         pda_sv_loki \n
+                        invulnerable \n
 #include "gameplay\character_items.xml" \n
 #include "gameplay\character_drugs.xml" \n
 #include "gameplay\character_food.xml"	
@@ -605,6 +606,7 @@
 			ammo_9x19_fmj \n
                         wpn_galil \n
 			ammo_7.62x51_fmj \n
+            invulnerable \n
 #include "gameplay\character_items.xml" \n
 #include "gameplay\character_drugs.xml" \n
 #include "gameplay\character_food.xml"	
