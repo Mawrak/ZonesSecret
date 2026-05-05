@@ -1290,6 +1290,11 @@
 	<info_portion id="find_bakas_done">
 		<task>talk_to_bekas</task>
 	</info_portion>
+    <info_portion id="bekas_extra"></info_portion>
+    <info_portion id="bekas_extra2"></info_portion>
+    <info_portion id="bekas_extra3"></info_portion>
+    <info_portion id="bekas_extra4"></info_portion>
+    <info_portion id="bekas_extra5"></info_portion>
 	<info_portion id="bekas_vrag"></info_portion>
 	<info_portion id="find_bekas_box"></info_portion>
 	<info_portion id="find_bekas_money_done"></info_portion>
