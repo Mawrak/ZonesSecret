@@ -5,7 +5,10 @@ on_death = death
 [walker@dv_max_stay]
 path_walk = dv_max_stay
 path_look = dv_max_look
-on_info = {+find_weapons_case_dialog} walker@dv_max
+on_info = {+find_weapons_bandits_dead} walker@dv_max_talk, {+find_weapons_case_done} walker@dv_max_sdelka, {+find_weapons_case_dialog_2} remark@dv_max_zapravka, {+find_weapons_case_dialog} walker@dv_max
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
 
 [walker@dv_max]
 path_walk = dv_max_walk
@@ -28,12 +31,17 @@ path_look = dv_max_look_sdelka
 meet = no_meet
 on_signal = maxsdelkastop| %+find_weapons_case_zasada =dv_zasada%
 on_info = {+find_weapons_bandits_dead} walker@dv_max_talk
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
 
 [walker@dv_max_talk]
 path_walk = dv_max_stay_2
 path_look = dv_max_look_2
 danger = danger_condition@scout_3
-
+def_state_moving1 = assault
+def_state_moving2 = assault
+def_state_moving3 = assault
 
 
 [danger_condition@scout_2]

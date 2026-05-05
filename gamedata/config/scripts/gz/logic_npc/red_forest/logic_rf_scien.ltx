@@ -11,6 +11,7 @@ def_state_moving2 = assault
 def_state_moving3 = assault
 meet = no_meet
 danger = danger_condition@agr_manik
+on_info = {+rf_scien_going_conf_end} walker@rf_manik4, {+rf_scien_going_conf_done} walker@rf_manik4, {+rf_scien_going_conf} walker@rf_manik3, {+rf_ld_blockp_ph3_end_extra} remark@rf_scien, {+rf_ld_blockp_ph3_end} walker@rf_manik2, {+rf_lead_scien_hands_up} remark@rf_scien_hands
 
 [remark@rf_scien_hands]
 anim = hands_up
@@ -23,7 +24,7 @@ def_state_moving1 = assault
 def_state_moving2 = assault
 def_state_moving3 = assault
 meet = no_meet
-on_signal = rf_scien2 |  remark@rf_scien
+on_signal = rf_scien2 | %+rf_ld_blockp_ph3_end_extra% remark@rf_scien
 
 [remark@rf_scien]
 anim = guard

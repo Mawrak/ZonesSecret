@@ -2282,6 +2282,7 @@
 		<action>gz_sms.rf_ld_blockp_ph3</action>
 	</info_portion>
 	<info_portion id="rf_ld_blockp_ph3_end"></info_portion>
+    <info_portion id="rf_ld_blockp_ph3_end_extra"></info_portion>
 	<info_portion id="rf_ld_blockp_ph4_racia">
 		<action>gz_sms.rf_ld_blockp_ph4_racia</action>
 	</info_portion>
