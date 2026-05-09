@@ -3,6 +3,7 @@
 -- Дата: 15/11/2010 - 30/03/2011
 -- Спасибо: Malandrinus, Erlik
 -- Last update: Shadows - корректировка и доработка скрипта для билдовского назначения
+-- Mawrak - changed and adapted for Strelok's Story
 ---------------------------------------------------------------------------------------------
 local rec_wnd      = nil
 local initial      = false
