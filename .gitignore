@@ -3266,7 +3266,6 @@ gamedata/levels/gz_agroprom/meshes/brkbl\#7.ogf
 gamedata/levels/gz_agroprom/meshes/brkbl\#8.ogf
 gamedata/levels/gz_agroprom/meshes/brkbl\#9.ogf
 gamedata/levels/gz_agroprom/terrain/terrain_agroprom.dds
-gamedata/levels/gz_agroprom/terrain/terrain_agroprom_lm.dds
 gamedata/levels/gz_agroprom_underground/level
 gamedata/levels/gz_agroprom_underground/level.ai
 gamedata/levels/gz_agroprom_underground/level.cform
@@ -3351,8 +3350,6 @@ gamedata/levels/gz_darkscape/meshes/brkbl\#6.ogf
 gamedata/levels/gz_darkscape/meshes/brkbl\#7.ogf
 gamedata/levels/gz_darkscape/meshes/brkbl\#8.ogf
 gamedata/levels/gz_darkscape/meshes/brkbl\#9.ogf
-gamedata/levels/gz_darkscape/terrain/terrain_darkcape.dds
-gamedata/levels/gz_darkscape/terrain/terrain_darkcape_lm.dds
 gamedata/levels/gz_darkvalley/build_details.dds
 gamedata/levels/gz_darkvalley/level
 gamedata/levels/gz_darkvalley/level.ai
@@ -3837,8 +3834,6 @@ gamedata/levels/gz_darkvalley/meshes/brkbl\#96.ogf
 gamedata/levels/gz_darkvalley/meshes/brkbl\#97.ogf
 gamedata/levels/gz_darkvalley/meshes/brkbl\#98.ogf
 gamedata/levels/gz_darkvalley/meshes/brkbl\#99.ogf
-gamedata/levels/gz_darkvalley/terrain/terrain_dark_valley.dds
-gamedata/levels/gz_darkvalley/terrain/terrain_dark_valley_lm.dds
 gamedata/levels/gz_garbage1935/build.aimap
 gamedata/levels/gz_garbage1935/build.cform
 gamedata/levels/gz_garbage1935/build.details
@@ -4216,8 +4211,6 @@ gamedata/levels/gz_promzone/meshes/brkbl\#96.ogf
 gamedata/levels/gz_promzone/meshes/brkbl\#97.ogf
 gamedata/levels/gz_promzone/meshes/brkbl\#98.ogf
 gamedata/levels/gz_promzone/meshes/brkbl\#99.ogf
-gamedata/levels/gz_promzone/terrain/terrain_promzona.dds
-gamedata/levels/gz_promzone/terrain/terrain_promzona_lm.dds
 gamedata/levels/gz_red_forest/build_details.dds
 gamedata/levels/gz_red_forest/level
 gamedata/levels/gz_red_forest/level.ai
@@ -4499,8 +4492,6 @@ gamedata/levels/gz_yantar/meshes/brkbl\#71.ogf
 gamedata/levels/gz_yantar/meshes/brkbl\#72.ogf
 gamedata/levels/gz_yantar/meshes/brkbl\#8.ogf
 gamedata/levels/gz_yantar/meshes/brkbl\#9.ogf
-gamedata/levels/gz_yantar/terrain/terrain_jantar.dds
-gamedata/levels/gz_yantar/terrain/terrain_jantar_lm.dds
 _appdata_/logs/
 _appdata_/screenshots/
 _appdata_/savedgames/
