@@ -153,6 +153,9 @@ function actor_binder:net_spawn(data)
         relation_registry.set_community_goodwill ("military", db.actor:id (), -500)
     end
     
+    
+    get_console():execute("sv_setweather indoor")
+    
 	return true
 end
 ----------------------------------------------------------------------------------------------------------------------

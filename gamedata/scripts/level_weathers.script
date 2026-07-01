@@ -48,6 +48,7 @@ function WeatherManager:save(F)
 end
 
 function WeatherManager:update()
+
 	if self.update_time <= time_global() then
 		printf("weather_update day [%s]", level.get_time_days())
 		
@@ -55,9 +56,18 @@ function WeatherManager:update()
 			self:select_weather(true)			
 		end
 		
-		if self.weather_change_day ~= level.get_time_days() then
-			self:select_weather(false)
-		end
+		
 		self.update_time = self.update_time + 10000
 	end
+    
+    if self.weather_change_day ~= level.get_time_days() then
+		self:select_weather(true)
+	end
+    
+    if rain_fix == nil then
+		self:select_weather(true)
+        rain_fix = 1
+	end    
+    
+    
 end
