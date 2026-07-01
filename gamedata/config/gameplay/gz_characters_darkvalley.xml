@@ -2009,6 +2009,7 @@ invulnerable \n
 			wpn_mp5 \n
 			ammo_9x19_fmj \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_items.xml" \n
 #include "gameplay\character_drugs.xml" \n
 #include "gameplay\character_food.xml"
@@ -2045,6 +2046,7 @@ invulnerable \n
 			ammo_7.62x25_p \n
 			device_torch \n
                         af_soul \n
+                        invulnerable \n
 #include "gameplay\character_drugs.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_items.xml"
