@@ -3192,7 +3192,6 @@ gamedata/levels/ai_test/level_stat.tga
 gamedata/levels/ai_test/lmap\#1_1.dds
 gamedata/levels/ai_test/lmap\#1_2.dds
 gamedata/levels/gz_agroprom/build_details.dds
-gamedata/levels/gz_agroprom/level
 gamedata/levels/gz_agroprom/level.ai
 gamedata/levels/gz_agroprom/level.cform
 gamedata/levels/gz_agroprom/level.details
@@ -4211,7 +4210,6 @@ gamedata/levels/gz_promzone/meshes/brkbl\#97.ogf
 gamedata/levels/gz_promzone/meshes/brkbl\#98.ogf
 gamedata/levels/gz_promzone/meshes/brkbl\#99.ogf
 gamedata/levels/gz_red_forest/build_details.dds
-gamedata/levels/gz_red_forest/level
 gamedata/levels/gz_red_forest/level.ai
 gamedata/levels/gz_red_forest/level.cform
 gamedata/levels/gz_red_forest/level.details
