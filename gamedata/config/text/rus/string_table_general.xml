@@ -263,30 +263,30 @@
   </string>
 
 	<string id="gz_agroprom">
-		<text>"Агропром"</text>
+		<text>Агропром</text>
 	</string>
 	<string id="gz_agroprom_underground">
-		<text>"Подземелье Агропрома"</text>
+		<text>Подземелье Агропрома</text>
 	</string>
 	<string id="gz_darkscape">
-		<text>"Тёмная Лощина"</text>
+		<text>Тёмная Лощина</text>
 	</string>
 	<string id="gz_darkvalley">
-		<text>"Тёмная Долина"</text>
+		<text>Тёмная Долина</text>
 	</string>
 	<string id="gz_garbage1935">
-		<text>"Свалка"</text>
+		<text>Свалка</text>
 	</string>
 	<string id="gz_labx13">
-		<text>"Лаборатория X-13"</text>
+		<text>Лаборатория X-13</text>
 	</string>
 	<string id="gz_promzone">
-		<text>"Промзона"</text>
+		<text>Промзона</text>
 	</string>
 	<string id="gz_red_forest">
-		<text>"Рыжий Лес"</text>
+		<text>Рыжий Лес</text>
 	</string>
 	<string id="gz_yantar">
-		<text>"Янтарь"</text>
+		<text>Янтарь</text>
 	</string>
 </string_table>
