@@ -10,7 +10,6 @@ local table_quest_item_info = {
 ["team_diary"] = "find_team_done",
 ["quest_key_greh_guard"] = "greh_guard_key_have",
 ["quest_weapons_case"] = "find_weapons_case_have",
-["pda_cap_dv"] = "go_to_garneutlager_start",
 ["agr_dolgbase_und_key"] = "agr_dolgbase_und_key_have",
 ["quest_case_instruments"] = "find_yar_instruments_have",
 ["quest_medkit_case_doc"] = "find_doc_medkit_case",
