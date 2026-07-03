@@ -124,9 +124,9 @@ if not has_alife_info("ds_kamaz_stalker_dead") then
 actor:give_info_portion ("pda_coordinats_start_1") 
 end
    if has_alife_info("ds_stalker_save_thanks") and not has_alife_info("ds_kamaz_stalker_dead") then 
-    actor:give_info_portion("dv_kamaz_done") 
+    --actor:give_info_portion("dv_kamaz_done") 
    else 
-    actor:give_info_portion("alt_wounded_stalk")
+    --actor:give_info_portion("alt_wounded_stalk")
    end
   --Квест 2.
   if has_alife_info("kill_scien_done") and not has_alife_info("go_to_evacuation_zone_start_1") then  -- Если квест 2 у нас уже есть, но еще не выполнен

@@ -105,4 +105,13 @@
 </string>  
         
         
+    <string id="cap_pda">
+      <text>Сигнал</text>
+    </string>
+    
+    
+    <string id="quest_guitara">
+      <text>Карты</text>
+    </string>
+        
 </string_table>

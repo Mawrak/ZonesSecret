@@ -70,6 +70,9 @@
  <dialog id="dv_dolg_rush_to_greh">
   <has_info>contact_with_base_start</has_info>
   <has_info>pda_coordinats_start</has_info>
+  
+  <dont_has_info>dv_sv_greshbase_assault</dont_has_info>
+  
   <dont_has_info>dv_dolg_group_sbor</dont_has_info>
   <dont_has_info>help_dv_dolg_failed</dont_has_info>
   <dont_has_info>greh_shturm_alone</dont_has_info>
@@ -82,7 +85,9 @@
   <dont_has_info>dv_dolg_group_sbor</dont_has_info>
   <dont_has_info>help_dv_dolg_failed</dont_has_info>
   <dont_has_info>greh_shturm_alone</dont_has_info>
-  <has_info>return_night_start</has_info>
+  
+  <dont_has_info>dv_sv_greshbase_assault</dont_has_info>
+
   <precondition>gz_prologue.precond_time_2</precondition>
   <init_func>dialogs_new_system.dv_rush_to_greh_2</init_func>	
  </dialog>
@@ -212,8 +217,7 @@
  </dialog>
  
  <dialog id="dialog_about_pda">
-  <has_info>pda_coordinats_start</has_info>
-  <dont_has_info>go_to_garneutlager_start</dont_has_info>
+  <dont_has_info>dv_prisoner_dialog_end</dont_has_info>
   <init_func>dialogs_new_system.dv_about_pda</init_func>      
  </dialog>
 
@@ -253,7 +257,6 @@
   <!--has_info>find_raciya_done</has_info-->
   <dont_has_info>dv_sv_sturm_otkaz</dont_has_info>
   <dont_has_info>greh_shturm_alone</dont_has_info>
-  <dont_has_info>return_night_start</dont_has_info>
   <dont_has_info>dv_dolg_group_sbor</dont_has_info>
   <dont_has_info>find_weapons_case_start_2</dont_has_info>
   <dont_has_info>dv_mikl_think_about_rush</dont_has_info>
@@ -265,7 +268,6 @@
   <!--has_info>find_raciya_done</has_info-->
   <dont_has_info>dv_sv_sturm_otkaz</dont_has_info>
   <dont_has_info>greh_shturm_alone</dont_has_info>
-  <dont_has_info>return_night_start</dont_has_info>
   <dont_has_info>dv_dolg_group_sbor</dont_has_info>
   <dont_has_info>find_weapons_case_start_2</dont_has_info>
   <has_info>pda_coordinats_start</has_info>
@@ -443,6 +445,7 @@
 	 <dialog id="dialog_attack_greh">
         <has_info>dv_talk_with_chehov_start</has_info>
         <dont_has_info>dv_sv_grehbase_group_ready_to_go</dont_has_info>
+        <dont_has_info>dv_dolg_group_sbor</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Здорова. Я от Миклухи.</text>
@@ -468,7 +471,8 @@
             </phrase>
 			<phrase id="4">
             <give_info>dv_sv_greshbase_lider_talk_done</give_info>
-		<give_info>dv_sv_greshbase_assault</give_info>
+            <give_info>dv_sv_greshbase_assault</give_info>
+            <give_info>alt_wounded_stalk</give_info>
 			<give_info>dv_sv_grehbase_group_ready_to_go</give_info>
                 <text>Ага.</text>
 				<action>dialogs.break_dialog</action>

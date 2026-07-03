@@ -3528,3 +3528,8 @@ function spawn_yantar_spacial_hidden()
     alife():create("wpn_vintorez", vector():set(-62.101, -12.784, 304.71), 343616, 556)
 end
 
+function greh_evil()
+    relation_registry.set_community_goodwill("greh", db.actor:id (), -5000)
+end
+
+

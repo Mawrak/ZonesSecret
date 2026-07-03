@@ -1,7 +1,12 @@
 [logic]
-active = walker@wounded_dv_stalker
-on_death = death
-help_wounded_enabled = false
+active = remark@one
+
+[remark@one]
+anim = wounded
+on_info = {+dv_prisoner_dialog_end} remark@two
+
+[remark@two]
+anim = wait
 
 [walker@wounded_dv_stalker]
 path_walk = wounded_dv_stalker_walk1

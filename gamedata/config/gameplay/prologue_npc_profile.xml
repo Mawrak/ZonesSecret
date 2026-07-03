@@ -304,6 +304,14 @@
 	<character id="dv_grehbase_default5">
 		<class>dv_grehbase_default5</class>
 	</character>
+    
+    <character id="dv_grehbase_default0">
+		<class>dv_grehbase_default0</class>
+	</character>
+    
+    <character id="dv_grehbase_default9">
+		<class>dv_grehbase_default9</class>
+	</character>
 	
 	<character id="dv_greh_guard_woun_st">
 		<class>dv_greh_guard_woun_st</class>

@@ -1746,6 +1746,7 @@
 			wpn_fort \n
 			ammo_9x18_fmj = 1 \n
 			device_torch \n
+            invulnerable \n
 		</supplies>
 
 		<start_dialog>dialog_yan_slepoi</start_dialog>
