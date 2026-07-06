@@ -199,7 +199,7 @@
 		</objective>
 		
 		<objective>
-			<text>Следовать за отрядом</text>
+			<text>Следовать за капитаном</text>
 			<map_location_type hint="Командир отряда">blue_location</map_location_type>
 			<object_story_id>dv_sv_grehbase_actor_pos</object_story_id>
 			<icon>ui_iconsTotal_find_item</icon>

@@ -256,22 +256,24 @@
 			<infoportion_complete>greh_sturm_done</infoportion_complete>
 		</objective>
 		<objective>
-			<text>Пробраться на базу греха в одиночку</text>
+			<text>Пробраться на базу греха с Долгом</text>
 			<map_location_type hint="cap_pda">green_location</map_location_type>
 			<object_story_id>cap_pda</object_story_id>
 			<icon>ui_iconsTotal_find_item</icon>
 			<infoportion_complete>greh_shturm_alone</infoportion_complete>
+            <infoportion_complete>dv_prisoner_dialog_end</infoportion_complete>
 			<infoportion_set_complete>greh_sturm_done</infoportion_set_complete>
 			<function_fail>gz_tasks.greh_base</function_fail>
 		</objective>
                 <objective>
-			<text>Пробраться на базу греха с Долгом или со Свободой</text>
+			<text>Пробраться на базу греха со Свободой</text>
 			<map_location_type hint="cap_pda">green_location</map_location_type>
 			<object_story_id>cap_pda</object_story_id>
 			<icon>ui_iconsTotal_find_item</icon>
                         <infoportion_fail>greh_shturm_alone</infoportion_fail>
 			<infoportion_complete>sv_sturm</infoportion_complete>
 			<infoportion_complete>dolg_sturm</infoportion_complete>
+            <infoportion_complete>dv_prisoner_dialog_end</infoportion_complete>
 			<function_complete>gz_tasks.greh_base</function_complete>
 			<infoportion_set_complete>greh_sturm_done</infoportion_set_complete>
 		</objective>
