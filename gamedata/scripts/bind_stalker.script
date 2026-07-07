@@ -101,9 +101,18 @@ function actor_binder:net_spawn(data)
         alife():create("vehicle_niva",vector():set(-576.449, -1.679, -429.959),2059,0)
         alife():create("vehicle_niva2",vector():set(-366.572, -0.001, 3.767),9200,534)
         
+        alife():create("vehicle_moskvich2",vector():set(112.505, 1.247, 0.239),403303,396)
+        
         alife():create("racya_b",vector():set(-69.843, -6.874, -68.96),4002,716)
         
+        
         alife():create("af_ds_art",vector():set(-106.408, 1.238, 257.183),24685,388)
+        
+        
+        
+        alife():create("bloodsucker_strong",vector():set(-61.106, 3.531, 264.351),87369,387)
+
+          
         
         db.actor:give_info_portion("af_ds_quest_art_have")
     
