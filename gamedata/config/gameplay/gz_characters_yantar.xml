@@ -511,6 +511,7 @@
 			[spawn] \n
 			wpn_hk416 \n
 			ammo_5.56x45_ap = 1 \n
+            invulnerable \n
 		</supplies>
 		<actor_dialog>dialog_felix_pismo</actor_dialog>
 		
@@ -539,6 +540,7 @@
 			[spawn] \n
 			wpn_hk416 \n
 			ammo_5.56x45_ap = 1 \n
+            invulnerable \n
 		</supplies>
 		
 #include "gameplay\character_criticals_3.xml"
@@ -566,6 +568,7 @@
 			[spawn] \n
 			wpn_svd \n
 			ammo_7.62x54_7h14 = 1 \n
+            invulnerable \n
 		</supplies>
 		
 #include "gameplay\character_criticals_3.xml"
@@ -597,6 +600,7 @@
 			[spawn] \n
 			wpn_hk416 \n
 			ammo_5.56x45_ap = 1 \n
+            invulnerable \n
 		</supplies>
 		
 #include "gameplay\character_criticals_3.xml"
@@ -1293,7 +1297,7 @@
 	</specific_character>
 
           	<specific_character id="yan_zombie_quest" team_default = "1">
-		<name>Неизвестный</name>
+		<name>Петька Борзой</name>
 		<icon>ui_npc_u_stalker_zombie1</icon>
 		<map_icon x="7" y="0"></map_icon>
 		<bio>sim_zombied_veteran_bio</bio>
@@ -1314,7 +1318,7 @@
 			ammo_5.45x39_fmj = 1 \n
 			wpn_pm \n
 			ammo_9x18_fmj = 1 \n
-                        quest_pda_zombie \n
+            quest_pda_zombie \n
 			device_torch \n
 		</supplies>
 			
