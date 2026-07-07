@@ -1553,6 +1553,9 @@ function give_x15_prof_flash (first_speaker, second_speaker)
 	dialogs.relocate_item_section(second_speaker, "x15_scien_flash", "in")
 end
 
+function give_pda_cap_dv (first_speaker, second_speaker)
+	dialogs.relocate_item_section(second_speaker, "pda_cap_dv", "in")
+end
 
 
 function transfer_reward_ocelot(first_speaker, second_speaker)
