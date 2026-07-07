@@ -2,7 +2,7 @@
 active = sr_idle
 
 [sr_idle]
-on_actor_inside = %+kapishce_teleport_start% sr_psy_antenna@timers  ;вошли в 1-й раз - получаем поршень и включаем пси-эффект
+on_actor_inside = {+kapishce_teleport_cancel_3} %+kapishce_teleport_start% sr_psy_antenna@timers  ;вошли в 1-й раз - получаем поршень и включаем пси-эффект
 
 [sr_psy_antenna@timers]
 eff_intensity = 100

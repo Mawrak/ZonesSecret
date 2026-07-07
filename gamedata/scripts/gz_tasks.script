@@ -70,7 +70,8 @@ local table_quest_item_info = {
 ["rf_mil_pda"] = "rf_mil_pda_cave_have",
 ["rf_lab_card"] = "rf_lab_card_have",
 ["dscol_af_prelest"] = "dscol_af_prelest_have",
-["pda_cap_dv"] = "pda_cap_dv_have"
+["pda_cap_dv"] = "pda_cap_dv_have",
+["af_kapishe"] = "kapishce_teleport_cancel_3"
 }
 
 local scientific_suit = {

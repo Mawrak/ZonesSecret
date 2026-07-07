@@ -849,6 +849,8 @@
 	<!-- -Капище - -->
 	<info_portion id="kapishce_teleport_start"></info_portion>
 	<info_portion id="kapishce_teleport_cancel"></info_portion>
+    <info_portion id="kapishce_teleport_cancel_2"></info_portion>
+    <info_portion id="kapishce_teleport_cancel_3"></info_portion>
 	<info_portion id="ds_kapische_first_teleport_done"></info_portion>
 	<info_portion id="ds_kapische_cutscene_end">
 		<article>storyline_soz_capish_info</article>
