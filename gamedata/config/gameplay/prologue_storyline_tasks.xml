@@ -1118,7 +1118,7 @@
 		</objective>
                 <objective>
 			<text>Забрать у него собранные сведения</text>
-			<infoportion_complete>dv_shpion_atack</infoportion_complete>
+			<infoportion_complete>find_tainik_done</infoportion_complete>
 			<map_location_type hint="Информатор Долга">blue_location</map_location_type>
 			<object_story_id>dv_shpion</object_story_id>
 		</objective>

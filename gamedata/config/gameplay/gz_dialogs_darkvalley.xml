@@ -973,7 +973,7 @@
  
   <dialog id="dv_dolg_about_shpion">
  			<dont_has_info>contact_with_base_start</dont_has_info>
- 			<has_info>dv_shpion_atack</has_info>
+ 			<has_info>find_tainik_done</has_info>
        <phrase_list>
             <phrase id="0">
                 <text>Вот, папка с информацией от Кривого.</text>
