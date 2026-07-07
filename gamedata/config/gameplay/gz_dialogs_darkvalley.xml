@@ -233,14 +233,6 @@
   <init_func>dialogs_new_system.dv_dolg_raciya_s</init_func>    
  </dialog>
  
- <dialog id="dv_dolg_rush_to_greh_old">
-  <has_info>find_ten_medkit_done</has_info>
-  <has_info>pda_coordinats_start</has_info>
-  <dont_has_info>dv_dolg_group_sbor</dont_has_info>
-  <dont_has_info>help_dv_dolg_failed</dont_has_info>
-  <dont_has_info>greh_shturm_alone</dont_has_info>
-  <init_func>dialogs_new_system.dv_dolg_rush_to_greh_old_s</init_func>
- </dialog>
  
  <dialog id="dialog_about_raciya_chehov">
   <has_info>go_to_lager_dv_done</has_info>
