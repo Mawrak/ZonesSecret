@@ -111,8 +111,27 @@ function actor_binder:net_spawn(data)
         
         
         alife():create("bloodsucker_strong",vector():set(-61.106, 3.531, 264.351),87369,387)
-
-          
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        alife():create("flesh_weak",vector():set(377.896, -0.503, 507.74),760304,94)
+        alife():create("flesh_weak",vector():set(377.896, -0.503, 507.74),760304,94)
+        alife():create("m_flesh_e",vector():set(377.896, -0.503, 507.74),760304,94)
+        
+        
+        alife():create("flesh_normal",vector():set(-264.123, -1.886, -409.095),68752,18)
+        alife():create("flesh_normal",vector():set(-264.123, -1.886, -409.095),68752,18)
+        alife():create("flesh_normal",vector():set(-264.123, -1.886, -409.095),68752,18)
+        
+        alife():create("flesh_strong",vector():set(-192.035, 0.683, -151.679),123546,27)
+        alife():create("flesh_strong",vector():set(-192.035, 0.683, -151.679),123546,27)
+        alife():create("flesh_strong",vector():set(-192.035, 0.683, -151.679),123546,27)
         
         db.actor:give_info_portion("af_ds_quest_art_have")
     
