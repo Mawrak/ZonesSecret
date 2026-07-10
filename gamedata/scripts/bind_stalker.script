@@ -58,7 +58,7 @@ end
 --artefact_spawn_count > 0 with box type shape
 
 local zone_prefixes_1 = { --this fixes it!!
-    "zone_flame_small", "zone_ameba1", "zone_zharka_static_strong", "zone_burning_fuzz1", "electra_witches_galantine_weak", "witches_galantine_strong_noart", "zone_witches_galantine_strong", "gar_zone_radioactive_weak", "zone_burning_fuzz", "gar_zone_buzz_average", "gar_zone_gravi_zone_killing", "gar_zone_gravi_zone_weak", "gar_zone_mosquito_bald_strong", "gar_zone_radioactive", "zone_electra", "zone_gravi_medium", "labx13_zone_buzz_weak_noart", "yan_zone_buzz_strong", "yan_zone_mine_field", "yan_zone_mosquito_bald_strong_noart", "yan_zone_mosquito_bald_weak_noart", "gz_yan_zone_radioactive_weak", "yan_zone_witches_galantine_weak", "yan_zone_zharka_static_average"
+    "zone_flame_small", "zone_ameba1", "zone_zharka_static_strong", "zone_burning_fuzz1", "electra_witches_galantine_weak", "witches_galantine_strong_noart", "zone_witches_galantine_strong", "gar_zone_radioactive_weak", "zone_burning_fuzz", "gar_zone_buzz_average", "gar_zone_gravi_zone_killing", "gar_zone_gravi_zone_weak", "gar_zone_mosquito_bald_strong", "gar_zone_radioactive", "zone_electra", "zone_gravi_medium", "labx13_zone_buzz_weak_noart", "yan_zone_buzz_strong", "yan_zone_mine_field", "yan_zone_mosquito_bald_strong_noart", "yan_zone_mosquito_bald_weak_noart", "gz_yan_zone_radioactive_weak", "yan_zone_witches_galantine_weak", "yan_zone_zharka_static_average", "exit_to_agr_u_from_agr1935_1", "exit_to_agr1935und_from_gar1935"
 }
 
 
