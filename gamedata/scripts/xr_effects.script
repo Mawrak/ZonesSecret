@@ -3533,3 +3533,23 @@ function greh_evil()
 end
 
 
+function remove_petro_gar()
+    
+    for a = 1, 65535 do
+        local obj = alife():object(a)
+        if obj then
+            local name = tostring(obj:name())
+            if name == "gar_petro" then
+                alife():release(obj)
+            end
+        end
+    end
+end
+
+
+
+
+function spawn_bekas_money_coords()
+    
+    alife():create("bekas_money", vector():set(274.818, -9.805, -30.119), 544740, 284)
+end

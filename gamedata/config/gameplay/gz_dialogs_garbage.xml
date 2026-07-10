@@ -231,7 +231,6 @@
             </phrase>
             <phrase id="121">
                 <text>Не, я пас.</text>
-                <give_info>dialog_osvedomel_digger_otkaz</give_info>
             </phrase>
               <phrase id="20">
                 <text>Он обычно где-то тут в лагере ошивается.</text>
@@ -357,7 +356,7 @@
                  <next>13</next>
             </phrase>
               <phrase id="12">
-                <text>Даже так? Хм… впрочем, ты не похож на человека с плохими намерениями. Бекас сейчас находится в Тёмной долине, КПК у него почти всегда выключен, поэтому его координаты скинуть не удастся.</text>
+                <text>Даже так? Хм… впрочем, ты не похож на человека с плохими намерениями. Бекас сейчас находится в Тёмной долине, КПК у него почти всегда выключен, но он почти все время ошивается в старом вагончике. Я скину координаты.</text>
             <give_info>find_bekas_at_td_start</give_info>
             </phrase>
               <phrase id="13">
@@ -418,11 +417,13 @@
                <phrase id="45">
                 <text>Ага, спасибо.</text>
                <give_info>find_bekas_box_fail</give_info>
+               <action>xr_effects.remove_petro_gar</action>
             </phrase>
             <phrase id="3">
                 <text>Повторю вопрос: где тайник? Иначе я сделаю с тобой тоже самое, что сделал с Петро.</text>
-                              <give_info>bekas_vrag</give_info>
-               <action>dialogs.break_dialog</action>
+                <give_info>bekas_vrag</give_info>
+                <action>dialogs.break_dialog</action>
+                <action>xr_effects.remove_petro_gar</action>
             </phrase>
 	</phrase_list>
     </dialog>

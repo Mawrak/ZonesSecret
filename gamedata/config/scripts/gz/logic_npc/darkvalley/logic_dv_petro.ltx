@@ -19,8 +19,8 @@ on_info = %=killactor%
 path_walk = dv_petro_stay
 path_look = dv_petro_look
 on_actor_dist_ge_nvis = 130| %+dv_dell_petro%
-meet = no_meet
+;meet = no_meet
 
 [meet@self_doc] 
-use_wpn = self
-use = {=dist_to_actor_le(3)} self
+use_wpn = {=dist_to_actor_le(3) -kill_petro} self, {+kill_petro} false
+use = {=dist_to_actor_le(3) -kill_petro} self, {+kill_petro} false

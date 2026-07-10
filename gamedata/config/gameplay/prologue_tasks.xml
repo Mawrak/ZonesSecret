@@ -613,16 +613,18 @@
 	</game_task>
 
     <game_task id="talk_to_bekas">
-	<title>Убедиться, что это Бекас</title>
+	<title>Найти Бекаса</title>
 		<objective>
-			<text>Убедиться, что это Бекас</text>
-                        <article>grab_bekas_box</article>
+			<text>Найти Бекаса</text>
+            <article>grab_bekas_box</article>
 			<icon>ui_icons_storyline_green_cont</icon>
-			<infoportion_complete>find_bekas_box_fail</infoportion_complete>
+			<infoportion_complete>find_bakas_done</infoportion_complete>
 		</objective>
         <objective>
-			<text>Поговорить с ним</text>
-			<infoportion_complete>find_bekas_box_fail</infoportion_complete>
+			<text>Поговорить с Бекасом</text>
+            <map_location_type hint="Бекас">green_location</map_location_type>
+			<object_story_id>dv_bekas</object_story_id>
+			<infoportion_complete>find_bakas_done</infoportion_complete>
 		</objective>
 	</game_task>
 

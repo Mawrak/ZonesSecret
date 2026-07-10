@@ -1281,7 +1281,7 @@
 	<info_portion id="quest_digger_tainik_start">
 		<task>find_digger_tainik</task>
 	</info_portion>
-	<info_portion id="find_bekas_at_td_start"></info_portion>
+	<info_portion id="find_bekas_at_td_start"><task>talk_to_bekas</task></info_portion>
 	<info_portion id="find_bekas_in_vagon"></info_portion>
 	<info_portion id="dell_dv_putnik"></info_portion>
 	<info_portion id="petro_dead"></info_portion>
@@ -1289,9 +1289,7 @@
 	<info_portion id="find_bekas_box_fail_new"></info_portion>
 	<info_portion id="find_petro_done"></info_portion>
 	<info_portion id="petro_pogovoril"></info_portion>
-	<info_portion id="find_bakas_done">
-		<task>talk_to_bekas</task>
-	</info_portion>
+	<info_portion id="find_bakas_done"></info_portion>
     <info_portion id="bekas_extra"></info_portion>
     <info_portion id="bekas_extra2"></info_portion>
     <info_portion id="bekas_extra3"></info_portion>
