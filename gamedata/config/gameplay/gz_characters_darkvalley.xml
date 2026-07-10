@@ -2203,7 +2203,7 @@ invulnerable \n
 		<bio>sim_stalker_general_bio</bio>
 
 		<class>dv_shpion</class>
-		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<community>dolg</community> <terrain_sect>stalker_terrain</terrain_sect>
 		
 		<rank>447</rank>
 		<reputation>33</reputation>
