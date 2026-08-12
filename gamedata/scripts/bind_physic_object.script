@@ -9,7 +9,7 @@ function init(obj)
 	printf("_bp: init(): name='%s'", obj:name())
     
     if level.name() == "gz_agroprom" then
-        if string.find(obj:name(), "light_wire_1_0000") then
+        if string.find(obj:name(), "light_wire_1_0000") or string.find(obj:name(), "lights_camp_fire_omni_r1_r2_0001") then
     
             --news_manager.send_tip(db.actor, obj:name())
             --alife():release(obj)
@@ -22,6 +22,21 @@ function init(obj)
     
     end
     
+    if level.name() == "gz_darkvalley" then
+        if string.find(obj:name(), "lights_camp_fire_omni_r1_r2_0001") then
+    
+            --news_manager.send_tip(db.actor, obj:name())
+            --alife():release(obj)
+                alife():set_switch_online(obj:id(), false)
+                alife():set_switch_offline(obj:id(), true)
+            
+            return
+    
+        end
+    
+    end
+    
+    --news_manager.send_tip(db.actor, obj:name(), nil, nil, 10000)
 
 	----------------------------------------------------------------------------------------
 	-- Старые схемы
