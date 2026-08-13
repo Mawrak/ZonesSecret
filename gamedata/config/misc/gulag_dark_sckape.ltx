@@ -10,7 +10,7 @@
 ;-- Торговец
 ;--день, вечер
 [logic@ds_neutlager_trader_walk1]
-active = walker@ds_neutlager_trader_walk1
+active = walker@ds_neutlager_trader_walk2
 trade = misc\soz_traders\trade_dsneutlager_trader.ltx
 inv_max_weight = 10000
 on_hit = hit@ds_neutlager
@@ -29,7 +29,7 @@ on_info = {=actor_out_zone(ds_neutlager_trader_tradezone)} walker@ds_neutlager_t
 path_walk = trader_walk2
 meet = meet@ds_neutlager_at_trade
 def_state_moving = walk
-on_info = {=actor_in_zone(ds_neutlager_trader_tradezone)} walker@ds_neutlager_trader_walk1
+;on_info = {=actor_in_zone(ds_neutlager_trader_tradezone)} walker@ds_neutlager_trader_walk1
 
 [meet@ds_neutlager_at_trade]
 meet_state = 2|wait@talk_hello
@@ -97,7 +97,7 @@ meet_state = guard
 
 ;--Бармен
 [logic@ds_neutlager_barmen_walk1]
-active = walker@ds_neutlager_barmen_walk1
+active = walker@ds_neutlager_barmen_walk3
 trade = misc\soz_traders\trade_dsneutlager_barmen.ltx
 on_hit = hit@ds_neutlager
 inv_max_weight = 10000
@@ -118,7 +118,7 @@ on_info = {=actor_in_zone(ds_neutlager_barman_tradezone)} walker@ds_neutlager_ba
 path_walk = barmen_walk1
 path_look = barmen_look1
 def_state_standing = wait
-on_info = {=actor_out_zone(ds_neutlager_barman_tradezone)} walker@ds_neutlager_barmen_walk1
+;on_info = {=actor_out_zone(ds_neutlager_barman_tradezone)} walker@ds_neutlager_barmen_walk1
 
 ;-------------------------------------------
 ;--Охранник №0 стоячий
