@@ -171,4 +171,10 @@
     <string id="kb_scores">
 		<text>Активное задание</text>
 	</string>
+	<string id="kb_use_bandage">
+		<text>Бинт</text>
+	</string>
+    <string id="kb_use_medkit">
+		<text>Аптечка</text>
+	</string>
 </string_table>
