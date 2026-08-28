@@ -180,7 +180,7 @@
 				
 		<rank>465</rank>
 		<reputation>450</reputation>
-		<money min="100000" max="100000" infinitive="1"/>  
+		<money min="1000000" max="1000000" infinitive="1"/>  
 		<supplies>
 			[spawn] \n
             wpn_fort \n
@@ -220,7 +220,7 @@
 				
 		<rank>350</rank>
 		<reputation>298</reputation>
-		<money min="100000" max="100000" infinitive="1"/> 
+		<money min="1000000" max="1000000" infinitive="1"/> 
 		<supplies>
 			[spawn] \n
            wpn_fort \n

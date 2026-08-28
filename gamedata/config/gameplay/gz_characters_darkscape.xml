@@ -289,7 +289,7 @@
 
 		<class>ds_iskateli_trader</class>
 		<community>iskateli</community> <terrain_sect>stalker_iskateli_terrain</terrain_sect>
-		<money min="50000" max="100000" infinitive="1"></money>
+		<money min="1000000" max="1000000" infinitive="1"></money>
 		
 		<rank>720</rank>
 		<reputation>0</reputation>
@@ -321,7 +321,7 @@
 
 		<class>ds_iskateli_doctor</class>
 		<community>iskateli</community> <terrain_sect>stalker_iskateli_terrain</terrain_sect>
-		<money min="50000" max="100000" infinitive="1"></money>
+		<money min="1000000" max="1000000" infinitive="1"></money>
 	
 		<rank>507</rank>
 		<reputation>0</reputation>
@@ -611,7 +611,7 @@
 
 		<class>ds_neutlager_mehanic</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
-		<money min="50000" max="100000" infinitive="1"></money>
+		<money min="1000000" max="1000000" infinitive="1"></money>
 		
 		<rank>515</rank>
 		<reputation>6</reputation>
@@ -651,7 +651,7 @@
 
 		<class>ds_neutlager_trader</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
-		<money min="50000" max="100000" infinitive="1"></money>
+		<money min="1000000" max="1000000" infinitive="1"></money>
 		
 		<rank>720</rank>
 		<reputation>0</reputation>
@@ -687,7 +687,7 @@
 
 		<class>ds_neutlager_barmen</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
-		<money min="50000" max="100000" infinitive="1"></money>
+		<money min="1000000" max="1000000" infinitive="1"></money>
 	
 		<rank>507</rank>
 		<reputation>0</reputation>
@@ -725,7 +725,7 @@
 
 		<class>ds_neutlager_doctor</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
-		<money min="50000" max="100000" infinitive="1"></money>
+		<money min="1000000" max="1000000" infinitive="1"></money>
 	
 		<rank>507</rank>
 		<reputation>0</reputation>

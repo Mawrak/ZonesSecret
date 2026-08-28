@@ -690,7 +690,7 @@
 
 		<class>bar_barman</class>
 		<community>trader</community> <terrain_sect>stalker_terrain</terrain_sect>
-		<money min="100000" max="110000" infinitive="1"></money>
+		<money min="1000000" max="1000000" infinitive="1"></money>
 		
 		<rank>700</rank>
 		<reputation>50</reputation>

@@ -12,7 +12,7 @@
 
 		<class>agr_dolgbase_lider_krylov</class>
 		<community>dolg</community> <terrain_sect>stalker_dolg_terrain</terrain_sect>
-		<money min="100000" max="110000" infinitive="1"></money>
+		<money min="1000000" max="1000000" infinitive="1"></money>
 		
 		<rank>459</rank>
 		<reputation>0</reputation>
@@ -392,7 +392,7 @@
 
 		<class>agr_dolgblokpost_commander_krivtsov</class>
 		<community>dolg</community> <terrain_sect>stalker_dolg_terrain</terrain_sect>
-		<money min="100000" max="110000" infinitive="1"></money>
+		<money min="1000000" max="1000000" infinitive="1"></money>
 		
 		<rank>459</rank>
 		<reputation>0</reputation>
@@ -767,7 +767,7 @@
 		
 		<class>agr_dolgbase_weapontrader</class>
 		<community>dolg</community> <terrain_sect>stalker_dolg_terrain</terrain_sect>
-		<money min="100000" max="100000" infinitive="1"/> 
+		<money min="1000000" max="1000000" infinitive="1"/> 
 		
 		<rank>650</rank>
 		<reputation>350</reputation>
