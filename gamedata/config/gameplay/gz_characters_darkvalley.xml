@@ -2086,6 +2086,7 @@ invulnerable \n
 			wpn_mp5 \n
 			ammo_9x19_fmj \n
 			device_torch \n
+			medkit_army \n
             invulnerable \n
 #include "gameplay\character_items.xml" \n
 #include "gameplay\character_drugs.xml" \n
@@ -2123,6 +2124,8 @@ invulnerable \n
 			ammo_7.62x25_p \n
 			device_torch \n
                         af_soul \n
+						
+						medkit_army = 2 \n
                         
 #include "gameplay\character_drugs.xml"
 #include "gameplay\character_food.xml"
@@ -2159,6 +2162,7 @@ invulnerable \n
 			ammo_9x18_fmj = 1 \n
 			device_torch \n
                         dv_fomka_diary \n
+						medkit_army = 3 \n
 		</supplies>
 			
 #include "gameplay\character_criticals_1.xml"
@@ -2185,6 +2189,7 @@ invulnerable \n
 		<supplies>
 			[spawn] \n
 			device_torch \n
+			medkit_army \n
 #include "gameplay\character_drugs.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_items.xml"
