@@ -18,6 +18,8 @@ snd = esc_wolf_radio
 target = actor
 meet = no_meet
 on_signal = sound_end| walker@dv_svobbase_leader_walk2 %+dv_talk_with_chehov_start%
+on_timer = 30000 | walker@dv_svobbase_leader_walk2 %+dv_talk_with_chehov_start%
+
 
 [walker@dv_svobbase_leader_walk2]
 path_walk = leader_walk
@@ -142,6 +144,7 @@ snd = dv_chehov_2
 target = actor
 meet = no_meet
 on_signal = sound_end| walker@dv_sv_attack_grehbase_lider_walk2
+on_timer = 30000 | walker@dv_sv_attack_grehbase_lider_walk2
 
 
 [walker@dv_sv_attack_grehbase_lider_walk2]
@@ -168,6 +171,7 @@ target = dv_svobbase_sva_lider_look3, 0
 snd = dv_chehov_2
 meet = no_meet
 on_signal = sound_end| walker@dv_sv_attack_grehbase_lider_attack %+dv_sv_greshbase_group_go%
+on_timer = 30000 | walker@dv_sv_attack_grehbase_lider_attack %+dv_sv_greshbase_group_go%
 
 [walker@dv_sv_attack_grehbase_lider_attack]
 path_walk = sva_attack7_walk
