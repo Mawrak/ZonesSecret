@@ -1129,8 +1129,8 @@ path_walk = gb_assault_way
 formation = back
 commander = true
 move_type = rush
-on_info = {+dv_dolg_contrgreh_spawn_controller_start} remark@dolg_a_attack_lider_crazy
-on_signal = dolgrush| %+dv_dolg_grehbase_rush_all_on_pos%, dolgcampassend| walker@dv_dolg_group_lider_patrol_on_gb
+on_info = {+dv_contergreh_dead} walker@dv_dolg_group_lider_patrol_on_gb
+;on_signal = dolgrush| %+dv_dolg_grehbase_rush_all_on_pos%, dolgcampassend| walker@dv_dolg_group_lider_patrol_on_gb
 meet = no_meet
 def_state_moving1 = rush
 def_state_moving2 = rush
@@ -1139,8 +1139,6 @@ def_state_moving3 = rush
 [walker@dv_dolg_group_lider_patrol_on_gb]
 path_walk = gb_assault_patrol_on_gb
 combat_type = monolith
-meet = no_meet
-on_info = {+dv_dolg_contrgreh_spawn_controller_start} remark@dolg_a_attack_lider_crazy
 
 [remark@dolg_a_attack_lider_crazy]
 ;anim = wounded_heavy_3
