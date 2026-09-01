@@ -1114,7 +1114,7 @@ on_info = {+dv_dolg_group_sbor} walker@dv_dolg_group_lider_walk2
 [walker@dv_dolg_group_lider_walk2]
 path_walk = lider_walk1
 path_look = lider_look1
-on_timer = 15000 | remark@dv_dolg_group_lider_remark
+on_timer = 1000 | remark@dv_dolg_group_lider_remark
 
 [remark@dv_dolg_group_lider_remark]
 target = dv_dolg_group_guard2_walk2
@@ -1122,7 +1122,7 @@ snd = dolg2
 anim = ward
 meet = no_meet
 on_signal = sound_end | walker@dv_dolg_group_lider_rush %+dv_dolg_group_rush_start%
-on_timer = 30000 | walker@dv_dolg_group_lider_rush %+dv_dolg_group_rush_start%
+on_timer = 24000 | walker@dv_dolg_group_lider_rush %+dv_dolg_group_rush_start%
 
 [walker@dv_dolg_group_lider_rush]
 path_walk = gb_assault_way
