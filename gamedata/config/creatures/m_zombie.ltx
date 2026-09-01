@@ -519,3 +519,42 @@ species = bird
 [zombie_strona]:zombie_strong
 
 species = bird
+
+
+[psy_zom]:zombie_strong
+panic_threshold			= 0.0
+
+
+; speed factors			linear | angular_real | angular_path | min |  max
+Velocity_Stand			= 0,		3,			3,		1,		1
+Velocity_WalkFwdNormal	= 2,		2,			2,		0.02,	2.0	
+Velocity_RunFwdNormal	= 3,		4.0,			4.0,		0.4,	1	
+Velocity_WalkFwdDamaged	= 1,		4.0,			4,		0.2,	2.0	
+Velocity_RunFwdDamaged	= 2,  	4.0,			4.0,		0.2,	1
+Velocity_Drag			= 1.0,		4.0,			4.0,		1,		1
+Velocity_Steal			= 1.5,		4.0,			4.0,		1,		1
+
+; acceleration
+Accel_Generic			= 2
+Accel_Calm			= 2.5
+Accel_Aggressive		= 12
+
+;attack parameters
+MinAttackDist		= 1.7	;0.5
+MaxAttackDist		= 2.3	;3.8
+
+Melee_Rotation_Factor	= 2
+
+
+sound_idle				= monsters\zombie_s\zombie_idle_ 
+sound_eat				= monsters\zombie_s\zombie_eat_ 
+sound_aggressive			= monsters\zombie_s\zombie_attack_
+sound_attack_hit		= monsters\zombie_s\zombie_attack_hit_
+sound_take_damage		= monsters\zombie_s\zombie_take_damage_
+sound_die				= monsters\zombie_s\zombie_die_
+sound_threaten			= monsters\biting\def_		
+sound_landing			= monsters\biting\def_
+sound_steal				= monsters\biting\def_
+sound_panic				= monsters\zombie_s\zombie_attack_
+sound_growling			= monsters\biting\def_
+sound_die_in_anomaly	= monsters\zombie_s\zombie_die_
