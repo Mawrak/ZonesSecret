@@ -1445,9 +1445,9 @@ end
 
 function allow_duty_spawn()
     a = db.actor:position()
-    --if a.x < 535 and a.x > 509 and a.z < -182 and a.z > -237 then
+    --if a.x < 566 and a.x > 509 and a.z < -182 and a.z > -237 then
     
-    if a.x > 576 and a.x < 594 and a.z < -206 and a.z > -224 then
+    if a.x > 566 and a.x < 594 and a.z < -202 and a.z > -224 then
         return true
         
     else

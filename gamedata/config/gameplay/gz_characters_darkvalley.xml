@@ -766,7 +766,7 @@ invulnerable \n
 		<bio>escape_trader_bio</bio>
 
 		<class>dv_wounded_stalker</class>
-		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<community>iskateli</community> <terrain_sect>stalker_terrain</terrain_sect>
 
 		<visual>gz\npc\neutral\new_novice\novice_3</visual>
         <snd_config>characters_voice\human_02\newbie\</snd_config>
