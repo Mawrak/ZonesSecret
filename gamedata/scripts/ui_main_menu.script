@@ -276,3 +276,24 @@ function main_menu:OnKeyboard(dik, keyboard_action)  --virtual function
    
 	return true
 end
+
+
+
+function main_menu:OnButton_credits_clicked()
+	local text
+	local vid
+	local gvid
+	local a = vector()
+	local text
+	a = db.actor:position()
+	vid = db.actor:level_vertex_id()
+	gvid = db.actor:game_vertex_id()
+	text = "Position:\\nX= "..a.x.."\\nY= "..a.y.."\\nZ= "..a.z.."\\nlevel_vertex= "..vid.."\\ngame_vertex_id= "..gvid
+	news_manager.send_tip(db.actor, text, nil, nil, 30000)
+
+    --local render = get_console():get_string("renderer")
+    --news_manager.send_tip(db.actor, tostring(render), nil, nil, 30000)
+
+    --aaa_quests.aaa_music_player("music\\cry\\lonely")
+
+end
