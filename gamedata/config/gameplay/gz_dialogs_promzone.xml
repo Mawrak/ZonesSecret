@@ -17,6 +17,7 @@
  </dialog>
 
  <dialog id="dialog_pz_wanderer">
+  <has_info>rf_lab_card_have</has_info>
   <dont_has_info>pz_wanderer_dialog_done</dont_has_info>
   <init_func>dialogs_new_system.pz_wanderer</init_func>      
  </dialog>
