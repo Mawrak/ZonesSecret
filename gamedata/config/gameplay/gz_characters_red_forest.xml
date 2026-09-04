@@ -226,6 +226,7 @@
 			wpn_ak74 \n
 			ammo_5.45x39_ap = 1 \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -262,6 +263,7 @@
 			wpn_rpk \n
 			ammo_7.62x39_fmj = 1 \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -586,6 +588,7 @@
                         wpn_fort \n
 			ammo_9x18_fmj = 1 \n
 			device_torch \n
+            invulnerable \n
 		</supplies>
 
 #include "gameplay\character_criticals_4.xml"
@@ -615,6 +618,7 @@
 			wpn_groza \n
 			ammo_9x39_sp5 = 4 \n
 			device_torch \n
+            invulnerable \n
 		</supplies>
 
 #include "gameplay\character_criticals_4.xml"

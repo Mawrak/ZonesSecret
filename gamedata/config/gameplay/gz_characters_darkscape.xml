@@ -555,6 +555,7 @@
 			wpn_mp5 \n
 			ammo_9x19_fmj \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
@@ -589,6 +590,7 @@
 			wpn_toz34 \n
 			ammo_12x70_buck \n
 			device_torch \n
+            invulnerable \n
 #include "gameplay\character_items.xml"
 #include "gameplay\character_food.xml"
 #include "gameplay\character_drugs.xml"
