@@ -516,6 +516,7 @@
 			wpn_fort \n
 			ammo_9x18_fmj \n
 			wpn_mp5 \n
+            medkit_army = 2 \n
 			ammo_9x19_fmj\n
 			device_torch \n
                         pda_ld_code \n
