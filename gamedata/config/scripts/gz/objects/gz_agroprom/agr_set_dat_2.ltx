@@ -5,8 +5,8 @@ active = ph_idle
 on_info = {+setup_agr_dat_start} ph_idle2
 
 [ph_idle2]
-on_use = %+setup_agr_dat_2_done%
+on_use = %+setup_agr_dat_2_done% ph_idle@nil
 tips = yan_det_install
-on_info = {+setup_agr_dat_2_done} ph_idle@nil
+on_info = {=distance_to_obj_le_actor(32002:2)} %+setup_agr_dat_2_done% ph_idle@nil
 
 [ph_idle@nil]
