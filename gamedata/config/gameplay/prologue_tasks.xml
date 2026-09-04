@@ -1236,16 +1236,24 @@
 			<text>Найти бойца Последнего Дня по прозвищу Швед</text>
 			<icon>ui_icons_storyline_find_ld</icon>
 			<article>ds_ld_find_shved</article>
-			<infoportion_complete>ds_find_shved_pda_done</infoportion_complete>
+			<infoportion_complete>ds_return_shved_pda_done</infoportion_complete>
+            <infoportion_fail>ds_return_shved_pda_false</infoportion_fail>
 		</objective>
 		<objective>
 			<text>Распросить в лагере про Шведа</text>
 			<infoportion_complete>ds_lager_talk_doc_about_shved_done</infoportion_complete>
 		</objective>
-                <objective>
+        <objective>
 			<text>Найти Шведа</text>
 			<infoportion_complete>ds_find_shved_pda_done</infoportion_complete>
 		</objective>
+        <objective>
+			<text>Доложить Оцелоту</text>
+            <map_location_type hint="Оцелот">blue_location</map_location_type>
+			<object_story_id>ds_ocelot</object_story_id>
+			<infoportion_complete>ds_return_shved_pda_done</infoportion_complete>
+			<infoportion_fail>ds_return_shved_pda_false</infoportion_fail>
+		</objective>   
 	</game_task>
 
               <game_task id="gar_self_destroy_the_wall">

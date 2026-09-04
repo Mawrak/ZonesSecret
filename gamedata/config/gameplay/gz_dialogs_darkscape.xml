@@ -53,6 +53,7 @@
  </dialog>
 
  <dialog id="dialog_ocelot_return_shved">
+    <has_info>ds_find_shved_pda_start</has_info>
   <dont_has_info>ds_return_shved_pda_done</dont_has_info>
   <dont_has_info>ds_return_shved_pda_false</dont_has_info>
   <has_info>ds_find_shved_pda_done</has_info>

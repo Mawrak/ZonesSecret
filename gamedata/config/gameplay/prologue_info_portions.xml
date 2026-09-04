@@ -2097,9 +2097,7 @@
 		<task>ds_ld_find_shved</task>
 	</info_portion>
 	<info_portion id="ds_find_shved_pda_otkaz"></info_portion>
-	<info_portion id="ds_find_shved_pda_done">
-		<task>ds_ld_return_shved_pda</task>
-	</info_portion>
+	<info_portion id="ds_find_shved_pda_done"></info_portion>
 	<info_portion id="ds_lager_talk_scarabey_about_shved_done"></info_portion>
 	<info_portion id="ds_lager_talk_doc_about_shved_done"></info_portion>
 	<info_portion id="ds_lager_talk_torg_about_shved_done"></info_portion>
