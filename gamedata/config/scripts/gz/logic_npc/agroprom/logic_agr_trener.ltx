@@ -4,7 +4,8 @@ active = walker
 [walker]
 path_walk = agr_dolg_trener_stay
 path_look = agr_dolg_sport2_look
-on_info = {+agr_dolg_sport_start} walker2
+on_info = {+agr_dolg_sport_start -agr_sport_end} walker2
+on_info2 = {+agr_sport_end} walker3
 meet = no_meet
 
 [walker2]
@@ -19,6 +20,7 @@ target = agr_dolg_sport2_look,0
 snd = dolg_trener_1
 on_signal = sound_end|remark2
 meet = no_meet
+on_timer = 20000|remark2
 
 [remark2]
 anim = guard
@@ -33,6 +35,7 @@ target = agr_dolg_sport2_look,0
 snd = dolg_trener_2
 on_actor_dist_ge_nvis = 50| %+agr_sport_end%
 on_signal = sound_end|remark4
+on_timer = 20000|remark4
 meet = no_meet
 
 [remark4]
@@ -48,6 +51,7 @@ target = actor
 snd = dolg_trener_3
 on_actor_dist_ge_nvis = 50| %+agr_sport_end%
 on_signal = sound_end|walker3
+on_timer = 20000|walker3
 meet = no_meet
 
 [walker3]
