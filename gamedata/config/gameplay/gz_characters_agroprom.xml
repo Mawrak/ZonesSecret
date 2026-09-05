@@ -29,7 +29,7 @@
 		</supplies>
 		
 		<actor_dialog>dialog_krylov_about_cap</actor_dialog>
-                <actor_dialog>dialog_krylov_about_cap_dolg</actor_dialog>
+        <actor_dialog>dialog_krylov_about_cap_dolg</actor_dialog>
 		
 #include "gameplay\character_criticals_6.xml"
 		
@@ -642,10 +642,7 @@
 
 #include "gameplay\character_criticals_6.xml"
 		
-		<actor_dialog>dialog_agr_com_blokp_neut_reputation</actor_dialog>
-		<actor_dialog>dialog_agr_com_blokp_neut_reputation_2</actor_dialog>
-		<actor_dialog>dialog_agr_com_blokp_good_reputation_1</actor_dialog>
-		<actor_dialog>dialog_agr_com_blokp_good_reputation_2</actor_dialog>
+		
 		
 #include "gameplay\character_dialogs.xml"
 
@@ -675,6 +672,7 @@
 			wpn_rpk \n
 			ammo_7.62x39_fmj \n
 			device_torch \n			
+            invulnerable \n
 #include "gameplay\character_food.xml" \n
 #include "gameplay\character_drugs.xml"
 		</supplies>
@@ -683,8 +681,6 @@
 		
 		<actor_dialog>dialog_agr_com_blokp_neut_reputation</actor_dialog>
 		<actor_dialog>dialog_agr_com_blokp_neut_reputation_2</actor_dialog>
-		<actor_dialog>dialog_agr_com_blokp_good_reputation_1</actor_dialog>
-                <actor_dialog>dialog_agr_com_blokp_good_reputation_2</actor_dialog>
 		
 #include "gameplay\character_dialogs.xml"
 
@@ -783,10 +779,8 @@
 #include "gameplay\character_drugs.xml"
 		</supplies>
 		
-		<actor_dialog>dialog_agr_kalash_about_general_1</actor_dialog>
-		<actor_dialog>dialog_agr_kalash_about_general_2</actor_dialog>
+                <actor_dialog>dialog_agr_kalash_about_general_1</actor_dialog>
                 <actor_dialog>dialog_agr_kalash_about_present_1</actor_dialog>
-                <actor_dialog>dialog_agr_kalash_about_present_2</actor_dialog>
                 <actor_dialog>dialog_dolg_borman_noyt</actor_dialog>
                 <actor_dialog>dialog_agr_loki_case_open</actor_dialog>
 
@@ -879,7 +873,7 @@
 	
 <!--------------------------- коммендант---------------------->
 	<specific_character id="agr_dolgbase_nachalnik" team_default = "1">
-		<name>Cуровый</name>
+		<name>Суровый</name>
 		<icon>ui_npc_u_stalker_do_mask_1</icon>
 		<map_icon x="4" y="0"></map_icon>
 		<bio>sim_dolg_regular_bio</bio>

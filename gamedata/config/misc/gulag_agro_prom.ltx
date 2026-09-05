@@ -25,7 +25,7 @@ combat_ignore_cond = {=check_fighting(31504:31505:31506:31507:31508:31509:31510:
 --------------------------------------------------------------------------
 
 [logic@agr_dolgbase_trader]
-active = walker@agr_dolgbase_trader_walk1
+active = walker@agr_dolgbase_trader_walk3
 on_hit = hit@dolgbase_dolgs
 trade = misc\soz_traders\trade_kalash_trader.ltx
 inv_max_weight = 10000
@@ -57,7 +57,7 @@ combat_ignore_cond = {=check_fighting(31504:31505:31506:31507:31508:31509:31510:
 [walker@agr_dolgbase_trader_walk3]
 path_walk = trader_trade_walk
 target = actor
-on_info = {=actor_out_zone(agr_dolgbase_trader_tradezone)} walker@agr_dolgbase_trader_walk2
+;on_info = {=actor_out_zone(agr_dolgbase_trader_tradezone)} walker@agr_dolgbase_trader_walk2
 combat_ignore_cond = {=check_fighting(31504:31505:31506:31507:31508:31509:31510:31511:31512:31513:31514)}
 
 --------------------------------------------------------------------------
@@ -252,6 +252,11 @@ combat_ignore_cond = {=check_fighting(31504:31505:31506:31507:31508:31509:31510:
 [logic@agr_dolgbase_blokp1_commander]
 active = walker@agr_dolgbase_blokp1_commander
 actor_dialogs = actor_dialogs
+on_death = death@agr_dolgbase_blokp1_commander
+
+
+[death@agr_dolgbase_blokp1_commander]
+on_info = %+agr_pass_to_dolgbase_have%
 
 [walker@agr_dolgbase_blokp1_commander]
 path_walk = blokp1_commander_walk1

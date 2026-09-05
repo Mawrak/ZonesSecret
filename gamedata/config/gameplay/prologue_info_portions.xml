@@ -1638,6 +1638,7 @@
 		<action>gz_prologue.diary_tip</action>
 	</info_portion>
 	<info_portion id="dv_max_buh_done"></info_portion>
+    <info_portion id="agr_present_dolg"></info_portion>    
 	<info_portion id="yan_spawn_heli_puz"></info_portion>
 	<info_portion id="dv_spawn_black_diger"></info_portion>
 	<info_portion id="pda_depo_dead_stalker_have"></info_portion>

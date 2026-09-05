@@ -65,10 +65,7 @@
  
  <dialog id="dialog_agr_com_blokp_neut_reputation">
   <dont_has_info>agr_kill_flock_of_mutants_start</dont_has_info>
-  <dont_has_info>dv_sv_greshbase_rush_done</dont_has_info>
-  <dont_has_info>dv_dolg_grehbase_rush_done</dont_has_info>
   <dont_has_info>agr_pass_to_dolgbase_have</dont_has_info>
-  <dont_has_info>dialog_dv_dolg_rush_done</dont_has_info>
   <has_info>go_to_agroprom_start</has_info>
   <init_func>dialogs_new_system.ag_agr_com_blokp_neut_reputation</init_func>
  </dialog>
@@ -104,12 +101,9 @@
  </dialog>
  
  <dialog id="dialog_agr_commendant_marsh_monsters_first">
-  <dont_has_info>dv_sv_greshbase_rush_done</dont_has_info>
-  <dont_has_info>dv_dolg_grehbase_rush_done</dont_has_info>
-  <dont_has_info>dolg_commendant_quest_otkaz</dont_has_info>
+  <has_info>agr_kalash_dialog_about_general_end</has_info>
   <dont_has_info>agr_marsh_monsters_start</dont_has_info>
   <dont_has_info>agr_krylov_wait</dont_has_info>
-  <has_info>go_to_agroprom_start</has_info>
   <init_func>dialogs_new_system.ag_commendant_marsh_monsters_first</init_func>
  </dialog>
 
@@ -181,35 +175,17 @@
  </dialog>
  
  <dialog id="dialog_agr_kalash_about_general_1">
-  <dont_has_info>agr_kalash_dialog_about_general_end</dont_has_info>
   <dont_has_info>agr_krylov_wait</dont_has_info>
-  <dont_has_info>agr_security_chief_pass_have</dont_has_info>
-  <dont_has_info>dialog_dv_dolg_rush_done</dont_has_info>
-  <dont_has_info>agr_kalash_general_propusk_dialog_done</dont_has_info>
   <init_func>dialogs_new_system.ag_kalash_about_general_1</init_func>
  </dialog>
 
- <dialog id="dialog_agr_kalash_about_general_2">
-                 <has_info>agr_kalash_dialog_about_general_end</has_info>
-                 <dont_has_info>agr_krylov_wait</dont_has_info>
-                 <dont_has_info>agr_security_chief_pass_have</dont_has_info>
-  <init_func>dialogs_new_system.ag_kalash_about_general_2</init_func>
- </dialog>
  
  <dialog id="dialog_agr_kalash_about_present_1">
-  <dont_has_info>agr_krylov_wait</dont_has_info>
   <has_info>dialog_dv_dolg_rush_done</has_info>
-  <dont_has_info>kalash_sms</dont_has_info>
+  <dont_has_info>agr_present_dolg</dont_has_info>
   <init_func>dialogs_new_system.ag_kalash_about_present_1</init_func>
  </dialog>
  
- <dialog id="dialog_agr_kalash_about_present_2">
-  <has_info>dv_dolg_grehbase_rush_done</has_info>
-  <dont_has_info>agr_krylov_wait</dont_has_info>
-  <has_info>kalash_sms</has_info>
-  <dont_has_info>dialog_dv_dolg_rush_done</dont_has_info>
-  <init_func>dialogs_new_system.ag_kalash_about_present_2</init_func>
- </dialog>
  
  <dialog id="dialog_agr_kalash_about_sniperka">
   <has_info>agr_marsh_monsters_start</has_info>
