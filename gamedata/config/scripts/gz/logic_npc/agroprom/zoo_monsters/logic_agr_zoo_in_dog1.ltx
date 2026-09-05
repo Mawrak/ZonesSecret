@@ -1,20 +1,8 @@
 [logic]
-active = mob_walker@1
+active = mob_remark
 
-[mob_walker@1]
-path_walk = agr_dolgbase_zoo_dogs_patrol_1
-path_look = agr_dolgbase_lovets_look1
-friendly = true
-on_game_timer = 60|mob_walker@2
 
-[mob_walker@2]
-path_walk = agr_dolgbase_zoo_dogs_patrol_2
-path_look = agr_dolgbase_lovets_look1
-friendly = true
-on_game_timer = 60|mob_walker@3
+[mob_remark]
+anim = stand_idle_2
+on_info = %=make_invulnerable%
 
-[mob_walker@3]
-path_walk = agr_dolgbase_zoo_dogs_patrol_3
-path_look = agr_dolgbase_lovets_look1
-friendly = true
-on_game_timer = 60|mob_walker@1

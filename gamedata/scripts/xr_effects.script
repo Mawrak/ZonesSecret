@@ -3553,3 +3553,13 @@ function spawn_bekas_money_coords()
     
     alife():create("bekas_money", vector():set(274.818, -9.805, -30.119), 544740, 284)
 end
+
+
+
+function make_invulnerable(actor, npc)
+  npc:invulnerable(true)
+end
+
+function unmake_invulnerable(actor, npc)
+  npc:invulnerable(false)
+end
