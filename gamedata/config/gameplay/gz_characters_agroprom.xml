@@ -29,7 +29,6 @@
 		</supplies>
 		
 		<actor_dialog>dialog_krylov_about_cap</actor_dialog>
-        <actor_dialog>dialog_krylov_about_cap_dolg</actor_dialog>
 		
 #include "gameplay\character_criticals_6.xml"
 		
@@ -900,7 +899,6 @@
 #include "gameplay\character_drugs.xml"
 		</supplies>
 		<actor_dialog>dialog_agr_commendant_marsh_monsters_first</actor_dialog>
-		<start_dialog>dialog_agr_commendant_marsh_monsters_second</start_dialog>
 		<actor_dialog>dialog_agr_commendant_marsh_monsters_third</actor_dialog>
 
 #include "gameplay\character_criticals_6.xml"

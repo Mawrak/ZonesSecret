@@ -107,21 +107,8 @@
   <init_func>dialogs_new_system.ag_commendant_marsh_monsters_first</init_func>
  </dialog>
 
- <dialog id="dialog_agr_commendant_marsh_monsters_second">
-  <dont_has_info>dv_sv_greshbase_rush_done</dont_has_info>
-  <dont_has_info>dolg_commendant_quest_otkaz</dont_has_info>
-  <dont_has_info>agr_marsh_monsters_start</dont_has_info>
-  <has_info>dv_dolg_grehbase_rush_done</has_info>
-  <has_info>agr_conversation_with_dolg_general_done</has_info>
-  <init_func>dialogs_new_system.ag_commendant_marsh_monsters_second</init_func>
- </dialog>
-
  <dialog id="dialog_agr_commendant_marsh_monsters_third">
-  <dont_has_info>dv_sv_greshbase_rush_done</dont_has_info>
-  <dont_has_info>dolg_commendant_quest_otkaz</dont_has_info>
-  <has_info>dv_dolg_grehbase_rush_done</has_info>
-  <has_info>agr_conversation_with_dolg_general_done</has_info>
-  <has_info>agr_marsh_monsters_start</has_info>
+   <has_info>agr_marsh_monsters_start</has_info>
   <has_info>agr_marsh_monsters_contr_dead</has_info>
   <init_func>dialogs_new_system.ag_commendant_marsh_monsters_third</init_func>
  </dialog>
@@ -156,21 +143,13 @@
  </dialog>
  
  <dialog id="dialog_krylov_about_cap">
-  <dont_has_info>agr_general_sent_to_underground</dont_has_info>
-  <dont_has_info>dv_dolg_grehbase_rush_done</dont_has_info>
-  <dont_has_info>dv_dolg_group_rush_start</dont_has_info>
+  <dont_has_info>agr_conversation_with_dolg_general_done</dont_has_info>
   <init_func>dialogs_new_system.ag_krylov_about_cap</init_func>      
  </dialog>
  
- <dialog id="dialog_krylov_about_cap_dolg">
-  <dont_has_info>agr_general_sent_to_underground</dont_has_info>
-  <has_info>dv_dolg_grehbase_rush_done</has_info>
-  <init_func>dialogs_new_system.ag_krylov_about_cap_dolg</init_func>      
- </dialog>
 
  <dialog id="ag_dolg_lab_guard">
-  <dont_has_info>agr_lab_guard_propusk</dont_has_info>
-  <has_info>agr_general_sent_to_underground</has_info>
+  <has_info>agr_conversation_with_dolg_general_done</has_info>
   <init_func>dialogs_new_system.ag_dolg_lab_guard</init_func>      
  </dialog>
  
