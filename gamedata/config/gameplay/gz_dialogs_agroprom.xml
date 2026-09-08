@@ -109,6 +109,7 @@
 
  <dialog id="dialog_agr_commendant_marsh_monsters_third">
    <has_info>agr_marsh_monsters_start</has_info>
+   <dont_has_info>agr_marsh_monsters_complete</dont_has_info>
   <has_info>agr_marsh_monsters_contr_dead</has_info>
   <init_func>dialogs_new_system.ag_commendant_marsh_monsters_third</init_func>
  </dialog>

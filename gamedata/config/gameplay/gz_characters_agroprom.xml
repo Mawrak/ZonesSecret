@@ -35,35 +35,6 @@
 
 </specific_character>
 
-	<specific_character id="agr_dolgbase_mehanik_gromov" team_default = "1">
-		<name>Громов</name>
-		<icon>ui_npc_u_stalker_do_balon_5</icon>
-		<map_icon x="0" y="0"></map_icon>
-		<bio>bar_ivancov_bio</bio>
-
-		<class>agr_dolgbase_mehanik_gromov</class>
-		<community>dolg</community> <terrain_sect>stalker_dolg_terrain</terrain_sect>
-		<money min="2000" max="5000" infinitive="0"></money>
-
-		<rank>603</rank>
-		<reputation>0</reputation>
- 
-		<visual>gz\npc\dolg\stalker_do_mask_1</visual>
-		<snd_config>characters_voice\human_01\dolg\</snd_config>
-		<crouch_type>0</crouch_type>
-
-		<supplies>
-			[spawn] \n
-            invulnerable \n
-#include "gameplay\character_food.xml" \n
-#include "gameplay\character_drugs.xml"
-		</supplies>
-		
-#include "gameplay\character_criticals_6.xml"
-		
-		#include "gameplay\character_dialogs.xml"
-        <actor_dialog>dialog_gz_hacker</actor_dialog>
-	</specific_character>
 	
 	<specific_character id="agr_dolgbase_trader_mityai" team_default = "1">
 		<name>Митяй</name>
