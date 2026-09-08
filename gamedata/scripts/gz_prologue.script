@@ -1375,7 +1375,7 @@ end
 function transfer_agr_dolg_svu (first_speaker, second_speaker)
 	dialogs.relocate_item_section(first_speaker, "wpn_svu", "in")
 		dialogs.relocate_item_section(first_speaker, "ammo_7.62x54_7h14", "in")
-			dialogs.relocate_item_section(first_speaker, "ammo_7.62x54_7h14", "in")
+
 end
 
 function transfer_agr_comend_nagr (first_speaker, second_speaker)
