@@ -751,6 +751,10 @@
 		
                 <actor_dialog>dialog_agr_kalash_about_general_1</actor_dialog>
                 <actor_dialog>dialog_agr_kalash_about_present_1</actor_dialog>
+                
+                <actor_dialog>dialog_gz_hacker</actor_dialog>
+                
+                
                 <actor_dialog>dialog_dolg_borman_noyt</actor_dialog>
                 <actor_dialog>dialog_agr_loki_case_open</actor_dialog>
 
