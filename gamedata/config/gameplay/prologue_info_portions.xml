@@ -778,6 +778,7 @@
 	<info_portion id="gar_digger_meet_start">
 		<task>gar_digger_meet</task>
 	</info_portion>
+    <info_portion id="gar_digger_meet_starz"></info_portion>
 	<info_portion id="gar_digger_meet_done"></info_portion>
 	<info_portion id="gar_digger_talk_done"></info_portion>
 	<info_portion id="find_tainik_black_digger_done"></info_portion>

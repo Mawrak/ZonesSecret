@@ -141,7 +141,7 @@
 </specific_character>
 	
 	<specific_character id="gar_neutbase_guard4" team_default = "1">
-		<name>GENERATE_NAME_stalker</name>
+		<name>Отелло</name>
 		<icon>ui_npc_u_stalker_neytral_rukzak_2</icon>
 		<map_icon x="1" y="0"></map_icon>
 		<bio>sim_stalker_general_bio</bio>
@@ -149,8 +149,8 @@
 		<class>gar_neutbase_guard4</class>
 		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
 		
-		<rank>447</rank>
-		<reputation>33</reputation>
+		<rank>420</rank>
+		<reputation>-18</reputation>
 		<money min="600" max="2000" infinitive="0"></money>
 		
 		<visual>gz\npc\neutral\neutral_4</visual>
@@ -169,6 +169,14 @@
 #include "gameplay\character_food.xml"
 #include "gameplay\character_items.xml"
 		</supplies>
+        
+        <actor_dialog>dialog_dig_find_dynamite</actor_dialog>
+        <actor_dialog>dialog_dig_find_digger_tainik</actor_dialog>
+        <actor_dialog>gar_black_digger_diary</actor_dialog>
+		<start_dialog>dialog_dig_have_dynamite</start_dialog>
+		
+#include "gameplay\character_criticals_4.xml"
+#include "gameplay\character_dialogs.xml"
 
 #include "gameplay\character_criticals_4.xml"
 #include "gameplay\character_dialogs.xml"
@@ -369,7 +377,7 @@
 	
 <!--------------------------------------- Диггер ------------------------------------------------------------------------------------------------>
 	<specific_character id="gar_digger" team_default = "1">
-		<name>Отелло</name>
+		<name>GENERATE_NAME_stalker</name>
 		<icon>ui_npc_u_stalker_neytral_hood_4</icon>
 		<map_icon x="0" y="0"></map_icon>
 		<bio>gar_seryi_bio</bio>
