@@ -3563,3 +3563,15 @@ end
 function unmake_invulnerable(actor, npc)
   npc:invulnerable(false)
 end
+
+
+
+function spawn_quest_raciya_detail_4_new()
+    alife():create("quest_raciya_detail_4", vector():set(237.113, 1.190, -245.464), 494670, 259)
+    alife():create("medkit_army", vector():set(245.193, 5.685, -173.918), 504578, 282)
+end
+
+
+function spawn_instrument_fix()
+    alife():create("quest_case_instruments", vector():set(269.930, -3.753, -219.372), 538036, 272)
+end

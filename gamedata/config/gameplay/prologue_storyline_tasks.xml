@@ -145,28 +145,28 @@
 		</objective>
 		
 		<objective>
-			<text>Найти аккумулятор</text>
+			<text>Найти аккумулятор (комната, главное здание)</text>
 	    	<map_location_type hint="Детали для рации">crlc_big</map_location_type>
 			<object_story_id>dv_details_zone</object_story_id>
 			<infoportion_complete>find_details_battery_have</infoportion_complete>
             <infoportion_fail>svoboda_war</infoportion_fail>	
 		</objective>
 		<objective>
-			<text>Найти транзистор</text>
+			<text>Найти транзистор (1 этаж, пристройка)</text>
 	    	<map_location_type hint="Детали для рации">crlc_big</map_location_type>
 			<object_story_id>dv_details_zone</object_story_id>
 			<infoportion_complete>find_details_tranzistor_have</infoportion_complete>
             <infoportion_fail>svoboda_war</infoportion_fail>	
 		</objective>
 		<objective>
-			<text>Найти проволоку</text>
+			<text>Найти проволоку (гараж со сломанной машиной)</text>
 	    	<map_location_type hint="Детали для рации">crlc_big</map_location_type>
 			<object_story_id>dv_details_zone</object_story_id>
 			<infoportion_complete>find_details_provoloka_have</infoportion_complete>
             <infoportion_fail>svoboda_war</infoportion_fail>	
 		</objective>
 		<objective>
-			<text>Найти плату</text>
+			<text>Найти плату (улица)</text>
 	    	<map_location_type hint="Детали для рации">crlc_big</map_location_type>
 			<object_story_id>dv_details_zone</object_story_id>
 			<infoportion_complete>find_details_plata_have</infoportion_complete>

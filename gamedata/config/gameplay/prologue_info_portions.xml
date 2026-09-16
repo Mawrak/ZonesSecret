@@ -1906,6 +1906,7 @@
 	<info_portion id="pz_ghost_dialog_done_pered"></info_portion>
 	<info_portion id="dv_fomka_diary_info">
 		<article>infa_fomka_diary</article>
+        <action>gz_prologue.diary_tip</action>
 	</info_portion>
 	<!-- - Мины на базе учёных -  -->
 	<info_portion id="gz_yan_ambush_mine_spawn"></info_portion>
