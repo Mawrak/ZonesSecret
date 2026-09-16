@@ -512,25 +512,14 @@
 	</dialog>
 
     <dialog id="quest_rabota">
-          <dont_has_info>find_details_for_yar_cancel</dont_has_info>
-          <dont_has_info>find_details_for_yar_alt_start</dont_has_info>
-           <dont_has_info>yar_no_job</dont_has_info>
+        <dont_has_info>start_find_yar_instruments</dont_has_info>
         <phrase_list>
             <phrase id="0">
                 <text>Здравствуй. Нет работы для меня?</text>
                 <next>1</next>
-                <next>30</next>
-                <next>9</next>
-                <next>40</next>
             </phrase>
-            <phrase id="40">
-                <has_info>find_yar_instruments_done</has_info>
-                <has_info>find_details_for_yar_start</has_info>
-                <text>Да нет, пока что...</text>
-                <give_info>yar_no_job</give_info>
-            </phrase>
+            
             <phrase id="1">
-                <dont_has_info>start_find_yar_instruments</dont_has_info>
                 <text>Работы? Думаю найдется.</text>
                 <next>2</next>
             </phrase>
@@ -560,27 +549,22 @@
 				<action>dialogs.break_dialog</action>
             </phrase>
 
-			<phrase id="9">
-                <has_info>start_find_yar_instruments</has_info>
-                <dont_has_info>find_yar_instruments_done</dont_has_info>
-                <text>А ты принес инструменты?</text>
-                <next>10</next>
-                <next>20</next>
-			</phrase>
-			<phrase id="10">
-                <text>Нет еще.</text>
-                <next>11</next>
+			
+	</phrase_list>
+    </dialog>
+    
+    
+    
+    <dialog id="quest_rabota_fix">
+        <has_info>start_find_yar_instruments</has_info>
+        <precondition>gz_prologue.have_instruments</precondition>
+        <dont_has_info>find_yar_instruments_done</dont_has_info>
+        <phrase_list>
+            <phrase id="0">
+                <text>Я нашёл инструменты!</text>
+                <next>21</next>
             </phrase>
-			<phrase id="11">
-                <text>Принеси инструменты для начала, тогда и поговорим.</text>
-				<action>dialogs.break_dialog</action>
-			</phrase>
-			<phrase id="20">
-				<precondition>gz_prologue.have_instruments</precondition>
-				<has_info>find_yar_instruments_have</has_info>
-                <text>Да, вот они.</text>
-				<next>21</next>
-            </phrase>
+            
 			<phrase id="21">
                 <text>Спасибо, вот держи награду. Если еще будет работа - сообщу.</text>
 				<action>gz_prologue.transfer_instruments</action>
@@ -592,26 +576,7 @@
                 <text>Хорошо.</text>
 				<action>dialogs.break_dialog</action>
             </phrase>
-             <phrase id="30">
-                <dont_has_info>find_details_for_yar_start</dont_has_info>
-                <has_info>find_raciya_done</has_info>
-                <has_info>find_yar_instruments_done</has_info>
-                <text>dialog_about_detali_yar</text>
-                <next>31</next>
-                <next>32</next>
-            </phrase>
-            <phrase id="31">
-                <text>Постараюсь, что-нибудь найти, но не обещаю.</text>
-                <next>33</next>
-            </phrase>
-            <phrase id="33">
-                <text>Спасибо, выручил дружище. Координаты скинул, список необходимого тоже. Как найдёшь, сразу тащи сюда.</text>
-                <give_info>find_details_for_yar_alt_start</give_info>
-            </phrase>
-            <phrase id="32">
-                <text>Подай, принеси, а сами вы что-нибудь умеете?! Не буду я вам ничего искать.</text>
-                <give_info>find_details_for_yar_cancel</give_info>
-            </phrase>
+             
 	</phrase_list>
     </dialog>
 	
@@ -665,7 +630,6 @@
 <dialog id="dialog_about_raciya_yar">
         <has_info>talk_with_baseleader_done</has_info>
 		<dont_has_info>find_details_for_yar_start</dont_has_info>
-                <dont_has_info>find_raciya_done</dont_has_info>
         <phrase_list>
             <phrase id="0">
 				<text>Мне нужна рация, говорят у тебя можно ее взять?</text>
@@ -703,8 +667,6 @@
 <dialog id="dialog_about_raciya_yar2">
         <has_info>find_all_details_have</has_info>
 		<dont_has_info>yar_idi_pogulyai</dont_has_info>
-                <dont_has_info>find_raciya_done</dont_has_info>
-                <dont_has_info>contact_with_base_start</dont_has_info>
         <phrase_list>
             <phrase id="0">
 				<text>Вот, я нашел, что ты просил.</text>
@@ -720,7 +682,7 @@
                 <next>3</next>
             </phrase>
 	         <phrase id="3">
-                <text>Теперь иди погуляй часика два. А я пока поработаю над твоей рацией.</text>
+                <text>Теперь иди погуляй. А я пока поработаю над твоей рацией.</text>
                 
                 <next>4</next>
             </phrase>
@@ -734,43 +696,6 @@
 	</phrase_list>
     </dialog>
 
-<dialog id="dialog_about_raciya_yar_alt">
-        <has_info>find_all_details_have</has_info>
-		<dont_has_info>yar_idi_pogulyai</dont_has_info>
-                <has_info>contact_with_base_start</has_info>
-        <phrase_list>
-            <phrase id="0">
-				<text>Я нашёл детали, но рацию уже заполучил. Я могу продать тебе найденные запчасти или обменять на что-нибудь.</text>
-                <next>1</next>
-            </phrase>
-          <phrase id="1">
-                <text>dialog_rabota_yar_nagrada</text>
-                
-                <next>4</next>
-                <next>5</next>
-            </phrase>
-	         <phrase id="4">
-                <text>Ствол в Зоне важнее.</text>
-                <next>45</next>
-            </phrase>
-               <phrase id="45">
-                <text>Вот, правильно, так мыслит опытный сталкер. Держи свою игрушку, заслужил.</text>
-        <give_info>yar_all_done</give_info>
-               <action>gz_prologue.transfer_bizon</action>
-               <action>gz_prologue.transfer_raciya_details</action>
-            </phrase>
-                   <phrase id="5">
-                <text>Деньги сейчас нужнее.</text>
-                <next>55</next>
-            </phrase>
-               <phrase id="55">
-                <text>Я тоже всегда говорил: "Денег много не бывает".</text>
-       <give_info>yar_all_done</give_info>
-       <action>gz_prologue.transfer_raciya_details</action>
-                 <action>gz_prologue.transfer_money_yar</action>
-            </phrase>
-	</phrase_list>
-    </dialog>
 	
 <dialog id="dialog_about_raciya_yar3">
 		<has_info>yar_idi_pogulyai</has_info>
