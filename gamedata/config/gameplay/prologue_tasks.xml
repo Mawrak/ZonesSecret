@@ -166,24 +166,30 @@
 		<objective>
 			<text>Найти тайники Долга и отметить GPS-маячками</text>
 			<icon>ui_icons_storyline_sv_gps</icon>
-                        <article>svoboda_gps</article>
-                      <function_complete>gz_prologue.RDF</function_complete>
+            <article>svoboda_gps</article>
+            <function_complete>gz_prologue.RDF</function_complete>
 			<function_fail>gz_prologue.enemy_dolg_dv</function_fail>
 		</objective>
 		<objective>
 			<text>Отметить тайник долга №1</text>
+            <map_location_type hint="Тайник Долга">green_location</map_location_type>
+			<object_story_id>dolg_rukz_1_inventory_box</object_story_id>
 			<icon>ui_icons_quest_yar_instruments</icon>
-                        <infoportion_complete>dolgs_t_1</infoportion_complete>		
+            <infoportion_complete>dolgs_t_1</infoportion_complete>		
 		</objective>
                 <objective>
 			<text>Отметить тайник долга №2</text>
+            <map_location_type hint="Тайник Долга">green_location</map_location_type>
+			<object_story_id>dolg_rukz_2_inventory_box</object_story_id>
 			<icon>ui_icons_quest_yar_instruments</icon>
-                        <infoportion_complete>dolgs_t_2</infoportion_complete>		
+            <infoportion_complete>dolgs_t_2</infoportion_complete>		
 		</objective>
-                 <objective>
+        <objective>
 			<text>Отметить тайник долга №3</text>
+            <map_location_type hint="Тайник Долга">green_location</map_location_type>
+			<object_story_id>dolg_rukz_3_inventory_box</object_story_id>
 			<icon>ui_icons_quest_yar_instruments</icon>
-                        <infoportion_complete>dolgs_t_3</infoportion_complete>		
+            <infoportion_complete>dolgs_t_3</infoportion_complete>		
 		</objective>
 	</game_task>
 	

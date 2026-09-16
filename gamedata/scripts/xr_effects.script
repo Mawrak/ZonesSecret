@@ -3575,3 +3575,5 @@ end
 function spawn_instrument_fix()
     alife():create("quest_case_instruments", vector():set(269.930, -3.753, -219.372), 538036, 272)
 end
+
+
