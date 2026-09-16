@@ -772,7 +772,6 @@
 	<!-- Альтернативный вход -->
 	<info_portion id="alt_enter_in_agr_underground_start">
 		<task>alt_enter_in_agr_underground</task>
-		<action>gz_sms.agr_dolg_guards_stop</action>
 	</info_portion>
 	<info_portion id="alt_enter_in_agr_underground_done"></info_portion>
 	<!-- Диггер -->

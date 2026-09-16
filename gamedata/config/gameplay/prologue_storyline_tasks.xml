@@ -1723,12 +1723,12 @@
 			<text>Обыскать труп Связного</text>
 			<icon>ui_icons_storyline_pda</icon>
 			<article>gar_messenger_trup</article>
-			<infoportion_complete>gar_follow_to_garneutlager_start</infoportion_complete>
+			<infoportion_complete>gar_digger_meet_start</infoportion_complete>
 		</objective>
 
 		<objective>
 			<text>Обыскать труп Связного</text>
-			<infoportion_complete>gar_follow_to_garneutlager_start</infoportion_complete>
+			<infoportion_complete>gar_digger_meet_start</infoportion_complete>
 		</objective>
 	</game_task>
 

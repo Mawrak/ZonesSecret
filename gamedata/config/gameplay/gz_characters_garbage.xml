@@ -1105,7 +1105,7 @@
 		<bio>gar_stalker_regular_bio</bio>
 
 		<class>gar_sniper_1</class>
-		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<community>killer</community> <terrain_sect>stalker_terrain</terrain_sect>
 		
 		<rank>515</rank>
 		<reputation>14</reputation>
@@ -1137,7 +1137,7 @@
 		<bio>gar_stalker_regular_bio</bio>
 
 		<class>gar_sniper_2</class>
-		<community>stalker</community> <terrain_sect>stalker_terrain</terrain_sect>
+		<community>killer</community> <terrain_sect>stalker_terrain</terrain_sect>
 		
 		<rank>515</rank>
 		<reputation>14</reputation>

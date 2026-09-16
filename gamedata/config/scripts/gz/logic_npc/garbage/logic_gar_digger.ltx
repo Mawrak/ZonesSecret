@@ -5,7 +5,9 @@ on_death = death
 [walker@gar_digger_stay]
 path_walk = gar_digger_stay_1
 path_look = gar_digger_look_1
-on_info = {+gar_transfer_dynamit_done} %-gar_find_dynamit_done% walker@gar_digger_to_bomb
+;on_info = {+gar_transfer_dynamit_done} %-gar_find_dynamit_done% walker@gar_digger_to_bomb
+danger = danger_condition@digger
+
 
 [walker@gar_digger_to_bomb]
 path_walk = gar_digger_tobomb_walk
@@ -32,7 +34,7 @@ on_signal = diggerhide | walker@gar_digger_stay2
 [walker@gar_digger_stay2]
 path_walk = gar_digger_stay_walk
 path_look = gar_digger_stay_look
-danger = danger_condition@digger
+
 
 
 [danger_condition@digger]
