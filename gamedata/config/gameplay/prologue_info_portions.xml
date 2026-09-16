@@ -453,6 +453,7 @@
 	<!-- - квест с деталями для Яра -  -->
 	<info_portion id="find_details_for_yar_start">
 		<task>find_details_for_yar</task>
+        <action>xr_effects.spawn_quest_raciya_detail_4_new</action>
 	</info_portion>
 	<info_portion id="find_details_for_yar_alt_start">
 		<task>find_details_for_yar_alt</task>

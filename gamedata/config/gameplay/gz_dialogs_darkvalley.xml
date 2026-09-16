@@ -247,9 +247,6 @@
 	
  <dialog id="dialog_find_weapons_case">
   <!--has_info>find_raciya_done</has_info-->
-  <dont_has_info>dv_sv_sturm_otkaz</dont_has_info>
-  <dont_has_info>greh_shturm_alone</dont_has_info>
-  <dont_has_info>dv_dolg_group_sbor</dont_has_info>
   <dont_has_info>find_weapons_case_start_2</dont_has_info>
   <dont_has_info>dv_mikl_think_about_rush</dont_has_info>
   <has_info>yar_est_raciya</has_info>
@@ -258,9 +255,6 @@
 
  <dialog id="dialog_find_weapons_case_2">
   <!--has_info>find_raciya_done</has_info-->
-  <dont_has_info>dv_sv_sturm_otkaz</dont_has_info>
-  <dont_has_info>greh_shturm_alone</dont_has_info>
-  <dont_has_info>dv_dolg_group_sbor</dont_has_info>
   <dont_has_info>find_weapons_case_start_2</dont_has_info>
   <has_info>pda_coordinats_start</has_info>
   <has_info>dv_mikl_think_about_rush</has_info>
@@ -274,12 +268,7 @@
   <init_func>dialogs_new_system.dv_chehov_dialog_weapons_case_give</init_func>      
  </dialog>
 
- <dialog id="chehov_dialog_weapons_case_give_2">
-  <has_info>find_weapons_case_have</has_info>
-  <has_info>max_dead</has_info>
-  <dont_has_info>dv_sv_greshbase_rush_start</dont_has_info>
-  <init_func>dialogs_new_system.dv_chehov_dialog_weapons_case_give_2</init_func>     
- </dialog>
+
 	
  <dialog id="dialog_lukash_proverka">
   <dont_has_info>lukash_pogovorili</dont_has_info>
@@ -581,52 +570,6 @@
     </dialog>
 	
 
-<dialog id="quest_rabota_2">
-        <has_info>find_all_details_have</has_info>
-        <has_info>find_details_for_yar_alt_start</has_info>
-		<dont_has_info>yar_all_done</dont_has_info>
-        <phrase_list>
-            <phrase id="0">
-				<text>Вот, я нашел всё из списка, что ты просил.</text>
-                <next>1</next>
-            </phrase>
-            <phrase id="1">
-                <text>Давай-ка всё это барахло сюда.</text>
-                <next>2</next>
-            </phrase>
-	         <phrase id="2">
-                <text>Держи.</text>
-				<give_info>find_details_for_yar_done_alt</give_info>
-                <next>3</next>
-            </phrase>
-	         <phrase id="3">
-                <text>dialog_rabota_yar_nagrada</text>
-                 
-                <next>4</next>
-                <next>5</next>
-            </phrase>
-	         <phrase id="4">
-                <text>Ствол в Зоне по важнее.</text>
-                <next>45</next>
-            </phrase>
-               <phrase id="45">
-                <text>Вот, правильно, так мыслит опытный сталкер. Держи свою игрушку, заслужил.</text>
-        <give_info>yar_all_done</give_info>
-               <action>gz_prologue.transfer_bizon</action>
-               <action>gz_prologue.transfer_raciya_details</action>
-            </phrase>
-                   <phrase id="5">
-                <text>Деньги сейчас нужнее.</text>
-                <next>55</next>
-            </phrase>
-               <phrase id="55">
-                <text>Я тоже всегда говорил: "Денег много не бывает".</text>
-       <give_info>yar_all_done</give_info>
-       <action>gz_prologue.transfer_raciya_details</action>
-                 <action>gz_prologue.transfer_money_yar</action>
-            </phrase>
-	</phrase_list>
-    </dialog>
 <dialog id="dialog_about_raciya_yar">
         <has_info>talk_with_baseleader_done</has_info>
 		<dont_has_info>find_details_for_yar_start</dont_has_info>

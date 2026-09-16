@@ -3567,7 +3567,7 @@ end
 
 
 function spawn_quest_raciya_detail_4_new()
-    alife():create("quest_raciya_detail_4", vector():set(237.113, 1.190, -245.464), 494670, 259)
+    alife():create("quest_raciya_detail_4", vector():set(227.470, 1.181, -245.156), 482810, 259)
     alife():create("medkit_army", vector():set(245.193, 5.685, -173.918), 504578, 282)
 end
 

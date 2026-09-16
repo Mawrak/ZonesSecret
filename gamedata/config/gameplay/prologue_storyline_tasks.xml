@@ -1036,7 +1036,6 @@
 			<icon>ui_icons_storyline_help_dolg_group</icon>
                         <article>help_dolg_group</article>
 			<infoportion_complete>dv_sos_talk_with_dolg_done</infoportion_complete>
-            <infoportion_fail>talk_with_chehov_done</infoportion_fail>
 		</objective>
 		
 		<objective>

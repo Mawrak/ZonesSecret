@@ -150,11 +150,13 @@
 		</supplies>
 
 		<actor_dialog>chehov_dialog_about_cap</actor_dialog>
+        
 		<start_dialog>dialog_find_weapons_case</start_dialog>
 		<actor_dialog>dialog_find_weapons_case_2</actor_dialog>
+        
 		<actor_dialog>dialog_miklih_prisoner</actor_dialog>
-                <actor_dialog>chehov_dialog_weapons_case_give</actor_dialog>
-                <actor_dialog>chehov_dialog_weapons_case_give_2</actor_dialog>
+        
+        <actor_dialog>chehov_dialog_weapons_case_give</actor_dialog>
 		
 #include "gameplay\character_criticals_3.xml"
 
@@ -1359,7 +1361,7 @@ invulnerable \n
 			
 		<start_dialog>hello_dialog</start_dialog>
 		<actor_dialog>dialog_attack_greh</actor_dialog>
-                 <actor_dialog>dialog_attack_greh_done</actor_dialog>
+        <actor_dialog>dialog_attack_greh_done</actor_dialog>
                  
 #include "gameplay\character_dialogs.xml"
 	</specific_character>
