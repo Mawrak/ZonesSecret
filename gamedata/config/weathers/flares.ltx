@@ -1,0 +1,991 @@
+;Эхо Чернобыля
+
+[flares_foggy_poranek_early]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.2, 0.3, 0.51, 0.41, 0.17, -0.54, -1.1, -0.31, -0.6, 0.26, 1.37, 1.5, -1.5, -0.26, 0.7, 0.56, 0.74
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.11, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.13
+     flare_opacity         = 0.3, 0.05, 0.22, 0.19, 0.15, 0.13, 0.29, 0.2, 0.24, 0.21, 0.27, 0.43, 0.29, 0.81, 0.67, 0.25, 0.25, 0.17, 0.16, 0.42, 0.39, 0.3
+     flare_shader          = effects\flare
+     flares                = off
+     gradient              = on
+     gradient_opacity      = 0.15
+     gradient_radius       = 0.5
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradientdeszcz.tga
+     source                = on
+     source_radius         = 0.25
+     source_texture        = fx\fx_sun_fog_early
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 60
+     blend_down_time       = 60
+
+
+[flares_dry_fog]
+     flare_textures        = fx\fx_gradientdeszcz, fx\element_sc, fx\fx_gradientdeszcz, fx\fx_gradientdeszcz
+     flare_position        = 0.7,                  0.4,           0.2,                 -0.2,
+     flare_radius          = 0.3,                  0.2,           0.15,                 0.2,
+     flare_opacity         = 0.35,                 0.4,           0.4,                  0.3
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.5
+     gradient_radius       = 0.8
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradientdeszcz.tga
+     source                = on
+     source_radius         = 0.3
+     source_texture        = fx\fx_sun_fog.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 60
+     blend_down_time       = 60
+
+   [sunset_clear_red]  
+flare_opacity            =  0.5,                             0.2,                0.4,                             0.5,         0.3,               0.4
+flare_position           =  0.7,                             0.6,                0.3,                            -0.2,        -0.6,              -1.0
+flare_radius             =  0.18,                            0.15,               0.08,                            0.1,         0.08,              0.25
+flare_textures           =  fx\fx_thunderbolts_gradient_red, fx\element_sc_red,  fx\fx_thunderbolts_gradient_red, fx\fx_ring1, fx\element_sc_red, fx\fx_thunderbolts_gradient_red
+flare_shader		= effects\flare
+flares                   = on
+gradient                 = on
+gradient_opacity         = 0.8
+gradient_radius          = 0.9
+gradient_texture         = fx\fx_sun_red
+gradient_shader          = effects\flare
+source                   = on
+source_radius            = 0.03
+source_texture           = fx\fx_sun_rise_zachod
+source_shader            = effects\sun
+source_ignore_color		 = false
+blend_time				= 0.1 ;(сек)
+blend_rise_time				= 300 ;(сек)
+blend_down_time				= 300 ;(сек) 
+
+   [lens_anarh]                                                         ;Непрозрачность, позиция, радиус                                                                                                      Непрозрачность, позиция, радиус                                                                     Непрозрачность, позиция, радиус
+flare_opacity            =  0.8,                             0.4,                0.5,                             0.5,             0.3,            0.2,              0.3,          0.4,                 0.4,           0.3,           0.5,               0.7,             0.4,                             0.3,             0.25,                0.25
+flare_position           =  0.7,                             0.6,                0.3,                             0.4,             0.2,            0.1,             -0.2,         -0.4,                -0.5,          -0.55,         -0.6,              -1.0             -0.75,                           -0.8,            -0.9,                -1.0
+flare_radius             =  0.18,                            0.15,               0.06,                            0.12,            0.15,           0.15,             0.2,          0.25,                0.15,          0.1,           0.15,              0.35,            0.3,                             0.2,             0.15,                0.3
+flare_textures           =  fx\fx_thunderbolts_gradient_red, fx\element_sc_red,  fx\fx_thunderbolts_gradient_red, fx\element_halo, fx\fx_flare2_3, fx\fx_flares_sun, fx\fx_gr_new, fx\fx_gradient_halo, fx\raduga_red, fx\sun_raduga, fx\fx_raduga_asai, fx\element_hoop, fx\fx_thunderbolts_gradient_red, fx\element_halo, fx\element_pentagon, fx\flar3_red
+flare_shader		     = effects\flare
+flares                   = on
+gradient                 = on
+gradient_opacity         = 1.1
+gradient_radius          = 1.5
+gradient_texture         = fx\anarh_flar
+gradient_shader          = effects\flare
+source                   = on
+source_radius            = 0.1
+source_texture           = fx\fx_sun_alt_clear
+source_shader            = effects\sun
+source_ignore_color	     = false
+blend_time		         = 10 ;
+blend_rise_time		     = 10 ;(сек)
+blend_down_time		     = 60 ;
+
+   [lens_red_2]                                                         ;Непрозрачность, позиция, радиус                                                                                                      Непрозрачность, позиция, радиус                                                                    Непрозрачность, позиция, радиус
+flare_opacity            =  0.25,                0.25,                 0.2,                 0.2,                 0.6,                         1.0,               0.2,                 0.9,             0.5,             0.3,            0.4,            0.8,               0.3,           0.3,           0.3,           0.8,      0.8,           0.5,               0.5
+flare_position           = -0.65,               -0.5,                 -0.4,                 0.2,                 1.0,                         1.0,              -0.8,                 1.0,             1.0,             0.3,            0.35,          -0.4,               0.1            0.15,          0.2,          -0.4,      1.0,           0.8,               0.7
+flare_radius             =  0.06,                0.08,                 0.1,                 0.1,                 0.4,                         0.2,               0.15,                0.35,            0.4,             0.1,            0.14,           0.15,              0.15,          0.2,           0.2,           0.16,     0.3,           0.1,               0.1
+flare_textures           =  fx\element_pentagon, fx\element_pentagon,  fx\element_pentagon, fx\element_pentagon, fx\fx_sun_spiky_artistpavel, fx\fx_raduga_asai, fx\element_pentagon, fx\fx_gradient3, fx\element_halo, fx\fx_gradient, fx\fx_gradient, fx\fx_raduga_asai, fx\element_sc, fx\element_sc, fx\element_sc, fx\flar3, fx\fx_sun_red, fx\element_sc_red, fx\fx_thunderbolts_gradient_red
+flare_shader		     = effects\flare
+flares                   = on
+gradient                 = on
+gradient_opacity         = 1.0
+gradient_radius          = 1.4
+gradient_texture         = fx\gr_t
+gradient_shader          = effects\flare
+source                   = on
+source_radius            = 0.1
+source_texture           = fx\fx_sun_alt_clear
+source_shader            = effects\sun
+source_ignore_color	     = false
+blend_time		         = 10 ;
+blend_rise_time		     = 10 ;(сек)
+blend_down_time		     = 60 ;
+
+
+[flares_garbage_1]
+flare_opacity            = 0.340, 0.35, 0.500, 0.420, 0.260, 0.260, 1.0, 0.4
+flare_position           = 1.300, 1.000, 0.500, -0.300, -0.600, -1.000, 1.0, -0.8
+flare_radius             = 0.080, 0.20, 0.040, 0.080, 0.120, 0.300, 0.55, 0.2
+flare_textures           = fx\fx_flare1.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\element_sc, fx\fx_gradient, fx\element_pentagon
+flare_shader          	= effects\flare
+flares                   = on
+gradient                 = on
+gradient_opacity         = 0.6
+gradient_radius          = 0.7
+gradient_texture         = fx\fx_gr_new.tga
+gradient_shader          = effects\flare
+source                   = on
+source_radius            = 0.3
+source_texture           = fx\fx_sun1.tga
+source_shader            = effects\sun
+source_ignore_color		 = false
+blend_time				=  10 ;(сек)
+blend_rise_time				= 60 ;(сек)
+blend_down_time				= 60 ;(сек)
+
+[flares_sun_cinema]
+;flare_opacity            = 0.600, 0.240, 0.300, 0.280, 0.240, 0.140, 1.4, 1.0
+;flare_position           = 1.300, 0.800, 0.500, -0.300, -0.600, -1.000, 1.0, 1.0
+;flare_radius             = 0.180, 0.120, 0.140, 0.180, 0.120, 0.300, 0.4, 0.35
+;flare_textures           = fxcop\glow_rad, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare1.tga, fx\fx_gradient3, fx\fx_gradient 
+
+flare_opacity            = 0.3,          0.3,            0.3,            0.3,            0.3,          0.3,            0.3,            0.2,               0.15,       1.2,             0.6
+flare_position           = 0.0,         -0.1,           -0.2,           -0.3,           -0.4,         -0.5,            0.02,          -0.03,             -0.03,       1.0,             1.3
+flare_radius             = 0.05,         0.04,           0.03,           0.05,           0.04,         0.03,           0.1,            0.1,               0.1,        0.3 ,            0.18
+flare_textures           = fx\fx_flare_1,fx\fx_flare_1_1,fx\fx_flare_2_2,fx\fx_flare_2_1,fx\fx_flare_2,fx\fx_flare_1_2,fx\fx_gradient3,fx\fx_flares_sun,  fx\blik_gor,fx\fx_gradient1, fxcop\glow_rad
+
+flare_shader		 = effects\flare
+flares                   = on
+gradient                 = on
+gradient_opacity         = 1.0
+gradient_radius          = 1.0
+gradient_texture         = fx\sun
+gradient_shader          = effects\flare
+source                   = on
+source_radius            = 0.12
+source_texture           = fx\fx_sun_alt_clear
+source_shader            = effects\sun
+source_ignore_color	 = false
+blend_time		 = 10 ;(сек)
+blend_rise_time		 = 10 ;(сек)
+blend_down_time		 = 60 ;(сек)
+
+   [lens]                                                         ;Непрозрачность, позиция, радиус                                                                                                      Непрозрачность, позиция, радиус
+flare_opacity            =  0.25,                0.25,                 0.2,                 0.2,                  0.9,               0.4,            1.0,               0.2,                 0.9,             1.2,               0.4,             0.3,            0.4,            0.8,               0.3,           0.3,           0.2
+flare_position           = -0.65,               -0.5,                 -0.4,                 0.2,                  0.6,               1.0,            1.0,              -0.8,                 1.0,             1.0,              -1.1,             0.3,            0.35,          -0.4,               0.1            0.15,         -0.4
+flare_radius             =  0.06,                0.08,                 0.1,                 0.1,                  0.15,              0.4,            0.2,                0.15,               0.35,            0.45,              0.25,            0.1,            0.14,           0.15,              0.15,          0.2,           0.16      
+flare_textures           =  fx\element_pentagon, fx\element_pentagon,  fx\element_pentagon, fx\element_pentagon,  fx\raduga_blue,    fx\fx_sun_test, fx\fx_raduga_asai, fx\element_pentagon, fx\fx_gradient3, fx\fx_raduga_red,  fx\element_hoop, fx\fx_gradient, fx\fx_gradient, fx\fx_raduga_asai, fx\element_sc, fx\element_sc, fx\fx_ring1
+flare_shader		     = effects\flare
+flares                   = on
+gradient                 = on
+gradient_opacity         = 0.55
+gradient_radius          = 1.8
+gradient_texture         = fx\anar
+gradient_shader          = effects\flare
+source                   = on
+source_radius            = 0.025
+source_texture           = fx\fx_sun_rise_zachod
+source_shader            = effects\sun
+source_ignore_color	     = false
+blend_time		         = 10 ;
+blend_rise_time		     = 10 ;(сек)
+blend_down_time		     = 60 ;
+
+   [lens_red]                                                         ;Непрозрачность, позиция, радиус                                                                                                      Непрозрачность, позиция, радиус                                                                    Непрозрачность, позиция, радиус
+flare_opacity            =  0.25,                0.25,                 0.2,                 0.2,                 0.6,                         1.0,               0.2,                 0.9,             0.5,             0.3,            0.4,            0.8,               0.3,           0.3,           0.3,           0.8,      0.8
+flare_position           = -0.65,               -0.5,                 -0.4,                 0.2,                 1.0,                         1.0,              -0.8,                 1.0,             1.0,             0.3,            0.35,          -0.4,               0.1            0.15,          0.2,          -0.4,      1.0
+flare_radius             =  0.06,                0.08,                 0.1,                 0.1,                 0.4,                         0.2,                0.15,               0.35,            0.4,             0.1,            0.14,           0.15,              0.15,          0.2,           0.2,           0.16,     0.3
+flare_textures           =  fx\element_pentagon, fx\element_pentagon,  fx\element_pentagon, fx\element_pentagon, fx\fx_sun_spiky_artistpavel, fx\fx_raduga_asai, fx\element_pentagon, fx\fx_gradient3, fx\element_halo, fx\fx_gradient, fx\fx_gradient, fx\fx_raduga_asai, fx\element_sc, fx\element_sc, fx\element_sc, fx\flar3, fx\fx_sun_red
+flare_shader		     = effects\flare
+flares                   = on
+gradient                 = on
+gradient_opacity         = 0.6
+gradient_radius          = 1.7
+gradient_texture         = fx\gr_t
+gradient_shader          = effects\flare
+source                   = on
+source_radius            = 0.3
+source_texture           = fx\fx_sun_fog
+source_shader            = effects\sun
+source_ignore_color	     = false
+blend_time		         = 10 ;
+blend_rise_time		     = 10 ;(сек)
+blend_down_time		     = 60 ;
+
+[flares_sun_orange]
+flare_opacity            = 0.7, 0.7, 0.4, 0.3, 0.3, 0.25, 0.6, 0.8
+flare_position           = 0.6, -0.8, -0.3, -0.1, 0.3, -0.3, -0.85, 1.0
+flare_radius             = 0.3, 0.2, 0.08, 0.15, 0.15, 0.1, 0.2, 1.2
+flare_textures           = fxcop\glow_red, fxcop\glow_orange, fxcop\circular, fxcop\glow_dist_red, fxcop\glow_dist_blue, fxcop\glow_fire, fx\sun_raduga, fxcop\fx_gradient
+flare_shader		= effects\flare
+flares                   = on
+gradient                 = on
+gradient_opacity         = 0.9
+gradient_radius          = 0.7
+gradient_texture         = fx\fx_sun_orange
+gradient_shader          = effects\flare
+source                   = on
+source_radius            = 0.18
+source_texture           = fx\fx_sun_fog
+source_shader            = effects\sun
+source_ignore_color		 = false
+blend_time				= 0.1 ;(сек)
+blend_rise_time				= 300 ;(сек)
+blend_down_time				= 300 ;(сек) 
+
+[flares_sun_red_suset] ;Не используется.
+flare_opacity            = 0.340, 0.260, 0.500, 0.420, 0.260, 0.260, 0.8, 0.9 ; непрозрачность каждого отражения, в порядке от дальнего к ближнему
+flare_position           = 1.300, 1.000, 0.500, -0.300, -0.600, -1.000, 1.0, 1.0
+flare_radius             = 0.080, 0.120, 0.040, 0.080, 0.120, 0.300, 0.15, 0.3
+flare_textures           = fx\fx_flare1.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare1, fx\fx_sun, fx\fx_sun_red
+flare_shader		= effects\flare
+flares                   = off
+gradient                 = on
+gradient_opacity         = 0.95
+gradient_radius          = 0.7
+gradient_texture         = fx\fx_sun_red
+gradient_shader          = effects\flare
+source                   = on
+source_radius            = 0.025
+source_texture           = fx\fx_sun_rise_zachod
+source_shader            = effects\sun
+source_ignore_color		 = false
+blend_time				= 0.1 ;(сек)
+blend_rise_time				= 300 ;(сек)
+blend_down_time				= 300 ;(сек) 
+; Эхо Чернобыля
+
+[clear_day_osiemnasta] ;лоста альфа + Эхо Чернобыля
+     flare_textures        = fx\fx_flares_sun, fx\fx_flares_sun_streaks1, fx\fx_ring1, fx\fx_ring1, fx\fx_gradient_halo, fx\fx_flare_1_2, fx\element_pentagon_pur_blo, fx\fx_flare2, fx\fx_flare3, fx\element_pentagon_pur_blo, fx\element_pentagon_pur, fx\element_pentagon_pur, fx\element_pentagon_pur,  fx\fx_flare3, fx\element_pentagon_pur, fx\element_pentagon_pur, fx\fx_flare3, fx\fx_gradient_halo_half,  fx\fx_sun_ppx
+     flare_position        = 1.0,              1.0,                       1.0,        -0.89,       -1.0,                 1.4,             0.25,                        0.51,         0.17,        -0.54,                       -0.88,                   -0.27,                    0.11,                    -0.26,         0.56,                    0.73,                    1.5,         -1.2,                       1.0
+     flare_radius          = 0.3,              0.4,                       0.2,         0.25,        0.4,                 0.15,            0.16,                        0.08,         0.14,         0.15,                        0.3,                     0.05,                    0.08,                     0.2,          0.15,                    0.16,                    0.15,         0.25,                      0.4
+     flare_opacity         = 0.3,              0.1,                       0.4,         0.36,        0.3,                 0.4,             0.3,                         0.3,          0.31,         0.37,                        0.25,                    0.3,                     0.28,                     0.29,         0.3,                     0.2,                     0.3,          0.7,                       0.7
+     
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.4
+     gradient_radius       = 1.0
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.3
+     source_texture        = fx\fx_sun_gradient.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[clear_day_dziewietnasta] ;лостатфовский
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.45
+     gradient_radius       = 1.16
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.03
+     source_texture        = fx\fx_flare0.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[clear_day]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.45
+     gradient_radius       = 1.2
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.3
+     source_texture        = fx\fx_sun_gradient.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[clear_day_9]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.4
+     gradient_radius       = 1.65
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.3
+     source_texture        = fx\fx_sun_gradient.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[clear_day_12]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.65
+     gradient_radius       = 1.2
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.65
+     source_texture        = fx\fx_sun_ppx.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[clear_day_10]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.55
+     gradient_radius       = 1.65
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.65
+     source_texture        = fx\fx_sun_ppx.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[clear_day_17]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.45
+     gradient_radius       = 1.16
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.65
+     source_texture        = fx\fx_sun_ppx.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[clear_day_14]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.4
+     gradient_radius       = 1.5
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.65
+     source_texture        = fx\fx_sun_ppx.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[clear_day_13]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.45
+     gradient_radius       = 1.2
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 1.35
+     source_texture        = fx\fx_sun_gradient.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[flares_partly_halo]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.4
+     gradient_radius       = 1.2
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradientdeszcz.tga
+     source                = on
+     source_radius         = 0.45
+     source_texture        = fx\fx_sun_halo.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[flares_partly_halo_poranek]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.15
+     gradient_radius       = 1.1
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradientdeszcz.tga
+     source                = on
+     source_radius         = 0.2
+     source_texture        = fx\fx_sun_halo.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[clear_morning]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.2
+     gradient_radius       = 1.2
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.3
+     source_texture        = fx\fx_sun_morning.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[clear_morning_big]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.35
+     gradient_radius       = 1.85
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.3
+     source_texture        = fx\fx_sun_morning.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[clear_morning_big2]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.4
+     gradient_radius       = 1.95
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.3
+     source_texture        = fx\fx_sun_morning.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[flares_wschod6zachod20]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.35
+     gradient_radius       = 0.9
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.04
+     source_texture        = fx\fx_sun_rise.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[flares_clear_20]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.65
+     gradient_radius       = 2
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.04
+     source_texture        = fx\fx_sun_rise.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[flares_partly_20]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.6
+     gradient_radius       = 2
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.04
+     source_texture        = fx\fx_sun_rise.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[flares_cloudy_morning]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.7
+     gradient_radius       = 0.7
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.04
+     source_texture        = fx\fx_sun_rise.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[flares_cloudy_morning_fade]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.41, 0.25, 0.51, 0.41, 0.17, -0.54, -0.88, -0.31, -0.27, 0.11, 1.37, 1.5, -1.5, -0.26, -0.6, 0.56, 0.73
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.15, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.16
+     flare_opacity         = 0.3, 0.05, 0.4, 0.36, 0.32, 0.14, 0.4, 0.3, 0.35, 0.31, 0.37, 0.27, 0.33, 0.38, 0.28, 0.33, 0.34, 0.2, 0.29, 0.6, 0.47, 0.19
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.7
+     gradient_radius       = 0.7
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.04
+     source_texture        = fx\fx_sun_rise_fade.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 30
+     blend_down_time       = 30
+
+
+[flares_moon]
+     flare_textures        = fx\fx_flare0.tga
+     flare_position        = 
+     flare_radius          = 
+     flare_opacity         = 
+     flare_shader          = 
+     flares                = off
+     gradient              = off
+     gradient_opacity      = 1
+     gradient_radius       = 0.35
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.33
+     source_texture        = fx\fx_moon.tga
+     source_shader         = effects\moon
+     source_ignore_color   = true
+     blend_time            = 10
+     blend_rise_time       = 1000
+     blend_down_time       = 1000
+
+
+[flares_moon_clear]
+     flare_textures        = fx\fx_flare0.tga
+     flare_position        = 
+     flare_radius          = 
+     flare_opacity         = 
+     flare_shader          = 
+     flares                = off
+     gradient              = on
+     gradient_opacity      = 1
+     gradient_radius       = 0.33
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.33
+     source_texture        = fx\fx_moon.tga
+     source_shader         = effects\moon
+     source_ignore_color   = true
+     blend_time            = 10
+     blend_rise_time       = 1000
+     blend_down_time       = 1000
+
+
+[flares_moon_partly]
+     flare_textures        = fx\fx_flare0.tga
+     flare_position        = 
+     flare_radius          = 
+     flare_opacity         = 
+     flare_shader          = 
+     flares                = off
+     gradient              = off
+     gradient_opacity      = 1
+     gradient_radius       = 0.33
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.33
+     source_texture        = fx\fx_moon.tga
+     source_shader         = effects\moon
+     source_ignore_color   = true
+     blend_time            = 10
+     blend_rise_time       = 1000
+     blend_down_time       = 1000
+
+
+[flares_moon_foggy]
+     flare_textures        = fx\fx_flare0.tga
+     flare_position        = 
+     flare_radius          = 
+     flare_opacity         = 
+     flare_shader          = 
+     flares                = off
+     gradient              = off
+     gradient_opacity      = 0.6
+     gradient_radius       = 0.35
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.33
+     source_texture        = fx\fx_moon_halo.tga
+     source_shader         = effects\moon
+     source_ignore_color   = true
+     blend_time            = 10
+     blend_rise_time       = 1000
+     blend_down_time       = 1000
+
+
+[flares_foggy]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.2, 0.3, 0.51, 0.41, 0.17, -0.54, -1.1, -0.31, -0.6, 0.26, 1.37, 1.5, -1.5, -0.26, 0.7, 0.56, 0.74
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.11, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.13
+     flare_opacity         = 0.3, 0.05, 0.22, 0.19, 0.15, 0.13, 0.29, 0.2, 0.24, 0.21, 0.27, 0.43, 0.29, 0.81, 0.67, 0.25, 0.25, 0.17, 0.16, 0.42, 0.39, 0.3
+     flare_shader          = effects\flare
+     flares                = off
+     gradient              = on
+     gradient_opacity      = 0.3
+     gradient_radius       = 1.2
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradientdeszcz.tga
+     source                = on
+     source_radius         = 0.3
+     source_texture        = fx\fx_sun_fog.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 60
+     blend_down_time       = 60
+
+
+[flares_veryfoggy]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.2, 0.3, 0.51, 0.41, 0.17, -0.54, -1.1, -0.31, -0.6, 0.26, 1.37, 1.5, -1.5, -0.26, 0.7, 0.56, 0.74
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.11, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.13
+     flare_opacity         = 0.3, 0.05, 0.22, 0.19, 0.15, 0.13, 0.29, 0.2, 0.24, 0.21, 0.27, 0.43, 0.29, 0.81, 0.67, 0.25, 0.25, 0.17, 0.16, 0.42, 0.39, 0.3
+     flare_shader          = effects\flare
+     flares                = off
+     gradient              = on
+     gradient_opacity      = 0.25
+     gradient_radius       = 1.2
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradientdeszcz.tga
+     source                = on
+     source_radius         = 0.3
+     source_texture        = fx\fx_sun_veryfoggy.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 60
+     blend_down_time       = 60
+
+
+[flares_foggy_poranek]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.2, 0.3, 0.51, 0.41, 0.17, -0.54, -1.1, -0.31, -0.6, 0.26, 1.37, 1.5, -1.5, -0.26, 0.7, 0.56, 0.74
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.11, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.13
+     flare_opacity         = 0.3, 0.05, 0.22, 0.19, 0.15, 0.13, 0.29, 0.2, 0.24, 0.21, 0.27, 0.43, 0.29, 0.81, 0.67, 0.25, 0.25, 0.17, 0.16, 0.42, 0.39, 0.3
+     flare_shader          = effects\flare
+     flares                = off
+     gradient              = on
+     gradient_opacity      = 0.05
+     gradient_radius       = 1.2
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradientdeszcz.tga
+     source                = on
+     source_radius         = 0.25
+     source_texture        = fx\fx_sun_fog.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 60
+     blend_down_time       = 60
+
+
+[flares_rainy]
+     flare_textures        = fx\fx_flares_sun.tga, fx\fx_flares_sun_streaks1.tga, fx\fx_ring1.tga, fx\fx_ring1.tga, fx\fx_gradient_halo.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_sunset.tga, fx\fx_flare2.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_flare3.tga, fx\fx_thunderbolts_gradient.tga, fx\fx_sunset.tga, fx\fx_sunset.tga, fx\fx_flare3.tga
+     flare_position        = 1, 1, 1, -0.89, -1.27, 1.2, 0.3, 0.51, 0.41, 0.17, -0.54, -1.1, -0.31, -0.6, 0.26, 1.37, 1.5, -1.5, -0.26, 0.7, 0.56, 0.74
+     flare_radius          = 0.3, 0.39, 0.22, 0.25, 0.5, 0.39, 0.16, 0.08, 0.05, 0.14, 0.11, 0.43, 0.1, 0.05, 0.08, 0.07, 0.08, 0.3, 0.4, 0.14, 0.25, 0.13
+     flare_opacity         = 0.3, 0.05, 0.22, 0.19, 0.15, 0.13, 0.29, 0.2, 0.24, 0.21, 0.27, 0.43, 0.29, 0.81, 0.67, 0.25, 0.25, 0.17, 0.16, 0.42, 0.39, 0.3
+     flare_shader          = effects\flare
+     flares                = off
+     gradient              = on
+     gradient_opacity      = 0.65
+     gradient_radius       = 0.7
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradientdeszcz.tga
+     source                = off
+     source_radius         = 0.17
+     source_texture        = fx\fx_sun.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 60
+     blend_down_time       = 60
+
+
+[flares_none]
+     flare_textures        = fx\fx_flare1.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare1.tga
+     flare_position        = 1.3, 1, 0.5, -0.3, -0.6, -1
+     flare_radius          = 0.08, 0.12, 0.04, 0.08, 0.12, 0.3
+     flare_opacity         = 0.34, 0.26, 0.5, 0.42, 0.26, 0.26
+     flare_shader          = effects\flare
+     flares                = off
+     gradient              = off
+     gradient_opacity      = 0
+     gradient_radius       = 0
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradientdeszcz.tga
+     source                = off
+     source_radius         = 0
+     source_texture        = fx\fx_sun.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 60
+     blend_down_time       = 60
+
+
+[flares_default10]
+     flare_textures        = fx\fx_flare1.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare1.tga
+     flare_position        = 1.3, 1, 0.5, -0.3, -0.6, -1
+     flare_radius          = 0.08, 0.12, 0.04, 0.08, 0.12, 0.3
+     flare_opacity         = 0.34, 0.26, 0.5, 0.42, 0.26, 0.26
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.4
+     gradient_radius       = 1.2
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradientdeszcz.tga
+     source                = on
+     source_radius         = 0.3
+     source_texture        = fx\fx_sun_halo.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 10
+     blend_down_time       = 60
+
+
+[flares_sun_rise]
+     flare_textures        = fx\fx_flare1.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare1.tga
+     flare_position        = 1.3, 0.55, 0.5, -0.3, -0.6, -1
+     flare_radius          = 0.08, 0.12, 0.04, 0.08, 0.12, 0.3
+     flare_opacity         = 0.34, 0.26, 0.5, 0.42, 0.26, 0.26
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 1
+     gradient_radius       = 0.5
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.5
+     source_texture        = fx\fx_sun_rise_on.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 30.0
+     blend_rise_time       = 1000
+     blend_down_time       = 1000
+
+
+[flares_default_0_10]
+     flare_textures        = fx\fx_flare1.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare1.tga
+     flare_position        = 1.3, 1, 0.5, -0.3, -0.6, -1
+     flare_radius          = 0.08, 0.12, 0.04, 0.08, 0.12, 0.3
+     flare_opacity         = 0.34, 0.26, 0.5, 0.42, 0.26, 0.26
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 1
+     gradient_radius       = 0.7
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = off
+     source_radius         = 0.1
+     source_texture        = fx\fx_sun1.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 30
+     blend_rise_time       = 1000
+     blend_down_time       = 1000
+
+
+[flares_default]
+     flare_textures        = fx\fx_flare1.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare1.tga
+     flare_position        = 1.3, 1, 0.5, -0.3, -0.6, -1
+     flare_radius          = 0.08, 0.12, 0.04, 0.08, 0.12, 0.3
+     flare_opacity         = 0.34, 0.26, 0.5, 0.42, 0.26, 0.26
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 1
+     gradient_radius       = 0.5
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient.tga
+     source                = on
+     source_radius         = 0.1
+     source_texture        = fx\fx_sun1.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 0.1
+     blend_rise_time       = 60
+     blend_down_time       = 60
+
+
+[flares_gradient]
+     flare_textures        = fx\fx_flare1.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare1.tga
+     flare_position        = 1.3, 1, 0.5, -0.3, -0.6, -1
+     flare_radius          = 0.08, 0.12, 0.04, 0.08, 0.12, 0.3
+     flare_opacity         = 0.06, 0.04, 0.1, 0.08, 0.04, 0.04
+     flare_shader          = effects\flare
+     flares                = on
+     gradient              = on
+     gradient_opacity      = 0.5
+     gradient_radius       = 0.7
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient1.tga
+     source                = on
+     source_radius         = 0.11
+     source_texture        = fx\fx_sun1.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 60
+     blend_down_time       = 60
+
+
+[flares_gradient1]
+     flare_textures        = fx\fx_flare1.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare2.tga, fx\fx_flare3.tga, fx\fx_flare1.tga
+     flare_position        = 1.3, 1, 0.5, -0.3, -0.6, -1
+     flare_radius          = 0.08, 0.12, 0.04, 0.08, 0.12, 0.3
+     flare_opacity         = 0.06, 0.04, 0.1, 0.08, 0.04, 0.04
+     flare_shader          = effects\flare
+     flares                = off
+     gradient              = on
+     gradient_opacity      = 1
+     gradient_radius       = 0.5
+     gradient_shader       = effects\flare
+     gradient_texture      = fx\fx_gradient1.tga
+     source                = on
+     source_radius         = 0.11
+     source_texture        = fx\fx_sun1.tga
+     source_shader         = effects\sun
+     source_ignore_color   = false
+     blend_time            = 10
+     blend_rise_time       = 60
+     blend_down_time       = 60
+
+

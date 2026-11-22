@@ -1,0 +1,39 @@
+#include "env_ambient.ltx"
+#include "flares.ltx"
+#include "thunderbolt.ltx"
+
+#include "weather_default.ltx"
+#include "weather_sarkofag.ltx"
+;#include "weather_mp.ltx"
+#include "weather_test.ltx"
+#include "weather_map.ltx"
+#include "weather_surge.ltx"
+#include "weather_rain.ltx"
+#include "weather_yantar.ltx"
+#include "weather_radar.ltx"
+#include "weather_prypyat.ltx"
+#include "weather_stancia.ltx"
+#include "weather_indoor.ltx"
+
+
+#include "weather_beta.ltx"
+#include "weather_dry.ltx"
+#include "weather_foggy.ltx"
+#include "weather_rainy.ltx"
+#include "weather_grey.ltx"
+
+[weathers]
+map				= sect_map
+test			= sect_test
+default			= sect_default_weather
+
+beta = sect_beta_weather
+dry = sect_dry_weather
+foggy = sect_foggy_weather
+grey = sect_grey_weather
+rainy = sect_rainy_weather
+
+
+[weather_effects]
+surge_day		= sect_surge_day
+p_surge_day     = sect_p_surge_day
